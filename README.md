@@ -4,4 +4,4 @@
 CSDN：http://blog.csdn.net/syg90178aw
 
 ###日期控件如图
-![image](https://github.com/XGPASS/XGDevelopDemo/blob/master/images/date.gif)
+![image](https://github.com/XGPASS/XGDevelopDemo/blob/master/images/develop.gif)

@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  XGBaseDemo
+//
+//  Created by 绿漫小广 on 16/8/3.
+//  Copyright © 2016年 绿漫小广. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/* Foundation */
+#import "NSObject+Ext.h"
+
+/* UIKit */
+#import "UIView+Ext.h"
+
+/* Macro */
+#import "XGUrlMacro.h"
+#import "XGCommonMacro.h"
+#import "XGDefineCode.h"
+
+
+/* Tools */
+#import "MJExtension.h"
+#import "SVProgressHUD.h"
+
+/* Other */
+
+
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>isSmall</key>
+		<false/>
+		<key>title</key>
+		<string>英雄不怕出身太淡薄</string>
+	</dict>
+	<dict>
+		<key>isSmall</key>
+		<false/>
+		<key>title</key>
+		<string>有志气高哪天也骄傲</string>
+	</dict>
+	<dict>
+		<key>isSmall</key>
+		<false/>
+		<key>title</key>
+		<string>就为一个缘字情难了</string>
+	</dict>
+	<dict>
+		<key>isSmall</key>
+		<false/>
+		<key>title</key>
+		<string>一生一世想捕捕不牢</string>
+	</dict>
+	<dict>
+		<key>isSmall</key>
+		<false/>
+		<key>title</key>
+		<string>相爱深深天都看不到</string>
+	</dict>
+	<dict>
+		<key>isSmall</key>
+		<false/>
+		<key>title</key>
+		<string>恩怨世世代代心头烧</string>
+	</dict>
+	<dict>
+		<key>isSmall</key>
+		<false/>
+		<key>title</key>
+		<string>有爱有心不能活到老</string>
+	</dict>
+	<dict>
+		<key>isSmall</key>
+		<false/>
+		<key>title</key>
+		<string>叫我怎能忘记你的好</string>
+	</dict>
+	<dict>
+		<key>isSmall</key>
+		<false/>
+		<key>title</key>
+		<string>人生若只如初见</string>
+	</dict>
+</array>
+</plist>
