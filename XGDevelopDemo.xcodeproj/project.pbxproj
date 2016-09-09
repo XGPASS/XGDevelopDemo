@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		03E8DBA682210C33E3010820 /* libPods-XGDevelopDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */; };
+		371067E31D829B7E0048CA65 /* XGAutoHeightTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371067E11D829B7E0048CA65 /* XGAutoHeightTabController.m */; };
+		371067E41D829B7E0048CA65 /* XGAutoHeightTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371067E21D829B7E0048CA65 /* XGAutoHeightTabController.xib */; };
 		373690DE1D7522CC00E04076 /* XGDevelopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 373690DD1D7522CC00E04076 /* XGDevelopDemoTests.m */; };
 		373690E91D7522CC00E04076 /* XGDevelopDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 373690E81D7522CC00E04076 /* XGDevelopDemoUITests.m */; };
 		37862C7A1D8258BB001318B8 /* XGNetBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C271D8258BB001318B8 /* XGNetBase.m */; };
@@ -68,6 +70,9 @@
 
 /* Begin PBXFileReference section */
 		29003ACEF14963DBB8FDECDB /* Pods-XGDevelopDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGDevelopDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo.release.xcconfig"; sourceTree = "<group>"; };
+		371067E01D829B7E0048CA65 /* XGAutoHeightTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAutoHeightTabController.h; sourceTree = "<group>"; };
+		371067E11D829B7E0048CA65 /* XGAutoHeightTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAutoHeightTabController.m; sourceTree = "<group>"; };
+		371067E21D829B7E0048CA65 /* XGAutoHeightTabController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGAutoHeightTabController.xib; sourceTree = "<group>"; };
 		373690C01D7522CC00E04076 /* XGDevelopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XGDevelopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		373690D91D7522CC00E04076 /* XGDevelopDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XGDevelopDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		373690DD1D7522CC00E04076 /* XGDevelopDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGDevelopDemoTests.m; sourceTree = "<group>"; };
@@ -325,6 +330,9 @@
 				37862C3E1D8258BB001318B8 /* XGCollectionController.xib */,
 				37862C3F1D8258BB001318B8 /* XGTableTestController.h */,
 				37862C401D8258BB001318B8 /* XGTableTestController.m */,
+				371067E01D829B7E0048CA65 /* XGAutoHeightTabController.h */,
+				371067E11D829B7E0048CA65 /* XGAutoHeightTabController.m */,
+				371067E21D829B7E0048CA65 /* XGAutoHeightTabController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -587,6 +595,7 @@
 				37862C9A1D8258BB001318B8 /* Assets.xcassets in Resources */,
 				37862C901D8258BB001318B8 /* XGTestCell.xib in Resources */,
 				37862C8E1D8258BB001318B8 /* XGCollectionHeaderView.xib in Resources */,
+				371067E41D829B7E0048CA65 /* XGAutoHeightTabController.xib in Resources */,
 				37862C861D8258BB001318B8 /* AddCellDatas.plist in Resources */,
 				37862C8A1D8258BB001318B8 /* XGAddCell.xib in Resources */,
 				37862C9B1D8258BB001318B8 /* LaunchScreen.storyboard in Resources */,
@@ -678,6 +687,7 @@
 				37862C7A1D8258BB001318B8 /* XGNetBase.m in Sources */,
 				37862C981D8258BB001318B8 /* XGDatePicerViewController.m in Sources */,
 				37862C891D8258BB001318B8 /* XGAddCell.m in Sources */,
+				371067E31D829B7E0048CA65 /* XGAutoHeightTabController.m in Sources */,
 				37862C7F1D8258BB001318B8 /* AppDelegate.m in Sources */,
 				37862C811D8258BB001318B8 /* XGAddCellController.m in Sources */,
 				37862C8B1D8258BB001318B8 /* XGCollectionCell.m in Sources */,

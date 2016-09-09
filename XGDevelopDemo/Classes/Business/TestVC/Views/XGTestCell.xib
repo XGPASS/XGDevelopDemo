@@ -15,17 +15,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPR-SQ-QjX">
-                        <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                        <rect key="frame" x="15" y="5" width="290" height="33.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="hPR-SQ-QjX" secondAttribute="bottom" id="Cao-Lv-fxB"/>
+                    <constraint firstAttribute="bottom" secondItem="hPR-SQ-QjX" secondAttribute="bottom" constant="5" id="Cao-Lv-fxB"/>
                     <constraint firstItem="hPR-SQ-QjX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Too-39-Y2T"/>
                     <constraint firstAttribute="trailing" secondItem="hPR-SQ-QjX" secondAttribute="trailing" constant="15" id="aSI-bQ-nc6"/>
-                    <constraint firstItem="hPR-SQ-QjX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="v8Q-iB-UF0"/>
+                    <constraint firstItem="hPR-SQ-QjX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="v8Q-iB-UF0"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

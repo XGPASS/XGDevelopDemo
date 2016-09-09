@@ -13,6 +13,7 @@
 #import "XGChoseDateView.h"
 #import "XGDatePicerViewController.h"
 #import "UIViewController+MJPopupViewController.h"
+#import "XGAutoHeightTabController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -54,7 +55,7 @@
 - (void)initDatas {
     self.titleArray = @[@"封装的Tab测试", @"CollectionView网格测试",
                         @"Tab弹出小cell测试", @"选择日期的测试一",
-                        @"选择日期的测试二"];
+                        @"选择日期的测试二",@"自动算高的Tab"];
 }
 
 // 注册cell
@@ -80,7 +81,10 @@
     } else if ([tempTitle isEqualToString:@"选择日期的测试二"]) {
         [self showDateView:1];
         return;
+    } else if ([tempTitle isEqualToString:@"自动算高的Tab"]) {
+        controller = [[XGAutoHeightTabController alloc] init];
     }
+    
     
     if (controller) {
 //        [self presentViewController:controller animated:YES completion:nil];

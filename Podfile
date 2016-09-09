@@ -9,5 +9,6 @@ target 'XGDevelopDemo' do
   pod 'MJExtension'
   pod 'SVProgressHUD'
   pod 'MWPhotoBrowser'
+  pod 'UITableView+FDTemplateLayoutCell'
 
 end
