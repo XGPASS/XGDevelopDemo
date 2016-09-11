@@ -12,6 +12,16 @@
 		371067E41D829B7E0048CA65 /* XGAutoHeightTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371067E21D829B7E0048CA65 /* XGAutoHeightTabController.xib */; };
 		373690DE1D7522CC00E04076 /* XGDevelopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 373690DD1D7522CC00E04076 /* XGDevelopDemoTests.m */; };
 		373690E91D7522CC00E04076 /* XGDevelopDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 373690E81D7522CC00E04076 /* XGDevelopDemoUITests.m */; };
+		375435601D851A5500851923 /* MSSCalendarCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3754354E1D851A5500851923 /* MSSCalendarCollectionReusableView.m */; };
+		375435611D851A5500851923 /* MSSCalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 375435501D851A5500851923 /* MSSCalendarCollectionViewCell.m */; };
+		375435621D851A5500851923 /* MSSCalendarHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 375435531D851A5500851923 /* MSSCalendarHeaderModel.m */; };
+		375435631D851A5500851923 /* MSSCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 375435551D851A5500851923 /* MSSCalendarManager.m */; };
+		375435641D851A5500851923 /* MSSCalendarPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 375435571D851A5500851923 /* MSSCalendarPopView.m */; };
+		375435651D851A5500851923 /* MSSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375435591D851A5500851923 /* MSSCalendarViewController.m */; };
+		375435661D851A5500851923 /* MSSChineseCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3754355B1D851A5500851923 /* MSSChineseCalendarManager.m */; };
+		375435671D851A5500851923 /* MSSCircleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3754355D1D851A5500851923 /* MSSCircleLabel.m */; };
+		375435681D851A5500851923 /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3754355E1D851A5500851923 /* nav_back@2x.png */; };
+		375435691D851A5500851923 /* nav_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3754355F1D851A5500851923 /* nav_back@3x.png */; };
 		37862C7A1D8258BB001318B8 /* XGNetBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C271D8258BB001318B8 /* XGNetBase.m */; };
 		37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C291D8258BB001318B8 /* XGNetRequest.m */; };
 		37862C7C1D8258BB001318B8 /* XGArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C2C1D8258BB001318B8 /* XGArrayDataSource.m */; };
@@ -80,6 +90,25 @@
 		373690E41D7522CC00E04076 /* XGDevelopDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XGDevelopDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		373690E81D7522CC00E04076 /* XGDevelopDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGDevelopDemoUITests.m; sourceTree = "<group>"; };
 		373690EA1D7522CC00E04076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3754354D1D851A5500851923 /* MSSCalendarCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarCollectionReusableView.h; sourceTree = "<group>"; };
+		3754354E1D851A5500851923 /* MSSCalendarCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarCollectionReusableView.m; sourceTree = "<group>"; };
+		3754354F1D851A5500851923 /* MSSCalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarCollectionViewCell.h; sourceTree = "<group>"; };
+		375435501D851A5500851923 /* MSSCalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarCollectionViewCell.m; sourceTree = "<group>"; };
+		375435511D851A5500851923 /* MSSCalendarDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarDefine.h; sourceTree = "<group>"; };
+		375435521D851A5500851923 /* MSSCalendarHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarHeaderModel.h; sourceTree = "<group>"; };
+		375435531D851A5500851923 /* MSSCalendarHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarHeaderModel.m; sourceTree = "<group>"; };
+		375435541D851A5500851923 /* MSSCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarManager.h; sourceTree = "<group>"; };
+		375435551D851A5500851923 /* MSSCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarManager.m; sourceTree = "<group>"; };
+		375435561D851A5500851923 /* MSSCalendarPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarPopView.h; sourceTree = "<group>"; };
+		375435571D851A5500851923 /* MSSCalendarPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarPopView.m; sourceTree = "<group>"; };
+		375435581D851A5500851923 /* MSSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarViewController.h; sourceTree = "<group>"; };
+		375435591D851A5500851923 /* MSSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarViewController.m; sourceTree = "<group>"; };
+		3754355A1D851A5500851923 /* MSSChineseCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSChineseCalendarManager.h; sourceTree = "<group>"; };
+		3754355B1D851A5500851923 /* MSSChineseCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSChineseCalendarManager.m; sourceTree = "<group>"; };
+		3754355C1D851A5500851923 /* MSSCircleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCircleLabel.h; sourceTree = "<group>"; };
+		3754355D1D851A5500851923 /* MSSCircleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCircleLabel.m; sourceTree = "<group>"; };
+		3754355E1D851A5500851923 /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
+		3754355F1D851A5500851923 /* nav_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@3x.png"; sourceTree = "<group>"; };
 		37862C261D8258BB001318B8 /* XGNetBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGNetBase.h; sourceTree = "<group>"; };
 		37862C271D8258BB001318B8 /* XGNetBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGNetBase.m; sourceTree = "<group>"; };
 		37862C281D8258BB001318B8 /* XGNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGNetRequest.h; sourceTree = "<group>"; };
@@ -221,6 +250,32 @@
 				373690EA1D7522CC00E04076 /* Info.plist */,
 			);
 			path = XGDevelopDemoUITests;
+			sourceTree = "<group>";
+		};
+		3754354C1D851A5500851923 /* MSSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				3754354D1D851A5500851923 /* MSSCalendarCollectionReusableView.h */,
+				3754354E1D851A5500851923 /* MSSCalendarCollectionReusableView.m */,
+				3754354F1D851A5500851923 /* MSSCalendarCollectionViewCell.h */,
+				375435501D851A5500851923 /* MSSCalendarCollectionViewCell.m */,
+				375435511D851A5500851923 /* MSSCalendarDefine.h */,
+				375435521D851A5500851923 /* MSSCalendarHeaderModel.h */,
+				375435531D851A5500851923 /* MSSCalendarHeaderModel.m */,
+				375435541D851A5500851923 /* MSSCalendarManager.h */,
+				375435551D851A5500851923 /* MSSCalendarManager.m */,
+				375435561D851A5500851923 /* MSSCalendarPopView.h */,
+				375435571D851A5500851923 /* MSSCalendarPopView.m */,
+				375435581D851A5500851923 /* MSSCalendarViewController.h */,
+				375435591D851A5500851923 /* MSSCalendarViewController.m */,
+				3754355A1D851A5500851923 /* MSSChineseCalendarManager.h */,
+				3754355B1D851A5500851923 /* MSSChineseCalendarManager.m */,
+				3754355C1D851A5500851923 /* MSSCircleLabel.h */,
+				3754355D1D851A5500851923 /* MSSCircleLabel.m */,
+				3754355E1D851A5500851923 /* nav_back@2x.png */,
+				3754355F1D851A5500851923 /* nav_back@3x.png */,
+			);
+			path = MSSCalendar;
 			sourceTree = "<group>";
 		};
 		37862C211D8258BB001318B8 /* XGDevelopDemo */ = {
@@ -432,6 +487,7 @@
 		37862C651D8258BB001318B8 /* Three */ = {
 			isa = PBXGroup;
 			children = (
+				3754354C1D851A5500851923 /* MSSCalendar */,
 			);
 			path = Three;
 			sourceTree = "<group>";
@@ -589,11 +645,13 @@
 			files = (
 				37862C841D8258BB001318B8 /* XGCollectionController.xib in Resources */,
 				37862C991D8258BB001318B8 /* XGDatePicerViewController.xib in Resources */,
+				375435691D851A5500851923 /* nav_back@3x.png in Resources */,
 				37862C951D8258BB001318B8 /* MJPopupViewController.textClipping in Resources */,
 				37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */,
 				37862C8C1D8258BB001318B8 /* XGCollectionCell.xib in Resources */,
 				37862C9A1D8258BB001318B8 /* Assets.xcassets in Resources */,
 				37862C901D8258BB001318B8 /* XGTestCell.xib in Resources */,
+				375435681D851A5500851923 /* nav_back@2x.png in Resources */,
 				37862C8E1D8258BB001318B8 /* XGCollectionHeaderView.xib in Resources */,
 				371067E41D829B7E0048CA65 /* XGAutoHeightTabController.xib in Resources */,
 				37862C861D8258BB001318B8 /* AddCellDatas.plist in Resources */,
@@ -674,30 +732,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				37862C911D8258BB001318B8 /* NSObject+Ext.m in Sources */,
+				375435601D851A5500851923 /* MSSCalendarCollectionReusableView.m in Sources */,
 				37862C871D8258BB001318B8 /* XGAddCellModel.m in Sources */,
 				37862C801D8258BB001318B8 /* ViewController.m in Sources */,
 				37862C851D8258BB001318B8 /* XGTableTestController.m in Sources */,
+				375435631D851A5500851923 /* MSSCalendarManager.m in Sources */,
 				37862C941D8258BB001318B8 /* MJPopupBackgroundView.m in Sources */,
 				37862C831D8258BB001318B8 /* XGCollectionController.m in Sources */,
 				37862C881D8258BB001318B8 /* XGModel.m in Sources */,
 				37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */,
 				37862C8F1D8258BB001318B8 /* XGTestCell.m in Sources */,
 				37862C921D8258BB001318B8 /* UIView+Ext.m in Sources */,
+				375435611D851A5500851923 /* MSSCalendarCollectionViewCell.m in Sources */,
 				37862C8D1D8258BB001318B8 /* XGCollectionHeaderView.m in Sources */,
 				37862C7A1D8258BB001318B8 /* XGNetBase.m in Sources */,
+				375435621D851A5500851923 /* MSSCalendarHeaderModel.m in Sources */,
 				37862C981D8258BB001318B8 /* XGDatePicerViewController.m in Sources */,
 				37862C891D8258BB001318B8 /* XGAddCell.m in Sources */,
 				371067E31D829B7E0048CA65 /* XGAutoHeightTabController.m in Sources */,
 				37862C7F1D8258BB001318B8 /* AppDelegate.m in Sources */,
+				375435651D851A5500851923 /* MSSCalendarViewController.m in Sources */,
 				37862C811D8258BB001318B8 /* XGAddCellController.m in Sources */,
 				37862C8B1D8258BB001318B8 /* XGCollectionCell.m in Sources */,
 				37862C931D8258BB001318B8 /* XGChoseDateView.m in Sources */,
 				37862C961D8258BB001318B8 /* UIViewController+MJPopupViewController.m in Sources */,
 				37862C7E1D8258BB001318B8 /* XGBaseTableController.m in Sources */,
 				37862C7C1D8258BB001318B8 /* XGArrayDataSource.m in Sources */,
+				375435641D851A5500851923 /* MSSCalendarPopView.m in Sources */,
 				37862C7D1D8258BB001318B8 /* XGBaseController.m in Sources */,
+				375435661D851A5500851923 /* MSSChineseCalendarManager.m in Sources */,
 				37862C9E1D8258BB001318B8 /* main.m in Sources */,
 				37862C971D8258BB001318B8 /* XGAlertTool.m in Sources */,
+				375435671D851A5500851923 /* MSSCircleLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

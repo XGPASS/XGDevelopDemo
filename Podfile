@@ -10,5 +10,7 @@ target 'XGDevelopDemo' do
   pod 'SVProgressHUD'
   pod 'MWPhotoBrowser'
   pod 'UITableView+FDTemplateLayoutCell'
+  pod 'IQKeyboardManager'
+  pod 'FSCalendar'
 
 end
