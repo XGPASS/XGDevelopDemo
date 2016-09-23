@@ -36,6 +36,7 @@
 // 布局UI
 - (void)initSubViews {
     self.title = @"CollectionView测试";
+    self.collectionView.alwaysBounceVertical = YES; // 此属性，可让collectionView未满一屏幕也能滚动
     // 1.创建流水布局
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     self.collectionView.collectionViewLayout = layout;
@@ -105,24 +106,25 @@
 
 // 设置cell大小 itemSize：可以给每一个cell指定不同的尺寸
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(90.0,90.0);
+    CGFloat sizeMax = (XGScreenWidth - 2.0) / 3;
+    return CGSizeMake(sizeMax,sizeMax);
 }
 
 // sectionInset：组内边距，设置UIcollectionView整体的组内边距
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     // 上 左 下 右
-    return UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0);
+    return UIEdgeInsetsMake(0.0, 0.0, 0.0, 0.0);
 }
 
 // 设置minimumLineSpacing：最小行间隔
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return 10.0;
+    return 0.5;
 }
 
 
 // 设置minimumInteritemSpacing：cell之间最小的距离
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return 10.0;
+    return 0.5;
 }
 
 // 设置headerView的大小
