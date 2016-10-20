@@ -37,6 +37,7 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - MWPhotoBrowser
+  - SDWebImage
   - SVProgressHUD
   - UITableView+FDTemplateLayoutCell
 
@@ -53,6 +54,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: 3b14c3beab81c03274d33d271a4cd327a6d12028
+PODFILE CHECKSUM: f8646930852080edc716e17585243fc402271f55
 
 COCOAPODS: 1.1.0.rc.2

@@ -12,5 +12,5 @@ target 'XGDevelopDemo' do
   pod 'UITableView+FDTemplateLayoutCell'
   pod 'IQKeyboardManager'
   pod 'FSCalendar'
-
+  pod 'SDWebImage'
 end
