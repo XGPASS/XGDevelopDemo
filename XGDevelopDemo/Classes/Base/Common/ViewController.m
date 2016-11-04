@@ -14,6 +14,7 @@
 #import "XGDatePicerViewController.h"
 #import "UIViewController+MJPopupViewController.h"
 #import "XGAutoHeightTabController.h"
+#import "WKWebViewBridgeController.h"
 
 #import "MSSCalendarViewController.h"
 #import "MSSCalendarDefine.h"
@@ -61,7 +62,7 @@
 - (void)initDatas {
     self.titleArray = @[@"封装的Tab测试", @"CollectionView网格测试",
                         @"Tab弹出小cell测试", @"选择日期的测试一",
-                        @"选择日期的测试二",@"日历的选择一",@"自动算高的Tab"];
+                        @"选择日期的测试二",@"日历的选择一",@"自动算高的Tab",@"第三方WebViewJavascriptBridge使用WKWebView"];
 }
 
 // 注册cell
@@ -104,6 +105,8 @@
 //        return;
     } else if ([tempTitle isEqualToString:@"自动算高的Tab"]) {
         controller = [[XGAutoHeightTabController alloc] init];
+    } else if ([tempTitle isEqualToString:@"第三方WebViewJavascriptBridge使用WKWebView"]) {
+        controller = [[WKWebViewBridgeController alloc] init];
     }
     
     

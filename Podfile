@@ -13,4 +13,6 @@ target 'XGDevelopDemo' do
   pod 'IQKeyboardManager'
   pod 'FSCalendar'
   pod 'SDWebImage'
+  pod 'KVOController'
+  pod 'WebViewJavascriptBridge'
 end

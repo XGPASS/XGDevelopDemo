@@ -59,6 +59,8 @@
 		37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37862C761D8258BB001318B8 /* Main.storyboard */; };
 		37862C9D1D8258BB001318B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37862C781D8258BB001318B8 /* Info.plist */; };
 		37862C9E1D8258BB001318B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C791D8258BB001318B8 /* main.m */; };
+		37A98CD81DCC5AEA00AFD09C /* WKWebViewBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */; };
+		37A98CDA1DCC5BCD00AFD09C /* testnew.html in Resources */ = {isa = PBXBuildFile; fileRef = 37A98CD91DCC5BCD00AFD09C /* testnew.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +175,9 @@
 		37862C771D8258BB001318B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37862C781D8258BB001318B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37862C791D8258BB001318B8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37A98CD61DCC5AEA00AFD09C /* WKWebViewBridgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewBridgeController.h; sourceTree = "<group>"; };
+		37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewBridgeController.m; sourceTree = "<group>"; };
+		37A98CD91DCC5BCD00AFD09C /* testnew.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = testnew.html; sourceTree = "<group>"; };
 		B39BF90DA5AC4210BCB91714 /* Pods-XGDevelopDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGDevelopDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGDevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -388,6 +393,8 @@
 				371067E01D829B7E0048CA65 /* XGAutoHeightTabController.h */,
 				371067E11D829B7E0048CA65 /* XGAutoHeightTabController.m */,
 				371067E21D829B7E0048CA65 /* XGAutoHeightTabController.xib */,
+				37A98CD61DCC5AEA00AFD09C /* WKWebViewBridgeController.h */,
+				37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -520,6 +527,7 @@
 		37862C721D8258BB001318B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				37A98CD91DCC5BCD00AFD09C /* testnew.html */,
 				37862C731D8258BB001318B8 /* Assets.xcassets */,
 				37862C741D8258BB001318B8 /* LaunchScreen.storyboard */,
 				37862C761D8258BB001318B8 /* Main.storyboard */,
@@ -644,6 +652,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37862C841D8258BB001318B8 /* XGCollectionController.xib in Resources */,
+				37A98CDA1DCC5BCD00AFD09C /* testnew.html in Resources */,
 				37862C991D8258BB001318B8 /* XGDatePicerViewController.xib in Resources */,
 				375435691D851A5500851923 /* nav_back@3x.png in Resources */,
 				37862C951D8258BB001318B8 /* MJPopupViewController.textClipping in Resources */,
@@ -741,6 +750,7 @@
 				37862C831D8258BB001318B8 /* XGCollectionController.m in Sources */,
 				37862C881D8258BB001318B8 /* XGModel.m in Sources */,
 				37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */,
+				37A98CD81DCC5AEA00AFD09C /* WKWebViewBridgeController.m in Sources */,
 				37862C8F1D8258BB001318B8 /* XGTestCell.m in Sources */,
 				37862C921D8258BB001318B8 /* UIView+Ext.m in Sources */,
 				375435611D851A5500851923 /* MSSCalendarCollectionViewCell.m in Sources */,
