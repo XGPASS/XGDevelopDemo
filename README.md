@@ -21,7 +21,7 @@
    **WebViewJavascriptBridge iOS使用地址:** http://www.jianshu.com/p/e951af9e5e74 <br/>
    **WebViewJavascriptBridge Java使用地址:** http://blog.csdn.net/sk719887916/article/details/47189607
 
-9.JSPatch热修复示例;
+9.JSPatch热修复示例;<br/>
 **JSPatch地址：** https://github.com/bang590/JSPatch <br/>
 **JSPatch中文文档：** https://github.com/bang590/JSPatch/wiki <br/>
 
