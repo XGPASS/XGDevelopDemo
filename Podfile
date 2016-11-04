@@ -15,4 +15,5 @@ target 'XGDevelopDemo' do
   pod 'SDWebImage'
   pod 'KVOController'
   pod 'WebViewJavascriptBridge'
+  pod 'JSPatch'
 end

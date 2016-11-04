@@ -61,6 +61,7 @@
 		37862C9E1D8258BB001318B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C791D8258BB001318B8 /* main.m */; };
 		37A98CD81DCC5AEA00AFD09C /* WKWebViewBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */; };
 		37A98CDA1DCC5BCD00AFD09C /* testnew.html in Resources */ = {isa = PBXBuildFile; fileRef = 37A98CD91DCC5BCD00AFD09C /* testnew.html */; };
+		37A98CDC1DCC6E9C00AFD09C /* hotpatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,7 @@
 		37A98CD61DCC5AEA00AFD09C /* WKWebViewBridgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewBridgeController.h; sourceTree = "<group>"; };
 		37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewBridgeController.m; sourceTree = "<group>"; };
 		37A98CD91DCC5BCD00AFD09C /* testnew.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = testnew.html; sourceTree = "<group>"; };
+		37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hotpatch.js; sourceTree = "<group>"; };
 		B39BF90DA5AC4210BCB91714 /* Pods-XGDevelopDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGDevelopDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGDevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -527,6 +529,7 @@
 		37862C721D8258BB001318B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */,
 				37A98CD91DCC5BCD00AFD09C /* testnew.html */,
 				37862C731D8258BB001318B8 /* Assets.xcassets */,
 				37862C741D8258BB001318B8 /* LaunchScreen.storyboard */,
@@ -662,6 +665,7 @@
 				37862C901D8258BB001318B8 /* XGTestCell.xib in Resources */,
 				375435681D851A5500851923 /* nav_back@2x.png in Resources */,
 				37862C8E1D8258BB001318B8 /* XGCollectionHeaderView.xib in Resources */,
+				37A98CDC1DCC6E9C00AFD09C /* hotpatch.js in Resources */,
 				371067E41D829B7E0048CA65 /* XGAutoHeightTabController.xib in Resources */,
 				37862C861D8258BB001318B8 /* AddCellDatas.plist in Resources */,
 				37862C8A1D8258BB001318B8 /* XGAddCell.xib in Resources */,

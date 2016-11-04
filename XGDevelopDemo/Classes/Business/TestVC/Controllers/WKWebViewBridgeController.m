@@ -5,6 +5,9 @@
 //  Created by 小广 on 2016/11/4.
 //  Copyright © 2016年 小广. All rights reserved.
 //  WebViewJavascriptBridge 第三方使用WKWebView
+// WebViewJavascriptBridge地址 https://github.com/marcuswestin/WebViewJavascriptBridge
+// WebViewJavascriptBridge iOS使用地址 http://www.jianshu.com/p/e951af9e5e74
+// WebViewJavascriptBridge Java使用地址 http://blog.csdn.net/sk719887916/article/details/47189607
 
 #import "WKWebViewBridgeController.h"
 #import "WKWebViewJavascriptBridge.h"

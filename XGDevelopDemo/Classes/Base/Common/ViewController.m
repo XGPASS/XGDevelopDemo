@@ -62,7 +62,9 @@
 - (void)initDatas {
     self.titleArray = @[@"封装的Tab测试", @"CollectionView网格测试",
                         @"Tab弹出小cell测试", @"选择日期的测试一",
-                        @"选择日期的测试二",@"日历的选择一",@"自动算高的Tab",@"第三方WebViewJavascriptBridge使用WKWebView"];
+                        @"选择日期的测试二",@"日历的选择一",
+                        @"自动算高的Tab",@"第三方WebViewJavascriptBridge使用WKWebView",
+                        @"JSPatch热修复"];
 }
 
 // 注册cell
@@ -107,6 +109,9 @@
         controller = [[XGAutoHeightTabController alloc] init];
     } else if ([tempTitle isEqualToString:@"第三方WebViewJavascriptBridge使用WKWebView"]) {
         controller = [[WKWebViewBridgeController alloc] init];
+    } else if ([tempTitle isEqualToString:@"JSPatch热修复"]) {
+        // 详细的js用法 https://github.com/bang590/JSPatch/wiki
+        [self showJSPatchMethod];
     }
     
     
@@ -114,6 +119,12 @@
 //        [self presentViewController:controller animated:YES completion:nil];
         [self.navigationController pushViewController:controller animated:YES];
     }
+}
+
+
+// 热修复方法
+- (void)showJSPatchMethod {
+    
 }
 
 // 选择日期的view
