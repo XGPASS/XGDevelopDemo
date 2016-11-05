@@ -25,8 +25,10 @@
                         //======iOS必须以上特殊特殊处理======
 
                         function setTitle() {
+                             // 加下判断 更为严谨
                             if (window.WebViewJavascriptBridge) {
-                               //
+                               // 客户端registerHandler, js端就要callHandler(传值给客户端);
+                               // js端registerHandler, 客户端就要callHandler(传值给js端)
                                 window.WebViewJavascriptBridge.callHandler('_app_setTitle',
                                 {'title': '这是一个nav标题'},
                                 function (response) {
