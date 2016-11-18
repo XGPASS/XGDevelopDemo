@@ -940,7 +940,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/XGDevelopDemo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uama.DreamHouseServerForDLEnterprise;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xg.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f07af5af-5f08-4c8f-b80f-c5a04e41d92d";
 			};
@@ -956,7 +956,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/XGDevelopDemo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uama.DreamHouseServerForDLEnterprise;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xg.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
