@@ -15,7 +15,7 @@
 #import "UIViewController+MJPopupViewController.h"
 #import "XGAutoHeightTabController.h"
 #import "WKWebViewBridgeController.h"
-
+#import "XGWKWebViewController.h"
 #import "MSSCalendarViewController.h"
 #import "MSSCalendarDefine.h"
 
@@ -64,7 +64,7 @@
                         @"Tab弹出小cell测试", @"选择日期的测试一",
                         @"选择日期的测试二",@"日历的选择一",
                         @"自动算高的Tab",@"第三方WebViewJavascriptBridge使用WKWebView",
-                        @"JSPatch热修复"];
+                        @"普通WKWebView使用",@"JSPatch热修复"];
 }
 
 // 注册cell
@@ -109,10 +109,13 @@
         controller = [[XGAutoHeightTabController alloc] init];
     } else if ([tempTitle isEqualToString:@"第三方WebViewJavascriptBridge使用WKWebView"]) {
         controller = [[WKWebViewBridgeController alloc] init];
+    } else if ([tempTitle isEqualToString:@"普通WKWebView使用"]) {
+        controller = [[XGWKWebViewController alloc] init];
     } else if ([tempTitle isEqualToString:@"JSPatch热修复"]) {
         // 详细的js用法 https://github.com/bang590/JSPatch/wiki
         [self showJSPatchMethod];
     }
+    
     
     
     if (controller) {

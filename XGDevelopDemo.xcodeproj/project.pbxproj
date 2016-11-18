@@ -59,6 +59,8 @@
 		37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37862C761D8258BB001318B8 /* Main.storyboard */; };
 		37862C9D1D8258BB001318B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37862C781D8258BB001318B8 /* Info.plist */; };
 		37862C9E1D8258BB001318B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C791D8258BB001318B8 /* main.m */; };
+		378A58D51DDEE62100A2E4B6 /* XGWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378A58D41DDEE62100A2E4B6 /* XGWKWebViewController.m */; };
+		378A58D81DDEE6F000A2E4B6 /* XGWKDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378A58D71DDEE6F000A2E4B6 /* XGWKDelegateController.m */; };
 		37A98CD81DCC5AEA00AFD09C /* WKWebViewBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */; };
 		37A98CDA1DCC5BCD00AFD09C /* testnew.html in Resources */ = {isa = PBXBuildFile; fileRef = 37A98CD91DCC5BCD00AFD09C /* testnew.html */; };
 		37A98CDC1DCC6E9C00AFD09C /* hotpatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */; };
@@ -176,6 +178,10 @@
 		37862C771D8258BB001318B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37862C781D8258BB001318B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37862C791D8258BB001318B8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		378A58D31DDEE62100A2E4B6 /* XGWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGWKWebViewController.h; sourceTree = "<group>"; };
+		378A58D41DDEE62100A2E4B6 /* XGWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGWKWebViewController.m; sourceTree = "<group>"; };
+		378A58D61DDEE6F000A2E4B6 /* XGWKDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGWKDelegateController.h; sourceTree = "<group>"; };
+		378A58D71DDEE6F000A2E4B6 /* XGWKDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGWKDelegateController.m; sourceTree = "<group>"; };
 		37A98CD61DCC5AEA00AFD09C /* WKWebViewBridgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewBridgeController.h; sourceTree = "<group>"; };
 		37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewBridgeController.m; sourceTree = "<group>"; };
 		37A98CD91DCC5BCD00AFD09C /* testnew.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = testnew.html; sourceTree = "<group>"; };
@@ -397,6 +403,10 @@
 				371067E21D829B7E0048CA65 /* XGAutoHeightTabController.xib */,
 				37A98CD61DCC5AEA00AFD09C /* WKWebViewBridgeController.h */,
 				37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */,
+				378A58D31DDEE62100A2E4B6 /* XGWKWebViewController.h */,
+				378A58D41DDEE62100A2E4B6 /* XGWKWebViewController.m */,
+				378A58D61DDEE6F000A2E4B6 /* XGWKDelegateController.h */,
+				378A58D71DDEE6F000A2E4B6 /* XGWKDelegateController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -618,6 +628,7 @@
 				TargetAttributes = {
 					373690BF1D7522CC00E04076 = {
 						CreatedOnToolsVersion = 7.3.1;
+						ProvisioningStyle = Manual;
 					};
 					373690D81D7522CC00E04076 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -775,7 +786,9 @@
 				375435641D851A5500851923 /* MSSCalendarPopView.m in Sources */,
 				37862C7D1D8258BB001318B8 /* XGBaseController.m in Sources */,
 				375435661D851A5500851923 /* MSSChineseCalendarManager.m in Sources */,
+				378A58D81DDEE6F000A2E4B6 /* XGWKDelegateController.m in Sources */,
 				37862C9E1D8258BB001318B8 /* main.m in Sources */,
+				378A58D51DDEE62100A2E4B6 /* XGWKWebViewController.m in Sources */,
 				37862C971D8258BB001318B8 /* XGAlertTool.m in Sources */,
 				375435671D851A5500851923 /* MSSCircleLabel.m in Sources */,
 			);
@@ -921,12 +934,15 @@
 			baseConfigurationReference = B39BF90DA5AC4210BCB91714 /* Pods-XGDevelopDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Linkou Bian (W9H7VWKM6Q)";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XGDevelopDemo/Classes/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/XGDevelopDemo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = XG.XGDevelopDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uama.DreamHouseServerForDLEnterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f07af5af-5f08-4c8f-b80f-c5a04e41d92d";
 			};
 			name = Debug;
 		};
@@ -935,11 +951,12 @@
 			baseConfigurationReference = 29003ACEF14963DBB8FDECDB /* Pods-XGDevelopDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XGDevelopDemo/Classes/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/XGDevelopDemo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = XG.XGDevelopDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uama.DreamHouseServerForDLEnterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

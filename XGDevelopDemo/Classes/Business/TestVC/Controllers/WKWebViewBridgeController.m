@@ -66,5 +66,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+// 处理拨打电话
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    NSURL *URL = navigationAction.request.URL;
+    NSString *scheme = [URL scheme];
+    if ([scheme isEqualToString:@"tel"]) {
+        NSString *resourceSpecifier = [URL resourceSpecifier];
+        NSString *callPhone = [NSString stringWithFormat:@"telprompt://%@", resourceSpecifier];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone]];
+    }
+    decisionHandler(WKNavigationActionPolicyAllow);
+}
+
 
 @end
