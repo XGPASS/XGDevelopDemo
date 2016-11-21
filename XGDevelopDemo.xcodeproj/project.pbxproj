@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		03E8DBA682210C33E3010820 /* libPods-XGDevelopDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */; };
-		371067E31D829B7E0048CA65 /* XGAutoHeightTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371067E11D829B7E0048CA65 /* XGAutoHeightTabController.m */; };
-		371067E41D829B7E0048CA65 /* XGAutoHeightTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371067E21D829B7E0048CA65 /* XGAutoHeightTabController.xib */; };
 		373690DE1D7522CC00E04076 /* XGDevelopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 373690DD1D7522CC00E04076 /* XGDevelopDemoTests.m */; };
 		373690E91D7522CC00E04076 /* XGDevelopDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 373690E81D7522CC00E04076 /* XGDevelopDemoUITests.m */; };
 		375435601D851A5500851923 /* MSSCalendarCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3754354E1D851A5500851923 /* MSSCalendarCollectionReusableView.m */; };
@@ -26,6 +24,27 @@
 		3769249F1DE2CF8D00DA356C /* points2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769249B1DE2CF8D00DA356C /* points2.png */; };
 		376924A01DE2CF8D00DA356C /* points4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769249C1DE2CF8D00DA356C /* points4.png */; };
 		376924A11DE2CF8D00DA356C /* xg_test.html in Resources */ = {isa = PBXBuildFile; fileRef = 3769249D1DE2CF8D00DA356C /* xg_test.html */; };
+		376924E81DE2D66F00DA356C /* XGCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924C31DE2D66F00DA356C /* XGCollectionController.m */; };
+		376924E91DE2D66F00DA356C /* XGCollectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924C41DE2D66F00DA356C /* XGCollectionController.xib */; };
+		376924EA1DE2D66F00DA356C /* XGAddCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924C71DE2D66F00DA356C /* XGAddCellController.m */; };
+		376924EB1DE2D66F00DA356C /* XGAddCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924C81DE2D66F00DA356C /* XGAddCellController.xib */; };
+		376924EC1DE2D66F00DA356C /* XGAutoHeightTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924CA1DE2D66F00DA356C /* XGAutoHeightTabController.m */; };
+		376924ED1DE2D66F00DA356C /* XGAutoHeightTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924CB1DE2D66F00DA356C /* XGAutoHeightTabController.xib */; };
+		376924EE1DE2D66F00DA356C /* XGTableTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924CD1DE2D66F00DA356C /* XGTableTestController.m */; };
+		376924EF1DE2D66F00DA356C /* WKWebViewBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924D01DE2D66F00DA356C /* WKWebViewBridgeController.m */; };
+		376924F01DE2D66F00DA356C /* XGWKDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924D21DE2D66F00DA356C /* XGWKDelegateController.m */; };
+		376924F11DE2D66F00DA356C /* XGWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924D41DE2D66F00DA356C /* XGWKWebViewController.m */; };
+		376924F21DE2D66F00DA356C /* AddCellDatas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 376924D61DE2D66F00DA356C /* AddCellDatas.plist */; };
+		376924F31DE2D66F00DA356C /* XGAddCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924D81DE2D66F00DA356C /* XGAddCellModel.m */; };
+		376924F41DE2D66F00DA356C /* XGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924DA1DE2D66F00DA356C /* XGModel.m */; };
+		376924F51DE2D66F00DA356C /* XGAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924DD1DE2D66F00DA356C /* XGAddCell.m */; };
+		376924F61DE2D66F00DA356C /* XGAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924DE1DE2D66F00DA356C /* XGAddCell.xib */; };
+		376924F71DE2D66F00DA356C /* XGCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924E01DE2D66F00DA356C /* XGCollectionCell.m */; };
+		376924F81DE2D66F00DA356C /* XGCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924E11DE2D66F00DA356C /* XGCollectionCell.xib */; };
+		376924F91DE2D66F00DA356C /* XGCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924E31DE2D66F00DA356C /* XGCollectionHeaderView.m */; };
+		376924FA1DE2D66F00DA356C /* XGCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924E41DE2D66F00DA356C /* XGCollectionHeaderView.xib */; };
+		376924FB1DE2D66F00DA356C /* XGTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924E61DE2D66F00DA356C /* XGTestCell.m */; };
+		376924FC1DE2D66F00DA356C /* XGTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924E71DE2D66F00DA356C /* XGTestCell.xib */; };
 		37862C7A1D8258BB001318B8 /* XGNetBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C271D8258BB001318B8 /* XGNetBase.m */; };
 		37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C291D8258BB001318B8 /* XGNetRequest.m */; };
 		37862C7C1D8258BB001318B8 /* XGArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C2C1D8258BB001318B8 /* XGArrayDataSource.m */; };
@@ -33,22 +52,6 @@
 		37862C7E1D8258BB001318B8 /* XGBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C301D8258BB001318B8 /* XGBaseTableController.m */; };
 		37862C7F1D8258BB001318B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C331D8258BB001318B8 /* AppDelegate.m */; };
 		37862C801D8258BB001318B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C351D8258BB001318B8 /* ViewController.m */; };
-		37862C811D8258BB001318B8 /* XGAddCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C3A1D8258BB001318B8 /* XGAddCellController.m */; };
-		37862C821D8258BB001318B8 /* XGAddCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37862C3B1D8258BB001318B8 /* XGAddCellController.xib */; };
-		37862C831D8258BB001318B8 /* XGCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C3D1D8258BB001318B8 /* XGCollectionController.m */; };
-		37862C841D8258BB001318B8 /* XGCollectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37862C3E1D8258BB001318B8 /* XGCollectionController.xib */; };
-		37862C851D8258BB001318B8 /* XGTableTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C401D8258BB001318B8 /* XGTableTestController.m */; };
-		37862C861D8258BB001318B8 /* AddCellDatas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37862C421D8258BB001318B8 /* AddCellDatas.plist */; };
-		37862C871D8258BB001318B8 /* XGAddCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C441D8258BB001318B8 /* XGAddCellModel.m */; };
-		37862C881D8258BB001318B8 /* XGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C461D8258BB001318B8 /* XGModel.m */; };
-		37862C891D8258BB001318B8 /* XGAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C4A1D8258BB001318B8 /* XGAddCell.m */; };
-		37862C8A1D8258BB001318B8 /* XGAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37862C4B1D8258BB001318B8 /* XGAddCell.xib */; };
-		37862C8B1D8258BB001318B8 /* XGCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C4D1D8258BB001318B8 /* XGCollectionCell.m */; };
-		37862C8C1D8258BB001318B8 /* XGCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37862C4E1D8258BB001318B8 /* XGCollectionCell.xib */; };
-		37862C8D1D8258BB001318B8 /* XGCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C501D8258BB001318B8 /* XGCollectionHeaderView.m */; };
-		37862C8E1D8258BB001318B8 /* XGCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37862C511D8258BB001318B8 /* XGCollectionHeaderView.xib */; };
-		37862C8F1D8258BB001318B8 /* XGTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C531D8258BB001318B8 /* XGTestCell.m */; };
-		37862C901D8258BB001318B8 /* XGTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37862C541D8258BB001318B8 /* XGTestCell.xib */; };
 		37862C911D8258BB001318B8 /* NSObject+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C591D8258BB001318B8 /* NSObject+Ext.m */; };
 		37862C921D8258BB001318B8 /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C5C1D8258BB001318B8 /* UIView+Ext.m */; };
 		37862C931D8258BB001318B8 /* XGChoseDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C5F1D8258BB001318B8 /* XGChoseDateView.m */; };
@@ -63,9 +66,6 @@
 		37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37862C761D8258BB001318B8 /* Main.storyboard */; };
 		37862C9D1D8258BB001318B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37862C781D8258BB001318B8 /* Info.plist */; };
 		37862C9E1D8258BB001318B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C791D8258BB001318B8 /* main.m */; };
-		378A58D51DDEE62100A2E4B6 /* XGWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378A58D41DDEE62100A2E4B6 /* XGWKWebViewController.m */; };
-		378A58D81DDEE6F000A2E4B6 /* XGWKDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378A58D71DDEE6F000A2E4B6 /* XGWKDelegateController.m */; };
-		37A98CD81DCC5AEA00AFD09C /* WKWebViewBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */; };
 		37A98CDC1DCC6E9C00AFD09C /* hotpatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */; };
 /* End PBXBuildFile section */
 
@@ -88,9 +88,6 @@
 
 /* Begin PBXFileReference section */
 		29003ACEF14963DBB8FDECDB /* Pods-XGDevelopDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGDevelopDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo.release.xcconfig"; sourceTree = "<group>"; };
-		371067E01D829B7E0048CA65 /* XGAutoHeightTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAutoHeightTabController.h; sourceTree = "<group>"; };
-		371067E11D829B7E0048CA65 /* XGAutoHeightTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAutoHeightTabController.m; sourceTree = "<group>"; };
-		371067E21D829B7E0048CA65 /* XGAutoHeightTabController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGAutoHeightTabController.xib; sourceTree = "<group>"; };
 		373690C01D7522CC00E04076 /* XGDevelopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XGDevelopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		373690D91D7522CC00E04076 /* XGDevelopDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XGDevelopDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		373690DD1D7522CC00E04076 /* XGDevelopDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGDevelopDemoTests.m; sourceTree = "<group>"; };
@@ -121,6 +118,40 @@
 		3769249B1DE2CF8D00DA356C /* points2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points2.png; sourceTree = "<group>"; };
 		3769249C1DE2CF8D00DA356C /* points4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points4.png; sourceTree = "<group>"; };
 		3769249D1DE2CF8D00DA356C /* xg_test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = xg_test.html; sourceTree = "<group>"; };
+		376924C21DE2D66F00DA356C /* XGCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCollectionController.h; sourceTree = "<group>"; };
+		376924C31DE2D66F00DA356C /* XGCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCollectionController.m; sourceTree = "<group>"; };
+		376924C41DE2D66F00DA356C /* XGCollectionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGCollectionController.xib; sourceTree = "<group>"; };
+		376924C61DE2D66F00DA356C /* XGAddCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAddCellController.h; sourceTree = "<group>"; };
+		376924C71DE2D66F00DA356C /* XGAddCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAddCellController.m; sourceTree = "<group>"; };
+		376924C81DE2D66F00DA356C /* XGAddCellController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGAddCellController.xib; sourceTree = "<group>"; };
+		376924C91DE2D66F00DA356C /* XGAutoHeightTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAutoHeightTabController.h; sourceTree = "<group>"; };
+		376924CA1DE2D66F00DA356C /* XGAutoHeightTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAutoHeightTabController.m; sourceTree = "<group>"; };
+		376924CB1DE2D66F00DA356C /* XGAutoHeightTabController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGAutoHeightTabController.xib; sourceTree = "<group>"; };
+		376924CC1DE2D66F00DA356C /* XGTableTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGTableTestController.h; sourceTree = "<group>"; };
+		376924CD1DE2D66F00DA356C /* XGTableTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGTableTestController.m; sourceTree = "<group>"; };
+		376924CF1DE2D66F00DA356C /* WKWebViewBridgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewBridgeController.h; sourceTree = "<group>"; };
+		376924D01DE2D66F00DA356C /* WKWebViewBridgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewBridgeController.m; sourceTree = "<group>"; };
+		376924D11DE2D66F00DA356C /* XGWKDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGWKDelegateController.h; sourceTree = "<group>"; };
+		376924D21DE2D66F00DA356C /* XGWKDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGWKDelegateController.m; sourceTree = "<group>"; };
+		376924D31DE2D66F00DA356C /* XGWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGWKWebViewController.h; sourceTree = "<group>"; };
+		376924D41DE2D66F00DA356C /* XGWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGWKWebViewController.m; sourceTree = "<group>"; };
+		376924D61DE2D66F00DA356C /* AddCellDatas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AddCellDatas.plist; sourceTree = "<group>"; };
+		376924D71DE2D66F00DA356C /* XGAddCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAddCellModel.h; sourceTree = "<group>"; };
+		376924D81DE2D66F00DA356C /* XGAddCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAddCellModel.m; sourceTree = "<group>"; };
+		376924D91DE2D66F00DA356C /* XGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGModel.h; sourceTree = "<group>"; };
+		376924DA1DE2D66F00DA356C /* XGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGModel.m; sourceTree = "<group>"; };
+		376924DC1DE2D66F00DA356C /* XGAddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAddCell.h; sourceTree = "<group>"; };
+		376924DD1DE2D66F00DA356C /* XGAddCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAddCell.m; sourceTree = "<group>"; };
+		376924DE1DE2D66F00DA356C /* XGAddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGAddCell.xib; sourceTree = "<group>"; };
+		376924DF1DE2D66F00DA356C /* XGCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCollectionCell.h; sourceTree = "<group>"; };
+		376924E01DE2D66F00DA356C /* XGCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCollectionCell.m; sourceTree = "<group>"; };
+		376924E11DE2D66F00DA356C /* XGCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGCollectionCell.xib; sourceTree = "<group>"; };
+		376924E21DE2D66F00DA356C /* XGCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCollectionHeaderView.h; sourceTree = "<group>"; };
+		376924E31DE2D66F00DA356C /* XGCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCollectionHeaderView.m; sourceTree = "<group>"; };
+		376924E41DE2D66F00DA356C /* XGCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGCollectionHeaderView.xib; sourceTree = "<group>"; };
+		376924E51DE2D66F00DA356C /* XGTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGTestCell.h; sourceTree = "<group>"; };
+		376924E61DE2D66F00DA356C /* XGTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGTestCell.m; sourceTree = "<group>"; };
+		376924E71DE2D66F00DA356C /* XGTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGTestCell.xib; sourceTree = "<group>"; };
 		37862C261D8258BB001318B8 /* XGNetBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGNetBase.h; sourceTree = "<group>"; };
 		37862C271D8258BB001318B8 /* XGNetBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGNetBase.m; sourceTree = "<group>"; };
 		37862C281D8258BB001318B8 /* XGNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGNetRequest.h; sourceTree = "<group>"; };
@@ -135,31 +166,6 @@
 		37862C331D8258BB001318B8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		37862C341D8258BB001318B8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		37862C351D8258BB001318B8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		37862C391D8258BB001318B8 /* XGAddCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAddCellController.h; sourceTree = "<group>"; };
-		37862C3A1D8258BB001318B8 /* XGAddCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAddCellController.m; sourceTree = "<group>"; };
-		37862C3B1D8258BB001318B8 /* XGAddCellController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGAddCellController.xib; sourceTree = "<group>"; };
-		37862C3C1D8258BB001318B8 /* XGCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCollectionController.h; sourceTree = "<group>"; };
-		37862C3D1D8258BB001318B8 /* XGCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCollectionController.m; sourceTree = "<group>"; };
-		37862C3E1D8258BB001318B8 /* XGCollectionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGCollectionController.xib; sourceTree = "<group>"; };
-		37862C3F1D8258BB001318B8 /* XGTableTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGTableTestController.h; sourceTree = "<group>"; };
-		37862C401D8258BB001318B8 /* XGTableTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGTableTestController.m; sourceTree = "<group>"; };
-		37862C421D8258BB001318B8 /* AddCellDatas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AddCellDatas.plist; sourceTree = "<group>"; };
-		37862C431D8258BB001318B8 /* XGAddCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAddCellModel.h; sourceTree = "<group>"; };
-		37862C441D8258BB001318B8 /* XGAddCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAddCellModel.m; sourceTree = "<group>"; };
-		37862C451D8258BB001318B8 /* XGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGModel.h; sourceTree = "<group>"; };
-		37862C461D8258BB001318B8 /* XGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGModel.m; sourceTree = "<group>"; };
-		37862C491D8258BB001318B8 /* XGAddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAddCell.h; sourceTree = "<group>"; };
-		37862C4A1D8258BB001318B8 /* XGAddCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAddCell.m; sourceTree = "<group>"; };
-		37862C4B1D8258BB001318B8 /* XGAddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGAddCell.xib; sourceTree = "<group>"; };
-		37862C4C1D8258BB001318B8 /* XGCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCollectionCell.h; sourceTree = "<group>"; };
-		37862C4D1D8258BB001318B8 /* XGCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCollectionCell.m; sourceTree = "<group>"; };
-		37862C4E1D8258BB001318B8 /* XGCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGCollectionCell.xib; sourceTree = "<group>"; };
-		37862C4F1D8258BB001318B8 /* XGCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCollectionHeaderView.h; sourceTree = "<group>"; };
-		37862C501D8258BB001318B8 /* XGCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCollectionHeaderView.m; sourceTree = "<group>"; };
-		37862C511D8258BB001318B8 /* XGCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGCollectionHeaderView.xib; sourceTree = "<group>"; };
-		37862C521D8258BB001318B8 /* XGTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGTestCell.h; sourceTree = "<group>"; };
-		37862C531D8258BB001318B8 /* XGTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGTestCell.m; sourceTree = "<group>"; };
-		37862C541D8258BB001318B8 /* XGTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGTestCell.xib; sourceTree = "<group>"; };
 		37862C581D8258BB001318B8 /* NSObject+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Ext.h"; sourceTree = "<group>"; };
 		37862C591D8258BB001318B8 /* NSObject+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Ext.m"; sourceTree = "<group>"; };
 		37862C5B1D8258BB001318B8 /* UIView+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ext.h"; sourceTree = "<group>"; };
@@ -185,12 +191,6 @@
 		37862C771D8258BB001318B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37862C781D8258BB001318B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37862C791D8258BB001318B8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		378A58D31DDEE62100A2E4B6 /* XGWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGWKWebViewController.h; sourceTree = "<group>"; };
-		378A58D41DDEE62100A2E4B6 /* XGWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGWKWebViewController.m; sourceTree = "<group>"; };
-		378A58D61DDEE6F000A2E4B6 /* XGWKDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGWKDelegateController.h; sourceTree = "<group>"; };
-		378A58D71DDEE6F000A2E4B6 /* XGWKDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGWKDelegateController.m; sourceTree = "<group>"; };
-		37A98CD61DCC5AEA00AFD09C /* WKWebViewBridgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewBridgeController.h; sourceTree = "<group>"; };
-		37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewBridgeController.m; sourceTree = "<group>"; };
 		37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hotpatch.js; sourceTree = "<group>"; };
 		B39BF90DA5AC4210BCB91714 /* Pods-XGDevelopDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGDevelopDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGDevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -308,6 +308,85 @@
 			path = html;
 			sourceTree = "<group>";
 		};
+		376924C01DE2D66F00DA356C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				376924C11DE2D66F00DA356C /* CollectionTest */,
+				376924C51DE2D66F00DA356C /* TabTest */,
+				376924CE1DE2D66F00DA356C /* WebTest */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		376924C11DE2D66F00DA356C /* CollectionTest */ = {
+			isa = PBXGroup;
+			children = (
+				376924C21DE2D66F00DA356C /* XGCollectionController.h */,
+				376924C31DE2D66F00DA356C /* XGCollectionController.m */,
+				376924C41DE2D66F00DA356C /* XGCollectionController.xib */,
+			);
+			path = CollectionTest;
+			sourceTree = "<group>";
+		};
+		376924C51DE2D66F00DA356C /* TabTest */ = {
+			isa = PBXGroup;
+			children = (
+				376924C61DE2D66F00DA356C /* XGAddCellController.h */,
+				376924C71DE2D66F00DA356C /* XGAddCellController.m */,
+				376924C81DE2D66F00DA356C /* XGAddCellController.xib */,
+				376924C91DE2D66F00DA356C /* XGAutoHeightTabController.h */,
+				376924CA1DE2D66F00DA356C /* XGAutoHeightTabController.m */,
+				376924CB1DE2D66F00DA356C /* XGAutoHeightTabController.xib */,
+				376924CC1DE2D66F00DA356C /* XGTableTestController.h */,
+				376924CD1DE2D66F00DA356C /* XGTableTestController.m */,
+			);
+			path = TabTest;
+			sourceTree = "<group>";
+		};
+		376924CE1DE2D66F00DA356C /* WebTest */ = {
+			isa = PBXGroup;
+			children = (
+				376924CF1DE2D66F00DA356C /* WKWebViewBridgeController.h */,
+				376924D01DE2D66F00DA356C /* WKWebViewBridgeController.m */,
+				376924D11DE2D66F00DA356C /* XGWKDelegateController.h */,
+				376924D21DE2D66F00DA356C /* XGWKDelegateController.m */,
+				376924D31DE2D66F00DA356C /* XGWKWebViewController.h */,
+				376924D41DE2D66F00DA356C /* XGWKWebViewController.m */,
+			);
+			path = WebTest;
+			sourceTree = "<group>";
+		};
+		376924D51DE2D66F00DA356C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				376924D61DE2D66F00DA356C /* AddCellDatas.plist */,
+				376924D71DE2D66F00DA356C /* XGAddCellModel.h */,
+				376924D81DE2D66F00DA356C /* XGAddCellModel.m */,
+				376924D91DE2D66F00DA356C /* XGModel.h */,
+				376924DA1DE2D66F00DA356C /* XGModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		376924DB1DE2D66F00DA356C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				376924DC1DE2D66F00DA356C /* XGAddCell.h */,
+				376924DD1DE2D66F00DA356C /* XGAddCell.m */,
+				376924DE1DE2D66F00DA356C /* XGAddCell.xib */,
+				376924DF1DE2D66F00DA356C /* XGCollectionCell.h */,
+				376924E01DE2D66F00DA356C /* XGCollectionCell.m */,
+				376924E11DE2D66F00DA356C /* XGCollectionCell.xib */,
+				376924E21DE2D66F00DA356C /* XGCollectionHeaderView.h */,
+				376924E31DE2D66F00DA356C /* XGCollectionHeaderView.m */,
+				376924E41DE2D66F00DA356C /* XGCollectionHeaderView.xib */,
+				376924E51DE2D66F00DA356C /* XGTestCell.h */,
+				376924E61DE2D66F00DA356C /* XGTestCell.m */,
+				376924E71DE2D66F00DA356C /* XGTestCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		37862C211D8258BB001318B8 /* XGDevelopDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,90 +466,11 @@
 		37862C361D8258BB001318B8 /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				37862C371D8258BB001318B8 /* TestVC */,
-				37862C551D8258BB001318B8 /* TestView */,
+				376924C01DE2D66F00DA356C /* Controllers */,
+				376924D51DE2D66F00DA356C /* Models */,
+				376924DB1DE2D66F00DA356C /* Views */,
 			);
 			path = Business;
-			sourceTree = "<group>";
-		};
-		37862C371D8258BB001318B8 /* TestVC */ = {
-			isa = PBXGroup;
-			children = (
-				37862C381D8258BB001318B8 /* Controllers */,
-				37862C411D8258BB001318B8 /* Models */,
-				37862C471D8258BB001318B8 /* ViewModels */,
-				37862C481D8258BB001318B8 /* Views */,
-			);
-			path = TestVC;
-			sourceTree = "<group>";
-		};
-		37862C381D8258BB001318B8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				37862C391D8258BB001318B8 /* XGAddCellController.h */,
-				37862C3A1D8258BB001318B8 /* XGAddCellController.m */,
-				37862C3B1D8258BB001318B8 /* XGAddCellController.xib */,
-				37862C3C1D8258BB001318B8 /* XGCollectionController.h */,
-				37862C3D1D8258BB001318B8 /* XGCollectionController.m */,
-				37862C3E1D8258BB001318B8 /* XGCollectionController.xib */,
-				37862C3F1D8258BB001318B8 /* XGTableTestController.h */,
-				37862C401D8258BB001318B8 /* XGTableTestController.m */,
-				371067E01D829B7E0048CA65 /* XGAutoHeightTabController.h */,
-				371067E11D829B7E0048CA65 /* XGAutoHeightTabController.m */,
-				371067E21D829B7E0048CA65 /* XGAutoHeightTabController.xib */,
-				37A98CD61DCC5AEA00AFD09C /* WKWebViewBridgeController.h */,
-				37A98CD71DCC5AEA00AFD09C /* WKWebViewBridgeController.m */,
-				378A58D31DDEE62100A2E4B6 /* XGWKWebViewController.h */,
-				378A58D41DDEE62100A2E4B6 /* XGWKWebViewController.m */,
-				378A58D61DDEE6F000A2E4B6 /* XGWKDelegateController.h */,
-				378A58D71DDEE6F000A2E4B6 /* XGWKDelegateController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		37862C411D8258BB001318B8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				37862C421D8258BB001318B8 /* AddCellDatas.plist */,
-				37862C431D8258BB001318B8 /* XGAddCellModel.h */,
-				37862C441D8258BB001318B8 /* XGAddCellModel.m */,
-				37862C451D8258BB001318B8 /* XGModel.h */,
-				37862C461D8258BB001318B8 /* XGModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		37862C471D8258BB001318B8 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		37862C481D8258BB001318B8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				37862C491D8258BB001318B8 /* XGAddCell.h */,
-				37862C4A1D8258BB001318B8 /* XGAddCell.m */,
-				37862C4B1D8258BB001318B8 /* XGAddCell.xib */,
-				37862C4C1D8258BB001318B8 /* XGCollectionCell.h */,
-				37862C4D1D8258BB001318B8 /* XGCollectionCell.m */,
-				37862C4E1D8258BB001318B8 /* XGCollectionCell.xib */,
-				37862C4F1D8258BB001318B8 /* XGCollectionHeaderView.h */,
-				37862C501D8258BB001318B8 /* XGCollectionHeaderView.m */,
-				37862C511D8258BB001318B8 /* XGCollectionHeaderView.xib */,
-				37862C521D8258BB001318B8 /* XGTestCell.h */,
-				37862C531D8258BB001318B8 /* XGTestCell.m */,
-				37862C541D8258BB001318B8 /* XGTestCell.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		37862C551D8258BB001318B8 /* TestView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TestView;
 			sourceTree = "<group>";
 		};
 		37862C561D8258BB001318B8 /* Category */ = {
@@ -682,26 +682,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37862C841D8258BB001318B8 /* XGCollectionController.xib in Resources */,
+				376924F21DE2D66F00DA356C /* AddCellDatas.plist in Resources */,
 				37862C991D8258BB001318B8 /* XGDatePicerViewController.xib in Resources */,
+				376924FC1DE2D66F00DA356C /* XGTestCell.xib in Resources */,
+				376924FA1DE2D66F00DA356C /* XGCollectionHeaderView.xib in Resources */,
+				376924F61DE2D66F00DA356C /* XGAddCell.xib in Resources */,
+				376924EB1DE2D66F00DA356C /* XGAddCellController.xib in Resources */,
 				375435691D851A5500851923 /* nav_back@3x.png in Resources */,
+				376924E91DE2D66F00DA356C /* XGCollectionController.xib in Resources */,
 				376924A01DE2CF8D00DA356C /* points4.png in Resources */,
 				376924A11DE2CF8D00DA356C /* xg_test.html in Resources */,
 				37862C951D8258BB001318B8 /* MJPopupViewController.textClipping in Resources */,
 				37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */,
-				37862C8C1D8258BB001318B8 /* XGCollectionCell.xib in Resources */,
 				3769249F1DE2CF8D00DA356C /* points2.png in Resources */,
+				376924F81DE2D66F00DA356C /* XGCollectionCell.xib in Resources */,
 				37862C9A1D8258BB001318B8 /* Assets.xcassets in Resources */,
-				37862C901D8258BB001318B8 /* XGTestCell.xib in Resources */,
+				376924ED1DE2D66F00DA356C /* XGAutoHeightTabController.xib in Resources */,
 				3769249E1DE2CF8D00DA356C /* points1.png in Resources */,
 				375435681D851A5500851923 /* nav_back@2x.png in Resources */,
-				37862C8E1D8258BB001318B8 /* XGCollectionHeaderView.xib in Resources */,
 				37A98CDC1DCC6E9C00AFD09C /* hotpatch.js in Resources */,
-				371067E41D829B7E0048CA65 /* XGAutoHeightTabController.xib in Resources */,
-				37862C861D8258BB001318B8 /* AddCellDatas.plist in Resources */,
-				37862C8A1D8258BB001318B8 /* XGAddCell.xib in Resources */,
 				37862C9B1D8258BB001318B8 /* LaunchScreen.storyboard in Resources */,
-				37862C821D8258BB001318B8 /* XGAddCellController.xib in Resources */,
 				37862C9D1D8258BB001318B8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -777,39 +777,39 @@
 			files = (
 				37862C911D8258BB001318B8 /* NSObject+Ext.m in Sources */,
 				375435601D851A5500851923 /* MSSCalendarCollectionReusableView.m in Sources */,
-				37862C871D8258BB001318B8 /* XGAddCellModel.m in Sources */,
+				376924EE1DE2D66F00DA356C /* XGTableTestController.m in Sources */,
 				37862C801D8258BB001318B8 /* ViewController.m in Sources */,
-				37862C851D8258BB001318B8 /* XGTableTestController.m in Sources */,
 				375435631D851A5500851923 /* MSSCalendarManager.m in Sources */,
 				37862C941D8258BB001318B8 /* MJPopupBackgroundView.m in Sources */,
-				37862C831D8258BB001318B8 /* XGCollectionController.m in Sources */,
-				37862C881D8258BB001318B8 /* XGModel.m in Sources */,
 				37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */,
-				37A98CD81DCC5AEA00AFD09C /* WKWebViewBridgeController.m in Sources */,
-				37862C8F1D8258BB001318B8 /* XGTestCell.m in Sources */,
+				376924F51DE2D66F00DA356C /* XGAddCell.m in Sources */,
 				37862C921D8258BB001318B8 /* UIView+Ext.m in Sources */,
 				375435611D851A5500851923 /* MSSCalendarCollectionViewCell.m in Sources */,
-				37862C8D1D8258BB001318B8 /* XGCollectionHeaderView.m in Sources */,
 				37862C7A1D8258BB001318B8 /* XGNetBase.m in Sources */,
 				375435621D851A5500851923 /* MSSCalendarHeaderModel.m in Sources */,
+				376924EC1DE2D66F00DA356C /* XGAutoHeightTabController.m in Sources */,
+				376924E81DE2D66F00DA356C /* XGCollectionController.m in Sources */,
+				376924EA1DE2D66F00DA356C /* XGAddCellController.m in Sources */,
 				37862C981D8258BB001318B8 /* XGDatePicerViewController.m in Sources */,
-				37862C891D8258BB001318B8 /* XGAddCell.m in Sources */,
-				371067E31D829B7E0048CA65 /* XGAutoHeightTabController.m in Sources */,
 				37862C7F1D8258BB001318B8 /* AppDelegate.m in Sources */,
+				376924F31DE2D66F00DA356C /* XGAddCellModel.m in Sources */,
+				376924FB1DE2D66F00DA356C /* XGTestCell.m in Sources */,
 				375435651D851A5500851923 /* MSSCalendarViewController.m in Sources */,
-				37862C811D8258BB001318B8 /* XGAddCellController.m in Sources */,
-				37862C8B1D8258BB001318B8 /* XGCollectionCell.m in Sources */,
 				37862C931D8258BB001318B8 /* XGChoseDateView.m in Sources */,
+				376924F71DE2D66F00DA356C /* XGCollectionCell.m in Sources */,
 				37862C961D8258BB001318B8 /* UIViewController+MJPopupViewController.m in Sources */,
+				376924F41DE2D66F00DA356C /* XGModel.m in Sources */,
 				37862C7E1D8258BB001318B8 /* XGBaseTableController.m in Sources */,
+				376924F11DE2D66F00DA356C /* XGWKWebViewController.m in Sources */,
 				37862C7C1D8258BB001318B8 /* XGArrayDataSource.m in Sources */,
+				376924F91DE2D66F00DA356C /* XGCollectionHeaderView.m in Sources */,
 				375435641D851A5500851923 /* MSSCalendarPopView.m in Sources */,
 				37862C7D1D8258BB001318B8 /* XGBaseController.m in Sources */,
 				375435661D851A5500851923 /* MSSChineseCalendarManager.m in Sources */,
-				378A58D81DDEE6F000A2E4B6 /* XGWKDelegateController.m in Sources */,
 				37862C9E1D8258BB001318B8 /* main.m in Sources */,
-				378A58D51DDEE62100A2E4B6 /* XGWKWebViewController.m in Sources */,
 				37862C971D8258BB001318B8 /* XGAlertTool.m in Sources */,
+				376924F01DE2D66F00DA356C /* XGWKDelegateController.m in Sources */,
+				376924EF1DE2D66F00DA356C /* WKWebViewBridgeController.m in Sources */,
 				375435671D851A5500851923 /* MSSCircleLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
