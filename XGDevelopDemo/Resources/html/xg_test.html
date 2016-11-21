@@ -16,26 +16,44 @@
                     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
                     <script src="js/jquery.min.js"></script>
                     <script>
-                        //======iOS必须以下特殊特殊处理======
-                        var WVJBIframe = document.createElement('iframe');
-                        WVJBIframe.style.display = 'none';
-                        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
-                        document.documentElement.appendChild(WVJBIframe);
-                        setTimeout(function () { document.documentElement.removeChild(WVJBIframe) }, 0);
-                        //======iOS必须以上特殊特殊处理======
 
-                        function setTitle() {
-                             // 加下判断 更为严谨
+                        // 固定写法 函数名字可变
+                        function setupWebViewJavascriptBridge(callback) {
                             if (window.WebViewJavascriptBridge) {
-                               // 客户端registerHandler, js端就要callHandler(传值给客户端);
-                               // js端registerHandler, 客户端就要callHandler(传值给js端)
-                                window.WebViewJavascriptBridge.callHandler('_app_setTitle',
-                                {'title': '这是一个nav标题'},
-                                function (response) {
-                                  //
-                                })
+                                callback(WebViewJavascriptBridge)
+                            } else {
+                                document.addEventListener('WebViewJavascriptBridgeReady' , function() {
+                                                          callback(WebViewJavascriptBridge)
+                                                          }, false );
                             }
+
+                            // =====以下是iOS必须的特殊处理========
+                            if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+                            window.WVJBCallbacks = [callback];
+                            var WVJBIframe = document.createElement('iframe');
+                            WVJBIframe.style.display = 'none';
+                            WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+                            document.documentElement.appendChild(WVJBIframe);
+                            setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0);
+                            // =====以上是iOS必须的特殊处理========
                         }
+
+                        // 固定写法2 函数名字与1保持一致
+                        setupWebViewJavascriptBridge(function(bridge) {
+                            // Java 注册回调函数，第一次连接时调用 初始化函数
+                             bridge.init();
+                        });
+
+                        // 每个方法的特殊处理
+                        function setTitle() {
+                          WebViewJavascriptBridge.callHandler('_app_setTitle',
+                          '这是一个nav标题',
+                          function (response) {
+                            // 移动端回传的数据
+                            alert('移动端回传的数据:' + response);
+                          });
+                        }
+                    
                     </script>
 
                     <style>
@@ -74,15 +92,15 @@
         <div id='log'></div>
         <div class="pointexchange">
             <div>
-                <img src="img/points4.png" width="47px" height="47px" title="points4.png" /><br />
+                <img src="points4.png" width="47px" height="47px" title="points4.png" /><br />
                 <label>积分兑换实物</label>
             </div>
             <div>
-                <img src="img/points1.png" width="47px" height="47px" title="points1.png" /><br />
+                <img src="points1.png" width="47px" height="47px" title="points1.png" /><br />
                 <label>积分兑换红包</label>
             </div>
             <div>
-                <img src="img/points2.png" width="47px" height="47px" title="points2.png" /><br />
+                <img src="points2.png" width="47px" height="47px" title="points2.png" /><br />
                 <label>积分参与活动</label>
             </div>
         </div>

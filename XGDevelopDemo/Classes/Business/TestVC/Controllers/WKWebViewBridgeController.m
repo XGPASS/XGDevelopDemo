@@ -31,6 +31,7 @@
 - (void)setUpWKWebView {
     self.wkWebView =  [[WKWebView alloc] initWithFrame:self.view.bounds];
     self.wkWebView.navigationDelegate = self;
+    self.wkWebView.UIDelegate = self;
     [self.view addSubview:self.wkWebView];
     [WKWebViewJavascriptBridge enableLogging];
     _bridge = [WKWebViewJavascriptBridge bridgeForWebView:self.wkWebView];
@@ -41,6 +42,7 @@
     __weak __typeof(self)weakSelf = self;
     // js调用oc
     [_bridge registerHandler:@"_app_setTitle" handler:^(id data, WVJBResponseCallback responseCallback) {
+        responseCallback(@" 这就是回传js数据");
         if ([data isKindOfClass:[NSString class]]) {
             weakSelf.title = (NSString *)data;
             return ;
@@ -50,16 +52,11 @@
         }
     }];
     
-    // js调用oc
-    [_bridge registerHandler:@"_app_getCodeScan" handler:^(id data, WVJBResponseCallback responseCallback) {
-        responseCallback(@"我就是回传到js的数据");
-    }];
-    
     // oc调用js
-    [_bridge callHandler:@"getCodeScan" data:@"oc调用js端方法" responseCallback:^(id responseData) {
-        //
-        NSLog(@"responseData===%@==",responseData);
-    }];
+//    [_bridge callHandler:@"getCodeScan" data:@"oc调用js端方法" responseCallback:^(id responseData) {
+//        //
+//        NSLog(@"responseData===%@==",responseData);
+//    }];
     
     [self loadExamplePage:self.wkWebView];
 }
@@ -73,7 +70,7 @@
 }
 
 - (void)loadExamplePage:(WKWebView*)webView {
-    NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
+    NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"xg_test" ofType:@"html"];
     NSString* appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
     NSURL *baseURL = [NSURL fileURLWithPath:htmlPath];
     [webView loadHTMLString:appHtml baseURL:baseURL];
@@ -90,10 +87,22 @@
     NSString *scheme = [URL scheme];
     if ([scheme isEqualToString:@"tel"]) {
         NSString *resourceSpecifier = [URL resourceSpecifier];
+        // 这种拨打电话的写法，真机可显示效果，模拟器不显示
         NSString *callPhone = [NSString stringWithFormat:@"telprompt://%@", resourceSpecifier];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone]];
     }
     decisionHandler(WKNavigationActionPolicyAllow);
+}
+
+// 处理拨打电话
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提醒" message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler();
+    }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 
