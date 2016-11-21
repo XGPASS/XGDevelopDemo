@@ -39,8 +39,26 @@
     // 注册一下
     
     __weak __typeof(self)weakSelf = self;
+    // js调用oc
     [_bridge registerHandler:@"_app_setTitle" handler:^(id data, WVJBResponseCallback responseCallback) {
-        weakSelf.title = data[@"title"];
+        if ([data isKindOfClass:[NSString class]]) {
+            weakSelf.title = (NSString *)data;
+            return ;
+        }
+        if (data) {
+            weakSelf.title = [NSString stringWithFormat:@"%@",data];
+        }
+    }];
+    
+    // js调用oc
+    [_bridge registerHandler:@"_app_getCodeScan" handler:^(id data, WVJBResponseCallback responseCallback) {
+        responseCallback(@"我就是回传到js的数据");
+    }];
+    
+    // oc调用js
+    [_bridge callHandler:@"getCodeScan" data:@"oc调用js端方法" responseCallback:^(id responseData) {
+        //
+        NSLog(@"responseData===%@==",responseData);
     }];
     
     [self loadExamplePage:self.wkWebView];
@@ -55,7 +73,7 @@
 }
 
 - (void)loadExamplePage:(WKWebView*)webView {
-    NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"testnew" ofType:@"html"];
+    NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
     NSString* appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
     NSURL *baseURL = [NSURL fileURLWithPath:htmlPath];
     [webView loadHTMLString:appHtml baseURL:baseURL];
