@@ -45,6 +45,7 @@
 		376924FA1DE2D66F00DA356C /* XGCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924E41DE2D66F00DA356C /* XGCollectionHeaderView.xib */; };
 		376924FB1DE2D66F00DA356C /* XGTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924E61DE2D66F00DA356C /* XGTestCell.m */; };
 		376924FC1DE2D66F00DA356C /* XGTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924E71DE2D66F00DA356C /* XGTestCell.xib */; };
+		376925081DE2E45D00DA356C /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 376925071DE2E45D00DA356C /* NSString+Ext.m */; };
 		37862C7A1D8258BB001318B8 /* XGNetBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C271D8258BB001318B8 /* XGNetBase.m */; };
 		37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C291D8258BB001318B8 /* XGNetRequest.m */; };
 		37862C7C1D8258BB001318B8 /* XGArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C2C1D8258BB001318B8 /* XGArrayDataSource.m */; };
@@ -152,6 +153,8 @@
 		376924E51DE2D66F00DA356C /* XGTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGTestCell.h; sourceTree = "<group>"; };
 		376924E61DE2D66F00DA356C /* XGTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGTestCell.m; sourceTree = "<group>"; };
 		376924E71DE2D66F00DA356C /* XGTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGTestCell.xib; sourceTree = "<group>"; };
+		376925061DE2E45D00DA356C /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
+		376925071DE2E45D00DA356C /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
 		37862C261D8258BB001318B8 /* XGNetBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGNetBase.h; sourceTree = "<group>"; };
 		37862C271D8258BB001318B8 /* XGNetBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGNetBase.m; sourceTree = "<group>"; };
 		37862C281D8258BB001318B8 /* XGNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGNetRequest.h; sourceTree = "<group>"; };
@@ -485,6 +488,8 @@
 		37862C571D8258BB001318B8 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				376925061DE2E45D00DA356C /* NSString+Ext.h */,
+				376925071DE2E45D00DA356C /* NSString+Ext.m */,
 				37862C581D8258BB001318B8 /* NSObject+Ext.h */,
 				37862C591D8258BB001318B8 /* NSObject+Ext.m */,
 			);
@@ -801,6 +806,7 @@
 				376924F41DE2D66F00DA356C /* XGModel.m in Sources */,
 				37862C7E1D8258BB001318B8 /* XGBaseTableController.m in Sources */,
 				376924F11DE2D66F00DA356C /* XGWKWebViewController.m in Sources */,
+				376925081DE2E45D00DA356C /* NSString+Ext.m in Sources */,
 				37862C7C1D8258BB001318B8 /* XGArrayDataSource.m in Sources */,
 				376924F91DE2D66F00DA356C /* XGCollectionHeaderView.m in Sources */,
 				375435641D851A5500851923 /* MSSCalendarPopView.m in Sources */,
