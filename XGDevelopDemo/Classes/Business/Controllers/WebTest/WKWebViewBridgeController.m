@@ -42,7 +42,7 @@
     __weak __typeof(self)weakSelf = self;
     // js调用oc
     [_bridge registerHandler:@"_app_setTitle" handler:^(id data, WVJBResponseCallback responseCallback) {
-        responseCallback(@" 这就是回传js数据");
+        responseCallback(@"this is callback data to JS");
         if ([data isKindOfClass:[NSString class]]) {
             weakSelf.title = (NSString *)data;
             return ;
@@ -94,7 +94,7 @@
     decisionHandler(WKNavigationActionPolicyAllow);
 }
 
-// 处理拨打电话
+//
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提醒" message:message preferredStyle:UIAlertControllerStyleAlert];
