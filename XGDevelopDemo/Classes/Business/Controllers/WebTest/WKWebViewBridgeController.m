@@ -28,6 +28,11 @@
     [self setUpWKWebView];
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 - (void)setUpWKWebView {
     self.wkWebView =  [[WKWebView alloc] initWithFrame:self.view.bounds];
     self.wkWebView.navigationDelegate = self;
@@ -61,14 +66,7 @@
     [self loadExamplePage:self.wkWebView];
 }
 
-- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
-    NSLog(@"webViewDidStartLoad");
-}
-
-- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
-    NSLog(@"webViewDidFinishLoad");
-}
-
+// 加载h5
 - (void)loadExamplePage:(WKWebView*)webView {
     NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"xg_test" ofType:@"html"];
     NSString* appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
@@ -76,9 +74,9 @@
     [webView loadHTMLString:appHtml baseURL:baseURL];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// 页面开始加载时调用
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
+    self.title = NSLocalizedString(@"Loading...", @"");
 }
 
 // 处理拨打电话
@@ -94,7 +92,7 @@
     decisionHandler(WKNavigationActionPolicyAllow);
 }
 
-//
+/// alert的处理
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提醒" message:message preferredStyle:UIAlertControllerStyleAlert];
