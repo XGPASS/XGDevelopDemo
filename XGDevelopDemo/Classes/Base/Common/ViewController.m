@@ -18,6 +18,7 @@
 #import "XGWKWebViewController.h"
 #import "MSSCalendarViewController.h"
 #import "MSSCalendarDefine.h"
+#import "XGSacnController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource, MSSCalendarViewControllerDelegate>
 
@@ -64,7 +65,8 @@
                         @"Tab弹出小cell测试", @"选择日期的测试一",
                         @"选择日期的测试二",@"日历的选择一",
                         @"自动算高的Tab",@"第三方WebViewJavascriptBridge使用WKWebView",
-                        @"普通WKWebView使用",@"JSPatch热修复"];
+                        @"普通WKWebView使用",@"JSPatch热修复",
+                        @"二维码扫描"];
 }
 
 // 注册cell
@@ -114,9 +116,11 @@
     } else if ([tempTitle isEqualToString:@"JSPatch热修复"]) {
         // 详细的js用法 https://github.com/bang590/JSPatch/wiki
         [self showJSPatchMethod];
+    } else if ([tempTitle isEqualToString:@"二维码扫描"]) {
+        controller = [[XGSacnController alloc] init];
+        [self presentViewController:controller animated:YES completion:nil];
+        return;
     }
-    
-    
     
     if (controller) {
 //        [self presentViewController:controller animated:YES completion:nil];

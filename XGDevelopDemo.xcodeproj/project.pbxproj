@@ -68,6 +68,11 @@
 		37862C9D1D8258BB001318B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37862C781D8258BB001318B8 /* Info.plist */; };
 		37862C9E1D8258BB001318B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C791D8258BB001318B8 /* main.m */; };
 		37A98CDC1DCC6E9C00AFD09C /* hotpatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */; };
+		37ABE0631DED294900E58619 /* XGQRScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ABE0621DED294900E58619 /* XGQRScanView.m */; };
+		37ABE0671DED33E300E58619 /* XGSacnController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ABE0661DED33E300E58619 /* XGSacnController.m */; };
+		37ABE06C1DED4D1C00E58619 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37ABE0691DED4D1C00E58619 /* beep.wav */; };
+		37ABE06D1DED4D1C00E58619 /* XGSoundHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ABE06B1DED4D1C00E58619 /* XGSoundHelper.m */; };
+		37ABE0701DED591C00E58619 /* UIImage+XJHResize.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ABE06F1DED591C00E58619 /* UIImage+XJHResize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +200,15 @@
 		37862C781D8258BB001318B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37862C791D8258BB001318B8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hotpatch.js; sourceTree = "<group>"; };
+		37ABE0611DED294900E58619 /* XGQRScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGQRScanView.h; sourceTree = "<group>"; };
+		37ABE0621DED294900E58619 /* XGQRScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGQRScanView.m; sourceTree = "<group>"; };
+		37ABE0651DED33E300E58619 /* XGSacnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGSacnController.h; sourceTree = "<group>"; };
+		37ABE0661DED33E300E58619 /* XGSacnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGSacnController.m; sourceTree = "<group>"; };
+		37ABE0691DED4D1C00E58619 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		37ABE06A1DED4D1C00E58619 /* XGSoundHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGSoundHelper.h; sourceTree = "<group>"; };
+		37ABE06B1DED4D1C00E58619 /* XGSoundHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGSoundHelper.m; sourceTree = "<group>"; };
+		37ABE06E1DED591C00E58619 /* UIImage+XJHResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XJHResize.h"; sourceTree = "<group>"; };
+		37ABE06F1DED591C00E58619 /* UIImage+XJHResize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XJHResize.m"; sourceTree = "<group>"; };
 		B39BF90DA5AC4210BCB91714 /* Pods-XGDevelopDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGDevelopDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGDevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -314,6 +328,7 @@
 		376924C01DE2D66F00DA356C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				37ABE0641DED33CA00E58619 /* CodeScan */,
 				376924C11DE2D66F00DA356C /* CollectionTest */,
 				376924C51DE2D66F00DA356C /* TabTest */,
 				376924CE1DE2D66F00DA356C /* WebTest */,
@@ -499,6 +514,8 @@
 		37862C5A1D8258BB001318B8 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				37ABE06E1DED591C00E58619 /* UIImage+XJHResize.h */,
+				37ABE06F1DED591C00E58619 /* UIImage+XJHResize.m */,
 				37862C5B1D8258BB001318B8 /* UIView+Ext.h */,
 				37862C5C1D8258BB001318B8 /* UIView+Ext.m */,
 			);
@@ -510,6 +527,8 @@
 			children = (
 				37862C5E1D8258BB001318B8 /* XGChoseDateView.h */,
 				37862C5F1D8258BB001318B8 /* XGChoseDateView.m */,
+				37ABE0611DED294900E58619 /* XGQRScanView.h */,
+				37ABE0621DED294900E58619 /* XGQRScanView.m */,
 			);
 			path = CutomViews;
 			sourceTree = "<group>";
@@ -536,6 +555,7 @@
 		37862C661D8258BB001318B8 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				37ABE0681DED4D1C00E58619 /* XGScanVoice */,
 				37862C671D8258BB001318B8 /* MJPopupViewController */,
 				37862C6D1D8258BB001318B8 /* XGAlertTool.h */,
 				37862C6E1D8258BB001318B8 /* XGAlertTool.m */,
@@ -570,6 +590,25 @@
 				37862C791D8258BB001318B8 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		37ABE0641DED33CA00E58619 /* CodeScan */ = {
+			isa = PBXGroup;
+			children = (
+				37ABE0651DED33E300E58619 /* XGSacnController.h */,
+				37ABE0661DED33E300E58619 /* XGSacnController.m */,
+			);
+			path = CodeScan;
+			sourceTree = "<group>";
+		};
+		37ABE0681DED4D1C00E58619 /* XGScanVoice */ = {
+			isa = PBXGroup;
+			children = (
+				37ABE0691DED4D1C00E58619 /* beep.wav */,
+				37ABE06A1DED4D1C00E58619 /* XGSoundHelper.h */,
+				37ABE06B1DED4D1C00E58619 /* XGSoundHelper.m */,
+			);
+			path = XGScanVoice;
 			sourceTree = "<group>";
 		};
 		F1AD30B5353424FB5896BC81 /* Frameworks */ = {
@@ -697,6 +736,7 @@
 				376924E91DE2D66F00DA356C /* XGCollectionController.xib in Resources */,
 				376924A01DE2CF8D00DA356C /* points4.png in Resources */,
 				376924A11DE2CF8D00DA356C /* xg_test.html in Resources */,
+				37ABE06C1DED4D1C00E58619 /* beep.wav in Resources */,
 				37862C951D8258BB001318B8 /* MJPopupViewController.textClipping in Resources */,
 				37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */,
 				3769249F1DE2CF8D00DA356C /* points2.png in Resources */,
@@ -784,12 +824,14 @@
 				375435601D851A5500851923 /* MSSCalendarCollectionReusableView.m in Sources */,
 				376924EE1DE2D66F00DA356C /* XGTableTestController.m in Sources */,
 				37862C801D8258BB001318B8 /* ViewController.m in Sources */,
+				37ABE0671DED33E300E58619 /* XGSacnController.m in Sources */,
 				375435631D851A5500851923 /* MSSCalendarManager.m in Sources */,
 				37862C941D8258BB001318B8 /* MJPopupBackgroundView.m in Sources */,
 				37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */,
 				376924F51DE2D66F00DA356C /* XGAddCell.m in Sources */,
 				37862C921D8258BB001318B8 /* UIView+Ext.m in Sources */,
 				375435611D851A5500851923 /* MSSCalendarCollectionViewCell.m in Sources */,
+				37ABE0631DED294900E58619 /* XGQRScanView.m in Sources */,
 				37862C7A1D8258BB001318B8 /* XGNetBase.m in Sources */,
 				375435621D851A5500851923 /* MSSCalendarHeaderModel.m in Sources */,
 				376924EC1DE2D66F00DA356C /* XGAutoHeightTabController.m in Sources */,
@@ -801,6 +843,7 @@
 				376924FB1DE2D66F00DA356C /* XGTestCell.m in Sources */,
 				375435651D851A5500851923 /* MSSCalendarViewController.m in Sources */,
 				37862C931D8258BB001318B8 /* XGChoseDateView.m in Sources */,
+				37ABE06D1DED4D1C00E58619 /* XGSoundHelper.m in Sources */,
 				376924F71DE2D66F00DA356C /* XGCollectionCell.m in Sources */,
 				37862C961D8258BB001318B8 /* UIViewController+MJPopupViewController.m in Sources */,
 				376924F41DE2D66F00DA356C /* XGModel.m in Sources */,
@@ -813,6 +856,7 @@
 				37862C7D1D8258BB001318B8 /* XGBaseController.m in Sources */,
 				375435661D851A5500851923 /* MSSChineseCalendarManager.m in Sources */,
 				37862C9E1D8258BB001318B8 /* main.m in Sources */,
+				37ABE0701DED591C00E58619 /* UIImage+XJHResize.m in Sources */,
 				37862C971D8258BB001318B8 /* XGAlertTool.m in Sources */,
 				376924F01DE2D66F00DA356C /* XGWKDelegateController.m in Sources */,
 				376924EF1DE2D66F00DA356C /* WKWebViewBridgeController.m in Sources */,

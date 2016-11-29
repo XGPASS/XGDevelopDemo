@@ -17,6 +17,7 @@
 **9.JSPatch热修复示例;**<br/>
 JSPatch地址： https://github.com/bang590/JSPatch <br/>
 JSPatch中文文档： https://github.com/bang590/JSPatch/wiki <br/>
+**10.原生二维码扫描;**<br/>
 
 ## 个人博客地址
 CSDN：http://blog.csdn.net/syg90178aw
