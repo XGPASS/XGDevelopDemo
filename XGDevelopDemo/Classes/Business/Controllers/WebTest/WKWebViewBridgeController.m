@@ -33,6 +33,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+//
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if (self.bridge) {
+        [self.bridge setWebViewDelegate:self];
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.bridge setWebViewDelegate:nil];
+}
+
+- (void)dealloc
+{
+    NSLog(@"dealloc==dealloc==");
+}
+
 - (void)setUpWKWebView {
     self.wkWebView =  [[WKWebView alloc] initWithFrame:self.view.bounds];
     self.wkWebView.navigationDelegate = self;
