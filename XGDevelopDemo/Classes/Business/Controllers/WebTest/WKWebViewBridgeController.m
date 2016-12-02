@@ -33,7 +33,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-//
+// viewWillAppear和viewWillDisappear对setWebViewDelegate处理，不处理会导致内存泄漏
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     if (self.bridge) {

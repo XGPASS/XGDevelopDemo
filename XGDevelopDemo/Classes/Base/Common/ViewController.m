@@ -19,6 +19,7 @@
 #import "MSSCalendarViewController.h"
 #import "MSSCalendarDefine.h"
 #import "XGSacnController.h"
+#import "XGSearchController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource, MSSCalendarViewControllerDelegate>
 
@@ -66,7 +67,7 @@
                         @"选择日期的测试二",@"日历的选择一",
                         @"自动算高的Tab",@"第三方WebViewJavascriptBridge使用WKWebView",
                         @"普通WKWebView使用",@"JSPatch热修复",
-                        @"二维码扫描"];
+                        @"二维码扫描",@"UISearchController测试"];
 }
 
 // 注册cell
@@ -120,6 +121,8 @@
         controller = [[XGSacnController alloc] init];
         [self presentViewController:controller animated:YES completion:nil];
         return;
+    } else if ([tempTitle isEqualToString:@"UISearchController测试"]) {
+        controller = [[XGSearchController alloc] init];
     }
     
     if (controller) {
