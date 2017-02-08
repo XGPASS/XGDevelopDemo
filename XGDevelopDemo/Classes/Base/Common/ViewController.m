@@ -24,7 +24,7 @@
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource, MSSCalendarViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) NSArray *titleArray;
+@property (nonatomic, strong) NSMutableArray *titleArray;
 @property (nonatomic, strong) NSDate *choseDate;
 
 @property (nonatomic, strong) MSSCalendarViewController *calendarVC; // 日历页面
@@ -62,12 +62,13 @@
 }
 
 - (void)initDatas {
-    self.titleArray = @[@"封装的Tab测试", @"CollectionView网格测试",
-                        @"Tab弹出小cell测试", @"选择日期的测试一",
-                        @"选择日期的测试二",@"日历的选择一",
-                        @"自动算高的Tab",@"第三方WebViewJavascriptBridge使用WKWebView",
-                        @"普通WKWebView使用",@"JSPatch热修复",
-                        @"二维码扫描",@"UISearchController测试"];
+    NSArray  *dataArray =  @[@"封装的Tab测试", @"CollectionView网格测试",
+                             @"Tab弹出小cell测试", @"选择日期的测试一",
+                             @"选择日期的测试二",@"日历的选择一",
+                             @"自动算高的Tab",@"第三方WebViewJavascriptBridge使用WKWebView",
+                             @"普通WKWebView使用",@"JSPatch热修复",
+                             @"二维码扫描",@"UISearchController测试"];
+    self.titleArray = [NSMutableArray arrayWithArray:dataArray];
 }
 
 // 注册cell
@@ -225,6 +226,59 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self selectRowAction:indexPath.row];
     
+}
+
+//// 只是一个删除按钮
+//- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    return @"删除";
+//}
+//
+//// 删除的处理
+//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"请三思而行再删除" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
+//    [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//        [self.tableView setEditing:NO animated:YES];
+//    }]];
+//
+//    [alertController addAction:[UIAlertAction actionWithTitle:@"删除" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+//        // 先移除数据源数据
+//        [self.dataArray removeObjectAtIndex:indexPath.row];
+//        // 再动态刷新UITableView
+//        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
+//    }]];
+//    [self presentViewController:alertController animated:YES completion:nil];
+//}
+
+// 必须写的方法（否则iOS 8无法删除，iOS 9及其以上不写没问题），和editActionsForRowAtIndexPath配对使用，里面什么不写也行
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+// 添加自定义的侧滑功能
+- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // 添加一个删除按钮
+    
+    UITableViewRowAction *deleteRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        // 先移除数据源数据
+        [self.titleArray removeObjectAtIndex:indexPath.row];
+        // 再动态刷新UITableView
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        NSLog(@"删除按钮");
+    }];
+    
+    UITableViewRowAction *topRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"置顶" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        NSLog(@"置顶按钮");
+        
+    }];
+    /// 设置按钮颜色，Normal默认是灰色的，Default默认是红色的
+    topRowAction.backgroundColor = [UIColor orangeColor];
+    
+    UITableViewRowAction *cancelRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"取消关注" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        NSLog(@"取消关注按钮");
+    }];
+    
+    return @[deleteRowAction,topRowAction,cancelRowAction];
 }
 
 //  日历代理方法
