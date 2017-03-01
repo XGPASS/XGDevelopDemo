@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03E8DBA682210C33E3010820 /* libPods-XGDevelopDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */; };
+		371103261E6580FE00BAF041 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371103251E6580FE00BAF041 /* AddressBook.framework */; };
 		373690DE1D7522CC00E04076 /* XGDevelopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 373690DD1D7522CC00E04076 /* XGDevelopDemoTests.m */; };
 		373690E91D7522CC00E04076 /* XGDevelopDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 373690E81D7522CC00E04076 /* XGDevelopDemoUITests.m */; };
 		375435601D851A5500851923 /* MSSCalendarCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3754354E1D851A5500851923 /* MSSCalendarCollectionReusableView.m */; };
@@ -98,6 +99,7 @@
 
 /* Begin PBXFileReference section */
 		29003ACEF14963DBB8FDECDB /* Pods-XGDevelopDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGDevelopDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo.release.xcconfig"; sourceTree = "<group>"; };
+		371103251E6580FE00BAF041 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		373690C01D7522CC00E04076 /* XGDevelopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XGDevelopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		373690D91D7522CC00E04076 /* XGDevelopDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XGDevelopDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		373690DD1D7522CC00E04076 /* XGDevelopDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGDevelopDemoTests.m; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371103261E6580FE00BAF041 /* AddressBook.framework in Frameworks */,
 				03E8DBA682210C33E3010820 /* libPods-XGDevelopDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,6 +641,7 @@
 		F1AD30B5353424FB5896BC81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				371103251E6580FE00BAF041 /* AddressBook.framework */,
 				D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */,
 			);
 			name = Frameworks;

@@ -40,6 +40,9 @@
     [super viewDidLoad];
     [self initSubViews];
     [self initDatas];
+    
+    NSInteger tempNum = (NSInteger)ceil(3.1);
+    NSLog(@"tempNum===%ld==",(long)tempNum);
 }
 
 - (void)viewWillAppear:(BOOL)animated {

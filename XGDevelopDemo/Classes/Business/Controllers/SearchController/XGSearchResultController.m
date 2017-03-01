@@ -10,6 +10,7 @@
 #import "XGTestCell.h"
 #import "MJRefresh.h"
 
+
 @interface XGSearchResultController ()<UITableViewDataSource, UITableViewDelegate> //
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
