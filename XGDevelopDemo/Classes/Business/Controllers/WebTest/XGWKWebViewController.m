@@ -172,7 +172,7 @@
     }
     
     // 网络
-    NSString *urlString = @"http://blog.csdn.net/syg90178aw";
+    NSString *urlString = @"http://bababbababababab.com";
     if (ISNULL(urlString).length > 0) {
         [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
     } else {

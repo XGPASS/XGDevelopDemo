@@ -74,6 +74,7 @@
 		37ABE06C1DED4D1C00E58619 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37ABE0691DED4D1C00E58619 /* beep.wav */; };
 		37ABE06D1DED4D1C00E58619 /* XGSoundHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ABE06B1DED4D1C00E58619 /* XGSoundHelper.m */; };
 		37ABE0701DED591C00E58619 /* UIImage+XJHResize.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ABE06F1DED591C00E58619 /* UIImage+XJHResize.m */; };
+		37AD024E1E95E5D50075CA53 /* UIControl+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD024D1E95E5D50075CA53 /* UIControl+Delay.m */; };
 		37E533241DF1535B00A1EB66 /* XGSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E533221DF1535B00A1EB66 /* XGSearchController.m */; };
 		37E533251DF1535B00A1EB66 /* XGSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E533231DF1535B00A1EB66 /* XGSearchController.xib */; };
 		37E533291DF1537500A1EB66 /* XGSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E533271DF1537500A1EB66 /* XGSearchResultController.m */; };
@@ -215,6 +216,8 @@
 		37ABE06B1DED4D1C00E58619 /* XGSoundHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGSoundHelper.m; sourceTree = "<group>"; };
 		37ABE06E1DED591C00E58619 /* UIImage+XJHResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XJHResize.h"; sourceTree = "<group>"; };
 		37ABE06F1DED591C00E58619 /* UIImage+XJHResize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XJHResize.m"; sourceTree = "<group>"; };
+		37AD024C1E95E5D50075CA53 /* UIControl+Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Delay.h"; sourceTree = "<group>"; };
+		37AD024D1E95E5D50075CA53 /* UIControl+Delay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Delay.m"; sourceTree = "<group>"; };
 		37E533211DF1535B00A1EB66 /* XGSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGSearchController.h; sourceTree = "<group>"; };
 		37E533221DF1535B00A1EB66 /* XGSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGSearchController.m; sourceTree = "<group>"; };
 		37E533231DF1535B00A1EB66 /* XGSearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGSearchController.xib; sourceTree = "<group>"; };
@@ -532,6 +535,8 @@
 				37ABE06F1DED591C00E58619 /* UIImage+XJHResize.m */,
 				37862C5B1D8258BB001318B8 /* UIView+Ext.h */,
 				37862C5C1D8258BB001318B8 /* UIView+Ext.m */,
+				37AD024C1E95E5D50075CA53 /* UIControl+Delay.h */,
+				37AD024D1E95E5D50075CA53 /* UIControl+Delay.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -851,6 +856,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37862C911D8258BB001318B8 /* NSObject+Ext.m in Sources */,
+				37AD024E1E95E5D50075CA53 /* UIControl+Delay.m in Sources */,
 				375435601D851A5500851923 /* MSSCalendarCollectionReusableView.m in Sources */,
 				376924EE1DE2D66F00DA356C /* XGTableTestController.m in Sources */,
 				37862C801D8258BB001318B8 /* ViewController.m in Sources */,
