@@ -151,7 +151,7 @@
     if (model.isSmall) {
         UITableViewCell *smallCell = [tableView dequeueReusableCellWithIdentifier:[UITableViewCell className] forIndexPath:indexPath];
         smallCell.textLabel.text = @"这就是个小Cell";
-        smallCell.backgroundColor = UIColorFrom16RGB(0x81b9ea);
+        smallCell.backgroundColor = UIColorFromHexValue(0x81b9ea);
         cell = smallCell;
     } else {
         XGAddCell *normalCell = [tableView dequeueReusableCellWithIdentifier:[XGAddCell className] forIndexPath:indexPath];

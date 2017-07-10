@@ -9,7 +9,8 @@ target 'XGDevelopDemo' do
   pod 'MJExtension'
   pod 'SVProgressHUD'
   pod 'MWPhotoBrowser'
-  pod 'UITableView+FDTemplateLayoutCell'
+# UITableView+FDTemplateLayoutCell官方代码有问题，使用修改后的
+#  pod 'UITableView+FDTemplateLayoutCell'
   pod 'IQKeyboardManager'
   pod 'FSCalendar'
   pod 'SDWebImage'

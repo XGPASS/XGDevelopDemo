@@ -33,8 +33,15 @@
 // 布局UI
 - (void)setUpUIContent {
     self.title = @"自动算高的table";
-    self.tableView.tableFooterView = [[UIView alloc] init];
     [self registerNibWithTableView];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    UIView *testView = [[UIView alloc] initWithFrame:CGRectMake(80.0f, 80.0f, 200.0f, 100.0f)];
+    testView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:testView];
+    [self borderForView:testView color:[UIColor redColor] borderWidth:1.0f borderType:UIBorderSideTypeLeft | UIBorderSideTypeTop | UIBorderSideTypeBottom];
+    
+    
 }
 
 // 初始化数据
@@ -85,20 +92,22 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [tableView fd_heightForCellWithIdentifier:[XGTestCell className]
-                                    cacheByIndexPath:indexPath
-                                       configuration:^(XGTestCell *cell) {
-                                           [cell refreshCellWithItem:self.dataArray[indexPath.row]];
-                                       }];
+    
+    CGFloat tempHeight = [tableView fd_heightForCellWithIdentifier:[XGTestCell className]
+                                                  cacheByIndexPath:indexPath
+                                                     configuration:^(XGTestCell *cell) {
+                                                         [cell refreshCellWithItem:self.dataArray[indexPath.row]];
+                                                     }];
+    return tempHeight > 44.0f ? tempHeight : 44.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     
-    return 0.01;
+    return CGFLOAT_MIN;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.01;
+    return CGFLOAT_MIN;
 }
 
 
@@ -117,6 +126,67 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+/**
+ 设置view指定位置的边框
+
+ @param originalView   原view
+ @param color          边框颜色
+ @param borderWidth    边框宽度
+ @param borderType     边框类型 例子: UIBorderSideTypeTop|UIBorderSideTypeBottom
+ @return  view
+ */
+- (UIView *)borderForView:(UIView *)originalView color:(UIColor *)color borderWidth:(CGFloat)borderWidth borderType:(UIBorderSideType)borderType {
+    
+    if (borderType == UIBorderSideTypeAll) {
+        originalView.layer.borderWidth = borderWidth;
+        originalView.layer.borderColor = color.CGColor;
+        return originalView;
+    }
+    
+    /// 线的路径
+    UIBezierPath * bezierPath = [UIBezierPath bezierPath];
+    
+    /// 左侧
+    if (borderType & UIBorderSideTypeLeft) {
+        /// 左侧线路径
+        [bezierPath moveToPoint:CGPointMake(0.0f, originalView.frame.size.height)];
+        [bezierPath addLineToPoint:CGPointMake(0.0f, 0.0f)];
+    }
+    
+    /// 右侧
+    if (borderType & UIBorderSideTypeRight) {
+        /// 右侧线路径
+        [bezierPath moveToPoint:CGPointMake(originalView.frame.size.width, 0.0f)];
+        [bezierPath addLineToPoint:CGPointMake( originalView.frame.size.width, originalView.frame.size.height)];
+    }
+    
+    /// top
+    if (borderType & UIBorderSideTypeTop) {
+        /// top线路径
+        [bezierPath moveToPoint:CGPointMake(0.0f, 0.0f)];
+        [bezierPath addLineToPoint:CGPointMake(originalView.frame.size.width, 0.0f)];
+    }
+    
+    /// bottom
+    if (borderType & UIBorderSideTypeBottom) {
+        /// bottom线路径
+        [bezierPath moveToPoint:CGPointMake(0.0f, originalView.frame.size.height)];
+        [bezierPath addLineToPoint:CGPointMake( originalView.frame.size.width, originalView.frame.size.height)];
+    }
+  
+    CAShapeLayer * shapeLayer = [CAShapeLayer layer];
+    shapeLayer.strokeColor = color.CGColor;
+    shapeLayer.fillColor  = [UIColor clearColor].CGColor;
+    /// 添加路径
+    shapeLayer.path = bezierPath.CGPath;
+    /// 线宽度
+    shapeLayer.lineWidth = borderWidth;
+    
+    [originalView.layer addSublayer:shapeLayer];
+    
+    return originalView;
 }
 
 @end

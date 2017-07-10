@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SCShareCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="103"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wechat_icon" translatesAutoresizingMaskIntoConstraints="NO" id="eSa-eQ-NNS">
+                        <rect key="frame" x="39" y="30" width="25" height="25"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvF-iL-HbL">
+                        <rect key="frame" x="26.5" y="63" width="49.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgT-c4-YVk">
+                        <rect key="frame" x="102" y="15" width="1" height="73"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="e1r-AK-lNO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EvF-iL-HbL" firstAttribute="centerX" secondItem="eSa-eQ-NNS" secondAttribute="centerX" id="4jJ-Ra-tRU"/>
+                <constraint firstItem="EvF-iL-HbL" firstAttribute="top" secondItem="eSa-eQ-NNS" secondAttribute="bottom" constant="8" id="9my-Uq-eJO"/>
+                <constraint firstItem="IgT-c4-YVk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="Cmx-oj-qOm"/>
+                <constraint firstItem="eSa-eQ-NNS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="NMZ-oK-3tS"/>
+                <constraint firstAttribute="bottom" secondItem="IgT-c4-YVk" secondAttribute="bottom" constant="15" id="hTY-Ea-FZH"/>
+                <constraint firstAttribute="trailing" secondItem="IgT-c4-YVk" secondAttribute="trailing" id="iGP-8h-dfp"/>
+                <constraint firstItem="eSa-eQ-NNS" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="nPX-47-itv"/>
+            </constraints>
+            <size key="customSize" width="121" height="50"/>
+            <connections>
+                <outlet property="shareImgView" destination="eSa-eQ-NNS" id="rU7-qJ-hU8"/>
+                <outlet property="shareLbl" destination="EvF-iL-HbL" id="yPV-48-Vdi"/>
+            </connections>
+            <point key="canvasLocation" x="270.5" y="239.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="wechat_icon" width="25" height="25"/>
+    </resources>
+</document>

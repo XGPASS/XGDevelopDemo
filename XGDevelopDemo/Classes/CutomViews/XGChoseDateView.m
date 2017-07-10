@@ -94,7 +94,7 @@
     
     CGFloat posY = 0.0;
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0.0, posY, XGScreenWidth, TopBarHeight)];
-    view.backgroundColor = UIColorFrom16RGB(0x334455);
+    view.backgroundColor = UIColorFromHexValue(0x334455);
     [self.bgView addSubview:view];
     
     // 取消按钮

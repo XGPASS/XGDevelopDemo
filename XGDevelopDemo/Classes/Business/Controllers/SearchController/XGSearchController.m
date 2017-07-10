@@ -73,7 +73,7 @@
     self.searchController.searchBar.placeholder = @"请输入搜索内容";
     self.searchController.searchBar.delegate = self.resultVC;
     // 改变取消按钮字体颜色
-    self.searchController.searchBar.tintColor = UIColorFrom16RGB(0x0083e1);
+    self.searchController.searchBar.tintColor = UIColorFromHexValue(0x0083e1);
     self.tableView.tableHeaderView = self.searchController.searchBar;
 }
 

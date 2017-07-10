@@ -333,7 +333,7 @@
         CGFloat posX = (XGScreenWidth / 2.0)/2.0 - 30.0;
         self.scanButton.frame = CGRectMake(posX, XGScreenHeight - 15.0 - 60.0, 60.0, 60.0);
         // CCFF00
-        [self.scanButton setTitleColor:UIColorFrom16RGB(0xCCFF00) forState:UIControlStateNormal];
+        [self.scanButton setTitleColor:UIColorFromHexValue(0xCCFF00) forState:UIControlStateNormal];
         [self.scanButton setTitle:@"扫一扫" forState:UIControlStateNormal];
         self.scanButton.titleLabel.font = [UIFont systemFontOfSize:14.0];
         [self.scanButton setTitleEdgeInsets:UIEdgeInsetsMake(30.0, -28.0, 0.0, 0.0)];
@@ -347,8 +347,8 @@
         self.photoButton = [UIButton buttonWithType:UIButtonTypeCustom];
         CGFloat posX = (XGScreenWidth / 2.0)/2.0 - 30.0 + (XGScreenWidth/2.0);
         self.photoButton.frame = CGRectMake(posX, XGScreenHeight - 15.0 - 60.0, 60.0, 60.0);
-        [self.photoButton setTitleColor:UIColorFrom16RGB(0xAAAAAA) forState:UIControlStateNormal];
-        [self.photoButton setTitleColor:UIColorFrom16RGB(0xCCFF00) forState:UIControlStateHighlighted];
+        [self.photoButton setTitleColor:UIColorFromHexValue(0xAAAAAA) forState:UIControlStateNormal];
+        [self.photoButton setTitleColor:UIColorFromHexValue(0xCCFF00) forState:UIControlStateHighlighted];
         self.photoButton.titleLabel.font = [UIFont systemFontOfSize:14.0];
         [self.photoButton setTitle:@"相册" forState:UIControlStateNormal];
         [self.photoButton setTitleEdgeInsets:UIEdgeInsetsMake(30.0, -28.0, 0.0, 0.0)];

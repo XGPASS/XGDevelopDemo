@@ -21,6 +21,8 @@
 #import "XGSacnController.h"
 #import "XGSearchController.h"
 
+#import "SCSharePlatformMenu.h"
+
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource, MSSCalendarViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -30,6 +32,8 @@
 @property (nonatomic, strong) MSSCalendarViewController *calendarVC; // 日历页面
 @property (nonatomic, assign) NSInteger startDate;
 @property (nonatomic, assign) NSInteger endDate;
+
+@property (nonatomic, strong) SCSharePlatformMenu *platformMenu;
 
 @end
 
@@ -59,18 +63,18 @@
     self.title = @"开发模板";
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    
     [self registerNibWithTableView];
-
 }
 
 - (void)initDatas {
     NSArray  *dataArray =  @[@"封装的Tab测试", @"CollectionView网格测试",
                              @"Tab弹出小cell测试", @"选择日期的测试一",
                              @"选择日期的测试二",@"日历的选择一",
-                             @"自动算高的Tab",@"第三方WebViewJavascriptBridge使用WKWebView",
+                             @"自动算高的Tab+设置view指定位置的边框",
+                             @"第三方WebViewJavascriptBridge使用WKWebView",
                              @"普通WKWebView使用",@"JSPatch热修复",
-                             @"二维码扫描",@"UISearchController测试"];
+                             @"二维码扫描",@"UISearchController测试",
+                             @"自定义分享弹出选择平台页面"];
     self.titleArray = [NSMutableArray arrayWithArray:dataArray];
 }
 
@@ -93,6 +97,10 @@
 #pragma mark - action事件
 // 列表cell点击事件的处理
 - (void)selectRowAction:(NSInteger)row {
+    
+    
+//    [self actionForShowBLEScanFailAlert];
+//    return;
     NSString *tempTitle = self.titleArray[row];
     UIViewController *controller = nil;
     if ([tempTitle isEqualToString:@"封装的Tab测试"]) {
@@ -110,9 +118,9 @@
     } else if ([tempTitle isEqualToString:@"日历的选择一"]) {
         controller = self.calendarVC;
         controller.title = @"日期选择" ;
-//        [self presentViewController:self.calendarVC animated:YES completion:^{}];
-//        return;
-    } else if ([tempTitle isEqualToString:@"自动算高的Tab"]) {
+        [self presentViewController:self.calendarVC animated:YES completion:^{}];
+        return;
+    } else if ([tempTitle isEqualToString:@"自动算高的Tab+设置view指定位置的边框"]) {
         controller = [[XGAutoHeightTabController alloc] init];
     } else if ([tempTitle isEqualToString:@"第三方WebViewJavascriptBridge使用WKWebView"]) {
         controller = [[WKWebViewBridgeController alloc] init];
@@ -127,7 +135,15 @@
         return;
     } else if ([tempTitle isEqualToString:@"UISearchController测试"]) {
         controller = [[XGSearchController alloc] init];
+    } else if ([tempTitle isEqualToString:@"自定义分享弹出选择平台页面"]) {
+        if (!self.platformMenu) {
+            self.platformMenu = [[SCSharePlatformMenu alloc] initWithShareWay:SCShareWayAll];
+        }
+        [self.platformMenu presentMenu:YES];
+        
+        return;
     }
+    
     
     if (controller) {
 //        [self presentViewController:controller animated:YES completion:nil];
@@ -139,6 +155,50 @@
 // 热修复方法
 - (void)showJSPatchMethod {
     
+}
+
+// 扫描蓝牙失败的alert
+- (void)actionForShowBLEScanFailAlert {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil
+                                                                             message:nil
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancleAction = [UIAlertAction actionWithTitle:@"重新扫描" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    }];
+    
+    /// 系统版本必须大于等于8.3
+    if ([self compareCurrentVersionGreaterThanV83]) {
+        // 此代码 可以修改按钮颜色
+        [cancleAction setValue:UIColorFromHexValue(0x00AE08) forKey:@"titleTextColor"];
+    }
+    NSAttributedString *attributedMessage = [[NSAttributedString alloc] initWithString:@"找不到蓝牙点，可能是蓝牙出现了故障，请报事完成打点" attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.0f], NSForegroundColorAttributeName:UIColorFromHexValue(0x334455)}];
+    [alertController setValue:attributedMessage forKey:@"attributedMessage"];
+    [alertController addAction:cancleAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+/// 比较当前版本是否大于8.3版本（修改UIAlertController的titleTextColor会用到）
+- (BOOL)compareCurrentVersionGreaterThanV83 {
+    
+    NSString *currentVersion = [UIDevice currentDevice].systemVersion;
+    NSArray *versionArray = [currentVersion componentsSeparatedByString:@"."];
+    if (versionArray.count > 0) {
+        NSInteger mainVersion = [versionArray[0] integerValue];
+        if (mainVersion > 8) {
+            /// 主版本大于8，直接return YES;
+            return YES;
+        } else if (mainVersion == 8) {
+            /// 主版本等于8，判断次要版本是否大于3
+            NSInteger secondVersion = [versionArray[1] integerValue];
+            if (secondVersion >= 3) {
+                return YES;
+            }
+        }
+    }
+    
+    return NO;
 }
 
 // 选择日期的view
