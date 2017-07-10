@@ -98,9 +98,6 @@
 // 列表cell点击事件的处理
 - (void)selectRowAction:(NSInteger)row {
     
-    
-//    [self actionForShowBLEScanFailAlert];
-//    return;
     NSString *tempTitle = self.titleArray[row];
     UIViewController *controller = nil;
     if ([tempTitle isEqualToString:@"封装的Tab测试"]) {
@@ -118,8 +115,6 @@
     } else if ([tempTitle isEqualToString:@"日历的选择一"]) {
         controller = self.calendarVC;
         controller.title = @"日期选择" ;
-        [self presentViewController:self.calendarVC animated:YES completion:^{}];
-        return;
     } else if ([tempTitle isEqualToString:@"自动算高的Tab+设置view指定位置的边框"]) {
         controller = [[XGAutoHeightTabController alloc] init];
     } else if ([tempTitle isEqualToString:@"第三方WebViewJavascriptBridge使用WKWebView"]) {
@@ -144,9 +139,7 @@
         return;
     }
     
-    
     if (controller) {
-//        [self presentViewController:controller animated:YES completion:nil];
         [self.navigationController pushViewController:controller animated:YES];
     }
 }
