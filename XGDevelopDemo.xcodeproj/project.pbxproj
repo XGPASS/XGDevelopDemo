@@ -29,8 +29,6 @@
 		376924A11DE2CF8D00DA356C /* xg_test.html in Resources */ = {isa = PBXBuildFile; fileRef = 3769249D1DE2CF8D00DA356C /* xg_test.html */; };
 		376924E81DE2D66F00DA356C /* XGCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924C31DE2D66F00DA356C /* XGCollectionController.m */; };
 		376924E91DE2D66F00DA356C /* XGCollectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924C41DE2D66F00DA356C /* XGCollectionController.xib */; };
-		376924EA1DE2D66F00DA356C /* XGAddCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924C71DE2D66F00DA356C /* XGAddCellController.m */; };
-		376924EB1DE2D66F00DA356C /* XGAddCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924C81DE2D66F00DA356C /* XGAddCellController.xib */; };
 		376924EC1DE2D66F00DA356C /* XGAutoHeightTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924CA1DE2D66F00DA356C /* XGAutoHeightTabController.m */; };
 		376924ED1DE2D66F00DA356C /* XGAutoHeightTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376924CB1DE2D66F00DA356C /* XGAutoHeightTabController.xib */; };
 		376924EE1DE2D66F00DA356C /* XGTableTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376924CD1DE2D66F00DA356C /* XGTableTestController.m */; };
@@ -57,7 +55,6 @@
 		37862C7E1D8258BB001318B8 /* XGBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C301D8258BB001318B8 /* XGBaseTableController.m */; };
 		37862C911D8258BB001318B8 /* NSObject+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C591D8258BB001318B8 /* NSObject+Ext.m */; };
 		37862C921D8258BB001318B8 /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C5C1D8258BB001318B8 /* UIView+Ext.m */; };
-		37862C931D8258BB001318B8 /* XGChoseDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C5F1D8258BB001318B8 /* XGChoseDateView.m */; };
 		37862C941D8258BB001318B8 /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C691D8258BB001318B8 /* MJPopupBackgroundView.m */; };
 		37862C951D8258BB001318B8 /* MJPopupViewController.textClipping in Resources */ = {isa = PBXBuildFile; fileRef = 37862C6A1D8258BB001318B8 /* MJPopupViewController.textClipping */; };
 		37862C961D8258BB001318B8 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C6C1D8258BB001318B8 /* UIViewController+MJPopupViewController.m */; };
@@ -88,6 +85,9 @@
 		B94F4EC51F135F0300CCDC58 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EBF1F135F0300CCDC58 /* README.md */; };
 		B94F4ECC1F13604300CCDC58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4ECA1F13604300CCDC58 /* ViewController.m */; };
 		B94F4ED01F13607D00CCDC58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4ECF1F13607D00CCDC58 /* AppDelegate.m */; };
+		B998F6B81F5A7B5800718DB8 /* SCChoseDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = B998F6B71F5A7B5800718DB8 /* SCChoseDateView.m */; };
+		B998F6BB1F5A7CC400718DB8 /* XGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B998F6BA1F5A7CC400718DB8 /* XGTool.m */; };
+		B998F6BE1F5A7DE700718DB8 /* SVProgressHUD+Duration.m in Sources */ = {isa = PBXBuildFile; fileRef = B998F6BD1F5A7DE700718DB8 /* SVProgressHUD+Duration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,9 +146,6 @@
 		376924C21DE2D66F00DA356C /* XGCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCollectionController.h; sourceTree = "<group>"; };
 		376924C31DE2D66F00DA356C /* XGCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCollectionController.m; sourceTree = "<group>"; };
 		376924C41DE2D66F00DA356C /* XGCollectionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGCollectionController.xib; sourceTree = "<group>"; };
-		376924C61DE2D66F00DA356C /* XGAddCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAddCellController.h; sourceTree = "<group>"; };
-		376924C71DE2D66F00DA356C /* XGAddCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAddCellController.m; sourceTree = "<group>"; };
-		376924C81DE2D66F00DA356C /* XGAddCellController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGAddCellController.xib; sourceTree = "<group>"; };
 		376924C91DE2D66F00DA356C /* XGAutoHeightTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGAutoHeightTabController.h; sourceTree = "<group>"; };
 		376924CA1DE2D66F00DA356C /* XGAutoHeightTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGAutoHeightTabController.m; sourceTree = "<group>"; };
 		376924CB1DE2D66F00DA356C /* XGAutoHeightTabController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGAutoHeightTabController.xib; sourceTree = "<group>"; };
@@ -195,8 +192,6 @@
 		37862C591D8258BB001318B8 /* NSObject+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Ext.m"; sourceTree = "<group>"; };
 		37862C5B1D8258BB001318B8 /* UIView+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ext.h"; sourceTree = "<group>"; };
 		37862C5C1D8258BB001318B8 /* UIView+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ext.m"; sourceTree = "<group>"; };
-		37862C5E1D8258BB001318B8 /* XGChoseDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGChoseDateView.h; sourceTree = "<group>"; };
-		37862C5F1D8258BB001318B8 /* XGChoseDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGChoseDateView.m; sourceTree = "<group>"; };
 		37862C611D8258BB001318B8 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		37862C621D8258BB001318B8 /* XGCommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCommonMacro.h; sourceTree = "<group>"; };
 		37862C631D8258BB001318B8 /* XGDefineCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGDefineCode.h; sourceTree = "<group>"; };
@@ -249,6 +244,12 @@
 		B94F4ECA1F13604300CCDC58 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B94F4ECE1F13607D00CCDC58 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B94F4ECF1F13607D00CCDC58 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B998F6B61F5A7B5800718DB8 /* SCChoseDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChoseDateView.h; sourceTree = "<group>"; };
+		B998F6B71F5A7B5800718DB8 /* SCChoseDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChoseDateView.m; sourceTree = "<group>"; };
+		B998F6B91F5A7CC400718DB8 /* XGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGTool.h; sourceTree = "<group>"; };
+		B998F6BA1F5A7CC400718DB8 /* XGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGTool.m; sourceTree = "<group>"; };
+		B998F6BC1F5A7DE700718DB8 /* SVProgressHUD+Duration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+Duration.h"; sourceTree = "<group>"; };
+		B998F6BD1F5A7DE700718DB8 /* SVProgressHUD+Duration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+Duration.m"; sourceTree = "<group>"; };
 		D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGDevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -395,9 +396,6 @@
 		376924C51DE2D66F00DA356C /* TabTest */ = {
 			isa = PBXGroup;
 			children = (
-				376924C61DE2D66F00DA356C /* XGAddCellController.h */,
-				376924C71DE2D66F00DA356C /* XGAddCellController.m */,
-				376924C81DE2D66F00DA356C /* XGAddCellController.xib */,
 				376924C91DE2D66F00DA356C /* XGAutoHeightTabController.h */,
 				376924CA1DE2D66F00DA356C /* XGAutoHeightTabController.m */,
 				376924CB1DE2D66F00DA356C /* XGAutoHeightTabController.xib */,
@@ -550,6 +548,8 @@
 		37862C5A1D8258BB001318B8 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B998F6BC1F5A7DE700718DB8 /* SVProgressHUD+Duration.h */,
+				B998F6BD1F5A7DE700718DB8 /* SVProgressHUD+Duration.m */,
 				37ABE06E1DED591C00E58619 /* UIImage+XJHResize.h */,
 				37ABE06F1DED591C00E58619 /* UIImage+XJHResize.m */,
 				37862C5B1D8258BB001318B8 /* UIView+Ext.h */,
@@ -563,8 +563,8 @@
 		37862C5D1D8258BB001318B8 /* CutomViews */ = {
 			isa = PBXGroup;
 			children = (
-				37862C5E1D8258BB001318B8 /* XGChoseDateView.h */,
-				37862C5F1D8258BB001318B8 /* XGChoseDateView.m */,
+				B998F6B61F5A7B5800718DB8 /* SCChoseDateView.h */,
+				B998F6B71F5A7B5800718DB8 /* SCChoseDateView.m */,
 				37ABE0611DED294900E58619 /* XGQRScanView.h */,
 				37ABE0621DED294900E58619 /* XGQRScanView.m */,
 			);
@@ -601,6 +601,8 @@
 				37862C6F1D8258BB001318B8 /* XGDatePicerViewController.h */,
 				37862C701D8258BB001318B8 /* XGDatePicerViewController.m */,
 				37862C711D8258BB001318B8 /* XGDatePicerViewController.xib */,
+				B998F6B91F5A7CC400718DB8 /* XGTool.h */,
+				B998F6BA1F5A7CC400718DB8 /* XGTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -829,7 +831,6 @@
 				376924FC1DE2D66F00DA356C /* XGTestCell.xib in Resources */,
 				376924FA1DE2D66F00DA356C /* XGCollectionHeaderView.xib in Resources */,
 				376924F61DE2D66F00DA356C /* XGAddCell.xib in Resources */,
-				376924EB1DE2D66F00DA356C /* XGAddCellController.xib in Resources */,
 				375435691D851A5500851923 /* nav_back@3x.png in Resources */,
 				376924E91DE2D66F00DA356C /* XGCollectionController.xib in Resources */,
 				376924A01DE2CF8D00DA356C /* points4.png in Resources */,
@@ -875,13 +876,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XGDevelopDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D7C5557054F19D3716D3DC6 /* [CP] Embed Pods Frameworks */ = {
@@ -905,9 +909,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/JSPatch/JSPatch/JSPatch.js",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle,
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -943,16 +954,16 @@
 				375435621D851A5500851923 /* MSSCalendarHeaderModel.m in Sources */,
 				376924EC1DE2D66F00DA356C /* XGAutoHeightTabController.m in Sources */,
 				376924E81DE2D66F00DA356C /* XGCollectionController.m in Sources */,
-				376924EA1DE2D66F00DA356C /* XGAddCellController.m in Sources */,
 				B94F4EC21F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				37862C981D8258BB001318B8 /* XGDatePicerViewController.m in Sources */,
 				376924F31DE2D66F00DA356C /* XGAddCellModel.m in Sources */,
 				376924FB1DE2D66F00DA356C /* XGTestCell.m in Sources */,
+				B998F6BB1F5A7CC400718DB8 /* XGTool.m in Sources */,
 				375435651D851A5500851923 /* MSSCalendarViewController.m in Sources */,
-				37862C931D8258BB001318B8 /* XGChoseDateView.m in Sources */,
 				37ABE06D1DED4D1C00E58619 /* XGSoundHelper.m in Sources */,
 				376924F71DE2D66F00DA356C /* XGCollectionCell.m in Sources */,
 				37862C961D8258BB001318B8 /* UIViewController+MJPopupViewController.m in Sources */,
+				B998F6BE1F5A7DE700718DB8 /* SVProgressHUD+Duration.m in Sources */,
 				376924F41DE2D66F00DA356C /* XGModel.m in Sources */,
 				37862C7E1D8258BB001318B8 /* XGBaseTableController.m in Sources */,
 				376924F11DE2D66F00DA356C /* XGWKWebViewController.m in Sources */,
@@ -967,6 +978,7 @@
 				37862C9E1D8258BB001318B8 /* main.m in Sources */,
 				37ABE0701DED591C00E58619 /* UIImage+XJHResize.m in Sources */,
 				B94F4EC51F135F0300CCDC58 /* README.md in Sources */,
+				B998F6B81F5A7B5800718DB8 /* SCChoseDateView.m in Sources */,
 				37862C971D8258BB001318B8 /* XGAlertTool.m in Sources */,
 				376924F01DE2D66F00DA356C /* XGWKDelegateController.m in Sources */,
 				376924EF1DE2D66F00DA356C /* WKWebViewBridgeController.m in Sources */,

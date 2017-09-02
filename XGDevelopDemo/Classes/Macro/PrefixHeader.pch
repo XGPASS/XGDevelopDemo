@@ -25,9 +25,10 @@
 /* Tools */
 #import "MJExtension.h"
 #import "SVProgressHUD.h"
+#import "XGTool.h"
 
 /* Other */
-
+#import "SVProgressHUD+Duration.h"
 
 
 #endif /* PrefixHeader_pch */

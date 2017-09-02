@@ -180,7 +180,7 @@
                                                                     message:message
                                                              preferredStyle:UIAlertControllerStyleAlert];
     // 下面两行代码 是修改 title颜色和字体的代码
-//    NSAttributedString *attributedMessage = [[NSAttributedString alloc] initWithString:title attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.0f], NSForegroundColorAttributeName:UIColorFromHexValue(0x334455)}];
+//    NSAttributedString *attributedMessage = [[NSAttributedString alloc] initWithString:title attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.0f], NSForegroundColorAttributeName:HEXCOLOR(0x334455)}];
 //    [alert setValue:attributedMessage forKey:@"attributedTitle"];
     if (cancelTitle) {
         // 取消
@@ -208,7 +208,7 @@
                                                                    handler:^(UIAlertAction * _Nonnull action) {
                                                                        if (confirm)confirm(i);
                                                                    }];
-            // [action setValue:UIColorFromHexValue(0x00AE08) forKey:@"titleTextColor"]; // 此代码 可以修改按钮颜色
+            // [action setValue:HEXCOLOR(0x00AE08) forKey:@"titleTextColor"]; // 此代码 可以修改按钮颜色
             [alert addAction:action];
         }
     }

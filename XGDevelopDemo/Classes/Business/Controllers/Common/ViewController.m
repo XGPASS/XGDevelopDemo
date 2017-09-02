@@ -9,8 +9,7 @@
 #import "ViewController.h"
 #import "XGTableTestController.h"
 #import "XGCollectionController.h"
-#import "XGAddCellController.h"
-#import "XGChoseDateView.h"
+#import "SCChoseDateView.h"
 #import "XGDatePicerViewController.h"
 #import "UIViewController+MJPopupViewController.h"
 #import "XGAutoHeightTabController.h"
@@ -68,7 +67,7 @@
 
 - (void)initDatas {
     NSArray  *dataArray =  @[@"封装的Tab测试", @"CollectionView网格测试",
-                             @"Tab弹出小cell测试", @"选择日期的测试一",
+                             @"选择日期的测试一",
                              @"选择日期的测试二",@"日历的选择一",
                              @"自动算高的Tab+设置view指定位置的边框",
                              @"第三方WebViewJavascriptBridge使用WKWebView",
@@ -104,8 +103,6 @@
         controller = [[XGTableTestController alloc] init];
     } else if ([tempTitle isEqualToString:@"CollectionView网格测试"]) {
         controller = [[XGCollectionController alloc] init];
-    } else if ([tempTitle isEqualToString:@"Tab弹出小cell测试"]) {
-        controller = [[XGAddCellController alloc] init];
     } else if ([tempTitle isEqualToString:@"选择日期的测试一"]) {
         [self showDateView:0];
         return;
@@ -163,9 +160,9 @@
     /// 系统版本必须大于等于8.3
     if ([self compareCurrentVersionGreaterThanV83]) {
         // 此代码 可以修改按钮颜色
-        [cancleAction setValue:UIColorFromHexValue(0x00AE08) forKey:@"titleTextColor"];
+        [cancleAction setValue:HEXCOLOR(0x00AE08) forKey:@"titleTextColor"];
     }
-    NSAttributedString *attributedMessage = [[NSAttributedString alloc] initWithString:@"找不到蓝牙点，可能是蓝牙出现了故障，请报事完成打点" attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.0f], NSForegroundColorAttributeName:UIColorFromHexValue(0x334455)}];
+    NSAttributedString *attributedMessage = [[NSAttributedString alloc] initWithString:@"找不到蓝牙点，可能是蓝牙出现了故障，请报事完成打点" attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.0f], NSForegroundColorAttributeName:HEXCOLOR(0x334455)}];
     [alertController setValue:attributedMessage forKey:@"attributedMessage"];
     [alertController addAction:cancleAction];
     
@@ -200,14 +197,15 @@
     kWeakSelf
     if (index == 0) {
         // 选择日期的测试一
-        XGChoseDateView *choseView = [[XGChoseDateView alloc] initWithFrame:XGScreenBounds
-                                                             datePickerMode:UIDatePickerModeDate
-                                                                   lastDate:self.choseDate];
-        [choseView showView];
-        [choseView confirmDate:^(NSDate *date) {
+        SCChoseDateView *choseDateView = [[SCChoseDateView alloc] initWithFrame:[[UIScreen mainScreen] bounds] datePickerMode:UIDatePickerModeDate];
+        [choseDateView showView];
+        choseDateView.choseDateBlock = ^(NSDate *date) {
             weakSelf.choseDate = date;
             NSLog(@"当前选择的时间是==%@==",date);
-        }];
+        };
+        choseDateView.lastDate = self.choseDate;
+        /// 允许显示的最小时间
+        //choseDateView.minimumDate = [NSDate date];
         return;
     }
     

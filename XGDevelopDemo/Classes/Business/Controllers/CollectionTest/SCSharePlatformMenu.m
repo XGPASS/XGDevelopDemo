@@ -75,7 +75,7 @@
         NSDictionary *dic = self.shareWayArray[indexPath.row];
         [cell refreshViewWithTitle:dic[@"title"] imageName:dic[@"imageName"]];
     }
-    //[cell borderForColor:UIColorFromHexValue(0xAAAAAA) borderWidth:0.8f borderType:UIBorderSideTypeLeft];
+    //[cell borderForColor:HEXCOLOR(0xAAAAAA) borderWidth:0.8f borderType:UIBorderSideTypeLeft];
     return cell;
 }
 

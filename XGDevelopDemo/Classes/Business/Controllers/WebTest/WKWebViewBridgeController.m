@@ -97,15 +97,14 @@
     self.title = NSLocalizedString(@"Loading...", @"");
 }
 
-// 处理拨打电话
+// 处理拨打电话或者URL的跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
     NSURL *URL = navigationAction.request.URL;
     NSString *scheme = [URL scheme];
     if ([scheme isEqualToString:@"tel"]) {
         NSString *resourceSpecifier = [URL resourceSpecifier];
         // 这种拨打电话的写法，真机可显示效果，模拟器不显示
-        NSString *callPhone = [NSString stringWithFormat:@"telprompt://%@", resourceSpecifier];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone]];
+        [XGTool callPhone:resourceSpecifier];
     }
     decisionHandler(WKNavigationActionPolicyAllow);
 }

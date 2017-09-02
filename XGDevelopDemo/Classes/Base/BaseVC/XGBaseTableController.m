@@ -146,7 +146,7 @@
 
 // 初始化UI
 - (void)p_layoutViews {
-    self.view.backgroundColor =  UIColorFromHexValue(0xECECF0);
+    self.view.backgroundColor =  HEXCOLOR(0xECECF0);
     [self.view addSubview:self.tableView];
     
     [self configTableViewSource];
@@ -205,7 +205,7 @@
     if (!_tableView ) {
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, XGScreenWidth, XGScreenHeight)
                                                               style:_tableViewStyle];
-        tableView.backgroundColor = UIColorFromHexValue(0xECECF0);
+        tableView.backgroundColor = HEXCOLOR(0xECECF0);
         tableView.backgroundView = nil;
         tableView.delegate = self;
         tableView.rowHeight = 70.f;
@@ -258,7 +258,7 @@
         emptyLbl.text = @"暂无数据";
         emptyLbl.textAlignment = NSTextAlignmentCenter;
         emptyLbl.font = [UIFont systemFontOfSize:16.0];
-        emptyLbl.textColor = UIColorFromHexValue(0x787878);
+        emptyLbl.textColor = HEXCOLOR(0x787878);
         [_emptyView addSubview:emptyLbl];
     }
     

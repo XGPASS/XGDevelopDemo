@@ -19,14 +19,12 @@
 #define XGScreenHeight XGScreenBounds.size.height
 #define XGViewHeight CGRectGetHeight(XGScreenBounds) - 44 - 20 // 去掉导航条的高度
 
-// 根据16位进制值转换成颜色，格式:UIColorFromHexValue(0xFF0000)
-#define UIColorFromHexValue(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+// 根据16位进制值转换成颜色，格式:HEXCOLOR(0xFF0000)
 
-// 根据10位RBG值转换成颜色, 格式:UIColorFromRGB(255,255,255)
-#define UIColorFromRGB(RED, GREEN, BLUE) [UIColor colorWithRed:RED/255.0 green:GREEN/255.0 blue:BLUE/255.0 alpha:1.0]
+#define HEXCOLOR(hexVal)  [UIColor colorWithRed:((float)((hexVal & 0xFF0000) >> 16))/255.0 green:((float)((hexVal & 0xFF00) >> 8))/255.0 blue:((float)(hexVal & 0xFF))/255.0 alpha:1.0]
 
 // VC通用的背景颜色
-#define BGColor   UIColorFromHexValue(0xECECF0)
+#define BGColor   HEXCOLOR(0xECECF0)
 
 //定义UIImage对象
 #define IMAGENAMED(_pointer) [UIImage imageNamed:_pointer]
