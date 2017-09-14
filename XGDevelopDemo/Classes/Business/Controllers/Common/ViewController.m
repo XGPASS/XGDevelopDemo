@@ -19,6 +19,7 @@
 #import "MSSCalendarDefine.h"
 #import "XGSacnController.h"
 #import "XGSearchController.h"
+#import "XGShowImageController.h"
 
 #import "SCSharePlatformMenu.h"
 
@@ -73,7 +74,7 @@
                              @"第三方WebViewJavascriptBridge使用WKWebView",
                              @"普通WKWebView使用",@"JSPatch热修复",
                              @"二维码扫描",@"UISearchController测试",
-                             @"自定义分享弹出选择平台页面"];
+                             @"自定义分享弹出选择平台页面",@"Tab显示多张图片测试"];
     self.titleArray = [NSMutableArray arrayWithArray:dataArray];
 }
 
@@ -134,6 +135,8 @@
         [self.platformMenu presentMenu:YES];
         
         return;
+    } else if ([tempTitle isEqualToString:@"Tab显示多张图片测试"]) {
+        controller = [[XGShowImageController alloc] init];
     }
     
     if (controller) {

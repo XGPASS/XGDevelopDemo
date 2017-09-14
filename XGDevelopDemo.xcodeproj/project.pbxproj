@@ -85,6 +85,12 @@
 		B94F4EC51F135F0300CCDC58 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EBF1F135F0300CCDC58 /* README.md */; };
 		B94F4ECC1F13604300CCDC58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4ECA1F13604300CCDC58 /* ViewController.m */; };
 		B94F4ED01F13607D00CCDC58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4ECF1F13607D00CCDC58 /* AppDelegate.m */; };
+		B978BC2D1F6A8174008E8ADA /* SCCommonImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B978BC251F6A8174008E8ADA /* SCCommonImageCell.m */; };
+		B978BC2E1F6A8174008E8ADA /* SCCommonImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B978BC261F6A8174008E8ADA /* SCCommonImageCell.xib */; };
+		B978BC2F1F6A8174008E8ADA /* SCImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B978BC281F6A8174008E8ADA /* SCImageCollectionCell.m */; };
+		B978BC301F6A8174008E8ADA /* SCImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B978BC291F6A8174008E8ADA /* SCImageCollectionCell.xib */; };
+		B978BC311F6A8174008E8ADA /* XGShowImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = B978BC2B1F6A8174008E8ADA /* XGShowImageController.m */; };
+		B978BC321F6A8174008E8ADA /* XGShowImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B978BC2C1F6A8174008E8ADA /* XGShowImageController.xib */; };
 		B998F6B81F5A7B5800718DB8 /* SCChoseDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = B998F6B71F5A7B5800718DB8 /* SCChoseDateView.m */; };
 		B998F6BB1F5A7CC400718DB8 /* XGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B998F6BA1F5A7CC400718DB8 /* XGTool.m */; };
 		B998F6BE1F5A7DE700718DB8 /* SVProgressHUD+Duration.m in Sources */ = {isa = PBXBuildFile; fileRef = B998F6BD1F5A7DE700718DB8 /* SVProgressHUD+Duration.m */; };
@@ -244,6 +250,15 @@
 		B94F4ECA1F13604300CCDC58 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B94F4ECE1F13607D00CCDC58 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B94F4ECF1F13607D00CCDC58 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B978BC241F6A8174008E8ADA /* SCCommonImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommonImageCell.h; sourceTree = "<group>"; };
+		B978BC251F6A8174008E8ADA /* SCCommonImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCommonImageCell.m; sourceTree = "<group>"; };
+		B978BC261F6A8174008E8ADA /* SCCommonImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCCommonImageCell.xib; sourceTree = "<group>"; };
+		B978BC271F6A8174008E8ADA /* SCImageCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageCollectionCell.h; sourceTree = "<group>"; };
+		B978BC281F6A8174008E8ADA /* SCImageCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageCollectionCell.m; sourceTree = "<group>"; };
+		B978BC291F6A8174008E8ADA /* SCImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCImageCollectionCell.xib; sourceTree = "<group>"; };
+		B978BC2A1F6A8174008E8ADA /* XGShowImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGShowImageController.h; sourceTree = "<group>"; };
+		B978BC2B1F6A8174008E8ADA /* XGShowImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGShowImageController.m; sourceTree = "<group>"; };
+		B978BC2C1F6A8174008E8ADA /* XGShowImageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGShowImageController.xib; sourceTree = "<group>"; };
 		B998F6B61F5A7B5800718DB8 /* SCChoseDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChoseDateView.h; sourceTree = "<group>"; };
 		B998F6B71F5A7B5800718DB8 /* SCChoseDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChoseDateView.m; sourceTree = "<group>"; };
 		B998F6B91F5A7CC400718DB8 /* XGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGTool.h; sourceTree = "<group>"; };
@@ -369,6 +384,7 @@
 		376924C01DE2D66F00DA356C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B978BC231F6A8174008E8ADA /* TabShowImage */,
 				37E533201DF1533F00A1EB66 /* SearchController */,
 				37ABE0641DED33CA00E58619 /* CodeScan */,
 				376924C11DE2D66F00DA356C /* CollectionTest */,
@@ -476,18 +492,10 @@
 			isa = PBXGroup;
 			children = (
 				B94F4ECD1F13607D00CCDC58 /* AppDelegate */,
-				37862C241D8258BB001318B8 /* BaseDB */,
 				37862C251D8258BB001318B8 /* BaseNet */,
 				37862C2A1D8258BB001318B8 /* BaseVC */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		37862C241D8258BB001318B8 /* BaseDB */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseDB;
 			sourceTree = "<group>";
 		};
 		37862C251D8258BB001318B8 /* BaseNet */ = {
@@ -709,6 +717,22 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		B978BC231F6A8174008E8ADA /* TabShowImage */ = {
+			isa = PBXGroup;
+			children = (
+				B978BC241F6A8174008E8ADA /* SCCommonImageCell.h */,
+				B978BC251F6A8174008E8ADA /* SCCommonImageCell.m */,
+				B978BC261F6A8174008E8ADA /* SCCommonImageCell.xib */,
+				B978BC271F6A8174008E8ADA /* SCImageCollectionCell.h */,
+				B978BC281F6A8174008E8ADA /* SCImageCollectionCell.m */,
+				B978BC291F6A8174008E8ADA /* SCImageCollectionCell.xib */,
+				B978BC2A1F6A8174008E8ADA /* XGShowImageController.h */,
+				B978BC2B1F6A8174008E8ADA /* XGShowImageController.m */,
+				B978BC2C1F6A8174008E8ADA /* XGShowImageController.xib */,
+			);
+			path = TabShowImage;
+			sourceTree = "<group>";
+		};
 		F1AD30B5353424FB5896BC81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -838,6 +862,7 @@
 				37ABE06C1DED4D1C00E58619 /* beep.wav in Resources */,
 				37862C951D8258BB001318B8 /* MJPopupViewController.textClipping in Resources */,
 				37E533251DF1535B00A1EB66 /* XGSearchController.xib in Resources */,
+				B978BC321F6A8174008E8ADA /* XGShowImageController.xib in Resources */,
 				37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */,
 				3769249F1DE2CF8D00DA356C /* points2.png in Resources */,
 				3703A4871EEAA402008274D8 /* SCShareCollectionViewCell.xib in Resources */,
@@ -846,7 +871,9 @@
 				376924ED1DE2D66F00DA356C /* XGAutoHeightTabController.xib in Resources */,
 				3769249E1DE2CF8D00DA356C /* points1.png in Resources */,
 				375435681D851A5500851923 /* nav_back@2x.png in Resources */,
+				B978BC301F6A8174008E8ADA /* SCImageCollectionCell.xib in Resources */,
 				37A98CDC1DCC6E9C00AFD09C /* hotpatch.js in Resources */,
+				B978BC2E1F6A8174008E8ADA /* SCCommonImageCell.xib in Resources */,
 				37E5332A1DF1537500A1EB66 /* XGSearchResultController.xib in Resources */,
 				37862C9B1D8258BB001318B8 /* LaunchScreen.storyboard in Resources */,
 				37862C9D1D8258BB001318B8 /* Info.plist in Resources */,
@@ -935,6 +962,7 @@
 				B94F4ECC1F13604300CCDC58 /* ViewController.m in Sources */,
 				B94F4EC11F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				37862C911D8258BB001318B8 /* NSObject+Ext.m in Sources */,
+				B978BC2F1F6A8174008E8ADA /* SCImageCollectionCell.m in Sources */,
 				37AD024E1E95E5D50075CA53 /* UIControl+Delay.m in Sources */,
 				375435601D851A5500851923 /* MSSCalendarCollectionReusableView.m in Sources */,
 				376924EE1DE2D66F00DA356C /* XGTableTestController.m in Sources */,
@@ -967,6 +995,7 @@
 				376924F41DE2D66F00DA356C /* XGModel.m in Sources */,
 				37862C7E1D8258BB001318B8 /* XGBaseTableController.m in Sources */,
 				376924F11DE2D66F00DA356C /* XGWKWebViewController.m in Sources */,
+				B978BC311F6A8174008E8ADA /* XGShowImageController.m in Sources */,
 				376925081DE2E45D00DA356C /* NSString+Ext.m in Sources */,
 				37862C7C1D8258BB001318B8 /* XGArrayDataSource.m in Sources */,
 				B94F4EC31F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
@@ -981,6 +1010,7 @@
 				B998F6B81F5A7B5800718DB8 /* SCChoseDateView.m in Sources */,
 				37862C971D8258BB001318B8 /* XGAlertTool.m in Sources */,
 				376924F01DE2D66F00DA356C /* XGWKDelegateController.m in Sources */,
+				B978BC2D1F6A8174008E8ADA /* SCCommonImageCell.m in Sources */,
 				376924EF1DE2D66F00DA356C /* WKWebViewBridgeController.m in Sources */,
 				3703A4861EEAA402008274D8 /* SCShareCollectionViewCell.m in Sources */,
 				375435671D851A5500851923 /* MSSCircleLabel.m in Sources */,
