@@ -13,6 +13,7 @@
    WebViewJavascriptBridge地址: https://github.com/marcuswestin/WebViewJavascriptBridge <br/>
    WebViewJavascriptBridge iOS使用地址: http://www.jianshu.com/p/e951af9e5e74 <br/>
    WebViewJavascriptBridge Java使用地址: http://blog.csdn.net/sk719887916/article/details/47189607
+   目前在Xcode9上，WKWebViewJavascriptBridge会crash，具体修改，参照：http://blog.csdn.net/syg90178aw/article/details/78084353
 
 **8.JSPatch热修复示例;**<br/>
 JSPatch地址： https://github.com/bang590/JSPatch <br/>
@@ -24,7 +25,7 @@ JSPatch中文文档： https://github.com/bang590/JSPatch/wiki <br/>
 ## 个人博客地址
 CSDN：http://blog.csdn.net/syg90178aw
 
-###项目模块如图
+### 项目模块如图
 
 ![image](https://github.com/XGPASS/XGDevelopDemo/blob/master/images/develop.gif)
 ![image](https://github.com/XGPASS/XGDevelopDemo/blob/master/images/develop2.gif)

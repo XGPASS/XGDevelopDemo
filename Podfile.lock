@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - DACircularProgress (2.3.1)
   - FSCalendar (2.7.9)
-  - IQKeyboardManager (4.0.10)
+  - IQKeyboardManager (4.0.13)
   - JSPatch (1.1.3):
     - JSPatch/Core (= 1.1.3)
   - JSPatch/Core (1.1.3)
@@ -31,7 +31,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - SVProgressHUD (2.1.2)
+  - SVProgressHUD (2.2.1)
   - WebViewJavascriptBridge (6.0.2)
 
 DEPENDENCIES:
@@ -51,7 +51,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
-  IQKeyboardManager: 593ee99b88381f4b9ccb22bd680f22606351bd41
+  IQKeyboardManager: 8eab4d8111418414619d1df8e4779ce5d0f8d7e2
   JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
@@ -59,7 +59,7 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SVProgressHUD: db27c54e6e18bc903341661fc9feb55e04905cc4
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
 
 PODFILE CHECKSUM: e58d45eeffa0bb5791a4eded1174c22f9627d27c

@@ -52,6 +52,7 @@
 }
 
 - (void)setUpWKWebView {
+    
     self.wkWebView =  [[WKWebView alloc] initWithFrame:self.view.bounds];
     self.wkWebView.navigationDelegate = self;
     self.wkWebView.UIDelegate = self;
@@ -94,7 +95,7 @@
 
 // 页面开始加载时调用
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
-    self.title = NSLocalizedString(@"Loading...", @"");
+//    self.title = NSLocalizedString(@"Loading...", @"");
 }
 
 // 处理拨打电话或者URL的跳转
