@@ -12,7 +12,7 @@
 **7.第三方WebViewJavascriptBridge使用WKWebView(其中的html可以和安卓共用一套的写法);**<br/>
    WebViewJavascriptBridge地址: https://github.com/marcuswestin/WebViewJavascriptBridge <br/>
    WebViewJavascriptBridge iOS使用地址: http://www.jianshu.com/p/e951af9e5e74 <br/>
-   WebViewJavascriptBridge Java使用地址: http://blog.csdn.net/sk719887916/article/details/47189607
+   WebViewJavascriptBridge Java使用地址: http://blog.csdn.net/sk719887916/article/details/47189607 <br/>
    目前在Xcode9上，WKWebViewJavascriptBridge会crash，具体修改，参照：http://blog.csdn.net/syg90178aw/article/details/78084353
 
 **8.JSPatch热修复示例;**<br/>
