@@ -91,9 +91,13 @@
 		B978BC301F6A8174008E8ADA /* SCImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B978BC291F6A8174008E8ADA /* SCImageCollectionCell.xib */; };
 		B978BC311F6A8174008E8ADA /* XGShowImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = B978BC2B1F6A8174008E8ADA /* XGShowImageController.m */; };
 		B978BC321F6A8174008E8ADA /* XGShowImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B978BC2C1F6A8174008E8ADA /* XGShowImageController.xib */; };
+		B98131571F909DF700303631 /* UIDynamicImageTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98131551F909DF700303631 /* UIDynamicImageTestController.m */; };
+		B98131581F909DF700303631 /* UIDynamicImageTestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98131561F909DF700303631 /* UIDynamicImageTestController.xib */; };
 		B998F6B81F5A7B5800718DB8 /* SCChoseDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = B998F6B71F5A7B5800718DB8 /* SCChoseDateView.m */; };
 		B998F6BB1F5A7CC400718DB8 /* XGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B998F6BA1F5A7CC400718DB8 /* XGTool.m */; };
 		B998F6BE1F5A7DE700718DB8 /* SVProgressHUD+Duration.m in Sources */ = {isa = PBXBuildFile; fileRef = B998F6BD1F5A7DE700718DB8 /* SVProgressHUD+Duration.m */; };
+		B9B1F9551F90979B0076ED65 /* UIDynamicTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B1F9531F90979B0076ED65 /* UIDynamicTestController.m */; };
+		B9B1F9561F90979B0076ED65 /* UIDynamicTestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B1F9541F90979B0076ED65 /* UIDynamicTestController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -259,12 +263,18 @@
 		B978BC2A1F6A8174008E8ADA /* XGShowImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGShowImageController.h; sourceTree = "<group>"; };
 		B978BC2B1F6A8174008E8ADA /* XGShowImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGShowImageController.m; sourceTree = "<group>"; };
 		B978BC2C1F6A8174008E8ADA /* XGShowImageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGShowImageController.xib; sourceTree = "<group>"; };
+		B98131541F909DF700303631 /* UIDynamicImageTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDynamicImageTestController.h; sourceTree = "<group>"; };
+		B98131551F909DF700303631 /* UIDynamicImageTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDynamicImageTestController.m; sourceTree = "<group>"; };
+		B98131561F909DF700303631 /* UIDynamicImageTestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIDynamicImageTestController.xib; sourceTree = "<group>"; };
 		B998F6B61F5A7B5800718DB8 /* SCChoseDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChoseDateView.h; sourceTree = "<group>"; };
 		B998F6B71F5A7B5800718DB8 /* SCChoseDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChoseDateView.m; sourceTree = "<group>"; };
 		B998F6B91F5A7CC400718DB8 /* XGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGTool.h; sourceTree = "<group>"; };
 		B998F6BA1F5A7CC400718DB8 /* XGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGTool.m; sourceTree = "<group>"; };
 		B998F6BC1F5A7DE700718DB8 /* SVProgressHUD+Duration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+Duration.h"; sourceTree = "<group>"; };
 		B998F6BD1F5A7DE700718DB8 /* SVProgressHUD+Duration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+Duration.m"; sourceTree = "<group>"; };
+		B9B1F9521F90979B0076ED65 /* UIDynamicTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDynamicTestController.h; sourceTree = "<group>"; };
+		B9B1F9531F90979B0076ED65 /* UIDynamicTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDynamicTestController.m; sourceTree = "<group>"; };
+		B9B1F9541F90979B0076ED65 /* UIDynamicTestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIDynamicTestController.xib; sourceTree = "<group>"; };
 		D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGDevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -384,6 +394,7 @@
 		376924C01DE2D66F00DA356C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B9B1F9511F90977F0076ED65 /* UIDynamicTest */,
 				B978BC231F6A8174008E8ADA /* TabShowImage */,
 				37E533201DF1533F00A1EB66 /* SearchController */,
 				37ABE0641DED33CA00E58619 /* CodeScan */,
@@ -733,6 +744,19 @@
 			path = TabShowImage;
 			sourceTree = "<group>";
 		};
+		B9B1F9511F90977F0076ED65 /* UIDynamicTest */ = {
+			isa = PBXGroup;
+			children = (
+				B9B1F9521F90979B0076ED65 /* UIDynamicTestController.h */,
+				B9B1F9531F90979B0076ED65 /* UIDynamicTestController.m */,
+				B9B1F9541F90979B0076ED65 /* UIDynamicTestController.xib */,
+				B98131541F909DF700303631 /* UIDynamicImageTestController.h */,
+				B98131551F909DF700303631 /* UIDynamicImageTestController.m */,
+				B98131561F909DF700303631 /* UIDynamicImageTestController.xib */,
+			);
+			path = UIDynamicTest;
+			sourceTree = "<group>";
+		};
 		F1AD30B5353424FB5896BC81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -866,8 +890,10 @@
 				37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */,
 				3769249F1DE2CF8D00DA356C /* points2.png in Resources */,
 				3703A4871EEAA402008274D8 /* SCShareCollectionViewCell.xib in Resources */,
+				B9B1F9561F90979B0076ED65 /* UIDynamicTestController.xib in Resources */,
 				376924F81DE2D66F00DA356C /* XGCollectionCell.xib in Resources */,
 				37862C9A1D8258BB001318B8 /* Assets.xcassets in Resources */,
+				B98131581F909DF700303631 /* UIDynamicImageTestController.xib in Resources */,
 				376924ED1DE2D66F00DA356C /* XGAutoHeightTabController.xib in Resources */,
 				3769249E1DE2CF8D00DA356C /* points1.png in Resources */,
 				375435681D851A5500851923 /* nav_back@2x.png in Resources */,
@@ -964,12 +990,14 @@
 				37862C911D8258BB001318B8 /* NSObject+Ext.m in Sources */,
 				B978BC2F1F6A8174008E8ADA /* SCImageCollectionCell.m in Sources */,
 				37AD024E1E95E5D50075CA53 /* UIControl+Delay.m in Sources */,
+				B98131571F909DF700303631 /* UIDynamicImageTestController.m in Sources */,
 				375435601D851A5500851923 /* MSSCalendarCollectionReusableView.m in Sources */,
 				376924EE1DE2D66F00DA356C /* XGTableTestController.m in Sources */,
 				37E533241DF1535B00A1EB66 /* XGSearchController.m in Sources */,
 				37ABE0671DED33E300E58619 /* XGSacnController.m in Sources */,
 				375435631D851A5500851923 /* MSSCalendarManager.m in Sources */,
 				37E533291DF1537500A1EB66 /* XGSearchResultController.m in Sources */,
+				B9B1F9551F90979B0076ED65 /* UIDynamicTestController.m in Sources */,
 				37862C941D8258BB001318B8 /* MJPopupBackgroundView.m in Sources */,
 				37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */,
 				376924F51DE2D66F00DA356C /* XGAddCell.m in Sources */,

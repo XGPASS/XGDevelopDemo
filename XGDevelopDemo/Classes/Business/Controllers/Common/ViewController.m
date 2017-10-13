@@ -20,6 +20,8 @@
 #import "XGSacnController.h"
 #import "XGSearchController.h"
 #import "XGShowImageController.h"
+#import "UIDynamicTestController.h"
+#import "UIDynamicImageTestController.h"
 
 #import "SCSharePlatformMenu.h"
 
@@ -74,7 +76,8 @@
                              @"第三方WebViewJavascriptBridge使用WKWebView",
                              @"普通WKWebView使用",@"JSPatch热修复",
                              @"二维码扫描",@"UISearchController测试",
-                             @"自定义分享弹出选择平台页面",@"Tab显示多张图片测试"];
+                             @"自定义分享弹出选择平台页面",@"Tab显示多张图片测试",
+                             @"UIDynamic图片测试",@"UIDynamic坠落测试"];
     self.titleArray = [NSMutableArray arrayWithArray:dataArray];
 }
 
@@ -137,9 +140,15 @@
         return;
     } else if ([tempTitle isEqualToString:@"Tab显示多张图片测试"]) {
         controller = [[XGShowImageController alloc] init];
+    } else if ([tempTitle isEqualToString:@"UIDynamic图片测试"]) {
+        controller = [[UIDynamicImageTestController alloc] initWithNibName:NSStringFromClass([UIDynamicImageTestController class]) bundle:nil];
+    } else if ([tempTitle isEqualToString:@"UIDynamic坠落测试"]) {
+        controller = [[UIDynamicTestController alloc] initWithNibName:NSStringFromClass([UIDynamicTestController class]) bundle:nil];
     }
     
+    
     if (controller) {
+        //controller.title = tempTitle;
         [self.navigationController pushViewController:controller animated:YES];
     }
 }

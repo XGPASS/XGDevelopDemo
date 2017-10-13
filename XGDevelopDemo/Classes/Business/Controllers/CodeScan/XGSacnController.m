@@ -38,6 +38,8 @@
 
 @end
 
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+
 @implementation XGSacnController
 
 #pragma mark - Lifecycle
@@ -303,10 +305,12 @@
     
     [self.maskView setBackgroundColor:[UIColor clearColor]];
     
+    /// x的状态栏，比之前多了24
+    CGFloat posY = kStatusBarHeight > 20.0f ? 44.0f : 30.0f;
     // 返回按钮
     if (self.navBackButton == nil) {
         self.navBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        self.navBackButton.frame = CGRectMake(8.0, 28.0, 37.0, 37.0);
+        self.navBackButton.frame = CGRectMake(15.0f, posY, 35.0f, 35.0f);
         [self.navBackButton setImage:[UIImage imageNamed:@"back_white"] forState:UIControlStateNormal];
         [self.navBackButton addTarget:self action:@selector(goBackAction:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -314,7 +318,7 @@
     // 手电筒按钮
     if (self.torchButton == nil) {
         self.torchButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        self.torchButton.frame = CGRectMake(XGScreenWidth - 45.0, 30.0, 37.0, 37.0);
+        self.torchButton.frame = CGRectMake(XGScreenWidth - 35.0f - 15.0f, posY, 35.0f, 35.0f);
         [self.torchButton setImage:[UIImage imageNamed:@"led_flash_off"] forState:UIControlStateNormal];
         [self.torchButton addTarget:self action:@selector(torchAction:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -325,13 +329,13 @@
     }
     //[self.scanFrameView setFrame:CGRectMake(self.view.center.x - 120, self.view.center.y - 120, 240, 240)];
     
-    
+    CGFloat bottomMargin = kStatusBarHeight > 20.0f ? 44.0f : 20.0f;
     // 扫一扫按钮
     if (self.scanButton == nil) {
         self.scanButton = [UIButton buttonWithType:UIButtonTypeCustom];
         
         CGFloat posX = (XGScreenWidth / 2.0)/2.0 - 30.0;
-        self.scanButton.frame = CGRectMake(posX, XGScreenHeight - 15.0 - 60.0, 60.0, 60.0);
+        self.scanButton.frame = CGRectMake(posX, XGScreenHeight - bottomMargin - 60.0, 60.0, 60.0);
         // CCFF00
         [self.scanButton setTitleColor:HEXCOLOR(0xCCFF00) forState:UIControlStateNormal];
         [self.scanButton setTitle:@"扫一扫" forState:UIControlStateNormal];
@@ -346,7 +350,7 @@
         // AAAAAA
         self.photoButton = [UIButton buttonWithType:UIButtonTypeCustom];
         CGFloat posX = (XGScreenWidth / 2.0)/2.0 - 30.0 + (XGScreenWidth/2.0);
-        self.photoButton.frame = CGRectMake(posX, XGScreenHeight - 15.0 - 60.0, 60.0, 60.0);
+        self.photoButton.frame = CGRectMake(posX, CGRectGetMinY(self.scanButton.frame), 60.0, 60.0);
         [self.photoButton setTitleColor:HEXCOLOR(0xAAAAAA) forState:UIControlStateNormal];
         [self.photoButton setTitleColor:HEXCOLOR(0xCCFF00) forState:UIControlStateHighlighted];
         self.photoButton.titleLabel.font = [UIFont systemFontOfSize:14.0];
