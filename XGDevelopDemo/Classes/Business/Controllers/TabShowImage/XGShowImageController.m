@@ -8,12 +8,16 @@
 
 #import "XGShowImageController.h"
 #import "SCCommonImageCell.h"
+#import "SCBrowsePhotoHelper.h"
 
 
 @interface XGShowImageController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray      *dataArray;      // 数据源数组
+
+///
+@property (nonatomic, strong) SCBrowsePhotoHelper  *browsePhotoHelper;
 
 @end
 
@@ -115,6 +119,7 @@
     
     cell.imageTouchBlock = ^(NSInteger index) {
         NSLog(@"第%ld行，第%ld张图片点击了",indexPath.row, index);
+        self.browsePhotoHelper = [SCBrowsePhotoHelper browseBigPhotos:dic[@"images"] currentIndex:index controller:self];
     };
     return cell;
 }
@@ -123,8 +128,8 @@
 // 选中的处理
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
 }
 
 
 @end
+

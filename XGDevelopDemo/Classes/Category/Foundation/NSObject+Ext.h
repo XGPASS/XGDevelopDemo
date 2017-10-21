@@ -15,9 +15,14 @@
  */
 + (NSString *)className;
 
+
 /**
- Returns the class name in NSString.
+ 方法替换
+
+ @param class 类
+ @param origSel 原始方法
+ @param swizSel 自定义方法
  */
-- (NSString *)className;
++ (void)swizzleMethods:(Class)class originalSelector:(SEL)origSel swizzledSelector:(SEL)swizSel;
 
 @end
