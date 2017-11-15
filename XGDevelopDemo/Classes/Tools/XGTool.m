@@ -21,7 +21,6 @@
     NSString *callPhone = [NSString stringWithFormat:@"telprompt://%@", phoneNum];
     
     /// 解决iOS10及其以上系统弹出拨号框延迟的问题
-    /// 方案一
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 10.0) {
         /// 10及其以上系统
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone] options:@{} completionHandler:nil];
@@ -29,11 +28,6 @@
         /// 10以下系统
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone]];
     }
-    
-    /// 方案二
-//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone]];
-//    });
     
 }
 

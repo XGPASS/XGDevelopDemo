@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "JPEngine.h"
+#import "IQKeyboardManager.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,12 @@
     NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"hotpatch" ofType:@"js"];
     NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
     [JPEngine evaluateScript:script];
+    
+    IQKeyboardManager *keyBoardManager = [IQKeyboardManager sharedManager];
+    keyBoardManager.enableAutoToolbar = NO;
+    keyBoardManager.shouldResignOnTouchOutside = YES;
+    keyBoardManager.shouldShowToolbarPlaceholder = NO;
+    keyBoardManager.enable = YES;
     
     return YES;
 }

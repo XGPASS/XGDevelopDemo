@@ -38,6 +38,7 @@
     [[self.wkWebView configuration].userContentController removeScriptMessageHandlerForName:kMessageHandlerName];
     [self.wkWebView removeObserver:self forKeyPath:@"estimatedProgress" context:nil];
     [self cleanWebKitCaches];
+    NSLog(@"%s",__func__);
 }
 
 #pragma mark - 重写父类
@@ -275,8 +276,7 @@
     // 处理拨打电话
     if ([scheme isEqualToString:@"tel"]) {
         NSString *resourceSpecifier = [URL resourceSpecifier];
-        NSString *callPhone = [NSString stringWithFormat:@"telprompt://%@", resourceSpecifier];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone]];
+        [XGTool callPhone:resourceSpecifier];
     }
     
     decisionHandler(WKNavigationActionPolicyAllow);

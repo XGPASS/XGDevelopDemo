@@ -22,6 +22,7 @@
 #import "XGShowImageController.h"
 #import "UIDynamicTestController.h"
 #import "UIDynamicImageTestController.h"
+#import "SCInputAccessoryController.h"
 
 #import "SCSharePlatformMenu.h"
 
@@ -62,9 +63,7 @@
 
 #pragma mark - 自定义方法
 - (void)initSubViews {
-    self.title = @"开发模板";
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    
+    self.title = @"开发模板";    
     [self registerNibWithTableView];
 }
 
@@ -74,7 +73,7 @@
                              @"选择日期的测试二",@"日历的选择一",
                              @"自动算高的Tab+设置view指定位置的边框",
                              @"第三方WebViewJavascriptBridge使用WKWebView",
-                             @"普通WKWebView使用",@"JSPatch热修复",
+                             @"普通WKWebView使用",@"JSPatch热修复",@"键盘的自定义InputView",
                              @"二维码扫描",@"UISearchController测试",
                              @"自定义分享弹出选择平台页面",@"Tab显示多张图片测试",
                              @"UIDynamic图片测试",@"UIDynamic坠落测试"];
@@ -129,6 +128,8 @@
         controller = [[XGSacnController alloc] init];
         [self presentViewController:controller animated:YES completion:nil];
         return;
+    } else if ([tempTitle isEqualToString:@"键盘的自定义InputView"]) {
+        controller = [[SCInputAccessoryController alloc] initWithNibName:NSStringFromClass([SCInputAccessoryController class]) bundle:nil];
     } else if ([tempTitle isEqualToString:@"UISearchController测试"]) {
         controller = [[XGSearchController alloc] init];
     } else if ([tempTitle isEqualToString:@"自定义分享弹出选择平台页面"]) {

@@ -100,6 +100,14 @@
 		B998F6BE1F5A7DE700718DB8 /* SVProgressHUD+Duration.m in Sources */ = {isa = PBXBuildFile; fileRef = B998F6BD1F5A7DE700718DB8 /* SVProgressHUD+Duration.m */; };
 		B9B1F9551F90979B0076ED65 /* UIDynamicTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B1F9531F90979B0076ED65 /* UIDynamicTestController.m */; };
 		B9B1F9561F90979B0076ED65 /* UIDynamicTestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B1F9541F90979B0076ED65 /* UIDynamicTestController.xib */; };
+		B9BE27AF1FB4020D00705672 /* SCInputAccessoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE27AA1FB4020D00705672 /* SCInputAccessoryCell.m */; };
+		B9BE27B01FB4020D00705672 /* SCInputAccessoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BE27AB1FB4020D00705672 /* SCInputAccessoryCell.xib */; };
+		B9BE27B11FB4020D00705672 /* SCInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE27AD1FB4020D00705672 /* SCInputAccessoryView.m */; };
+		B9BE27B21FB4020D00705672 /* SCInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BE27AE1FB4020D00705672 /* SCInputAccessoryView.xib */; };
+		B9BE27B61FB402E400705672 /* SCInputAccessoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE27B41FB402E400705672 /* SCInputAccessoryController.m */; };
+		B9BE27B71FB402E400705672 /* SCInputAccessoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BE27B51FB402E400705672 /* SCInputAccessoryController.xib */; };
+		B9BE27BB1FB4034100705672 /* SCInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE27B91FB4034100705672 /* SCInputCell.m */; };
+		B9BE27BC1FB4034100705672 /* SCInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BE27BA1FB4034100705672 /* SCInputCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -281,6 +289,18 @@
 		B9B1F9521F90979B0076ED65 /* UIDynamicTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDynamicTestController.h; sourceTree = "<group>"; };
 		B9B1F9531F90979B0076ED65 /* UIDynamicTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDynamicTestController.m; sourceTree = "<group>"; };
 		B9B1F9541F90979B0076ED65 /* UIDynamicTestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIDynamicTestController.xib; sourceTree = "<group>"; };
+		B9BE27A91FB4020D00705672 /* SCInputAccessoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInputAccessoryCell.h; sourceTree = "<group>"; };
+		B9BE27AA1FB4020D00705672 /* SCInputAccessoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInputAccessoryCell.m; sourceTree = "<group>"; };
+		B9BE27AB1FB4020D00705672 /* SCInputAccessoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCInputAccessoryCell.xib; sourceTree = "<group>"; };
+		B9BE27AC1FB4020D00705672 /* SCInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInputAccessoryView.h; sourceTree = "<group>"; };
+		B9BE27AD1FB4020D00705672 /* SCInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInputAccessoryView.m; sourceTree = "<group>"; };
+		B9BE27AE1FB4020D00705672 /* SCInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCInputAccessoryView.xib; sourceTree = "<group>"; };
+		B9BE27B31FB402E400705672 /* SCInputAccessoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCInputAccessoryController.h; sourceTree = "<group>"; };
+		B9BE27B41FB402E400705672 /* SCInputAccessoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCInputAccessoryController.m; sourceTree = "<group>"; };
+		B9BE27B51FB402E400705672 /* SCInputAccessoryController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCInputAccessoryController.xib; sourceTree = "<group>"; };
+		B9BE27B81FB4034100705672 /* SCInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCInputCell.h; sourceTree = "<group>"; };
+		B9BE27B91FB4034100705672 /* SCInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCInputCell.m; sourceTree = "<group>"; };
+		B9BE27BA1FB4034100705672 /* SCInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCInputCell.xib; sourceTree = "<group>"; };
 		D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGDevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -400,6 +420,7 @@
 		376924C01DE2D66F00DA356C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B9BE27A71FB401E400705672 /* HorizontalCollection */,
 				B9B1F9511F90977F0076ED65 /* UIDynamicTest */,
 				B978BC231F6A8174008E8ADA /* TabShowImage */,
 				37E533201DF1533F00A1EB66 /* SearchController */,
@@ -741,15 +762,15 @@
 		B978BC231F6A8174008E8ADA /* TabShowImage */ = {
 			isa = PBXGroup;
 			children = (
+				B978BC2A1F6A8174008E8ADA /* XGShowImageController.h */,
+				B978BC2B1F6A8174008E8ADA /* XGShowImageController.m */,
+				B978BC2C1F6A8174008E8ADA /* XGShowImageController.xib */,
 				B978BC241F6A8174008E8ADA /* SCCommonImageCell.h */,
 				B978BC251F6A8174008E8ADA /* SCCommonImageCell.m */,
 				B978BC261F6A8174008E8ADA /* SCCommonImageCell.xib */,
 				B978BC271F6A8174008E8ADA /* SCImageCollectionCell.h */,
 				B978BC281F6A8174008E8ADA /* SCImageCollectionCell.m */,
 				B978BC291F6A8174008E8ADA /* SCImageCollectionCell.xib */,
-				B978BC2A1F6A8174008E8ADA /* XGShowImageController.h */,
-				B978BC2B1F6A8174008E8ADA /* XGShowImageController.m */,
-				B978BC2C1F6A8174008E8ADA /* XGShowImageController.xib */,
 			);
 			path = TabShowImage;
 			sourceTree = "<group>";
@@ -765,6 +786,33 @@
 				B98131561F909DF700303631 /* UIDynamicImageTestController.xib */,
 			);
 			path = UIDynamicTest;
+			sourceTree = "<group>";
+		};
+		B9BE27A71FB401E400705672 /* HorizontalCollection */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE27B31FB402E400705672 /* SCInputAccessoryController.h */,
+				B9BE27B41FB402E400705672 /* SCInputAccessoryController.m */,
+				B9BE27B51FB402E400705672 /* SCInputAccessoryController.xib */,
+				B9BE27A81FB4020D00705672 /* View */,
+			);
+			path = HorizontalCollection;
+			sourceTree = "<group>";
+		};
+		B9BE27A81FB4020D00705672 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE27B81FB4034100705672 /* SCInputCell.h */,
+				B9BE27B91FB4034100705672 /* SCInputCell.m */,
+				B9BE27BA1FB4034100705672 /* SCInputCell.xib */,
+				B9BE27AC1FB4020D00705672 /* SCInputAccessoryView.h */,
+				B9BE27AD1FB4020D00705672 /* SCInputAccessoryView.m */,
+				B9BE27AE1FB4020D00705672 /* SCInputAccessoryView.xib */,
+				B9BE27A91FB4020D00705672 /* SCInputAccessoryCell.h */,
+				B9BE27AA1FB4020D00705672 /* SCInputAccessoryCell.m */,
+				B9BE27AB1FB4020D00705672 /* SCInputAccessoryCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F1AD30B5353424FB5896BC81 /* Frameworks */ = {
@@ -887,15 +935,19 @@
 				37862C991D8258BB001318B8 /* XGDatePicerViewController.xib in Resources */,
 				B94F4EC41F135F0300CCDC58 /* LICENSE in Resources */,
 				376924FC1DE2D66F00DA356C /* XGTestCell.xib in Resources */,
+				B9BE27B01FB4020D00705672 /* SCInputAccessoryCell.xib in Resources */,
 				376924FA1DE2D66F00DA356C /* XGCollectionHeaderView.xib in Resources */,
 				376924F61DE2D66F00DA356C /* XGAddCell.xib in Resources */,
+				B9BE27B71FB402E400705672 /* SCInputAccessoryController.xib in Resources */,
 				375435691D851A5500851923 /* nav_back@3x.png in Resources */,
 				376924E91DE2D66F00DA356C /* XGCollectionController.xib in Resources */,
 				376924A01DE2CF8D00DA356C /* points4.png in Resources */,
 				376924A11DE2CF8D00DA356C /* xg_test.html in Resources */,
 				37ABE06C1DED4D1C00E58619 /* beep.wav in Resources */,
 				37862C951D8258BB001318B8 /* MJPopupViewController.textClipping in Resources */,
+				B9BE27B21FB4020D00705672 /* SCInputAccessoryView.xib in Resources */,
 				37E533251DF1535B00A1EB66 /* XGSearchController.xib in Resources */,
+				B9BE27BC1FB4034100705672 /* SCInputCell.xib in Resources */,
 				B978BC321F6A8174008E8ADA /* XGShowImageController.xib in Resources */,
 				37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */,
 				3769249F1DE2CF8D00DA356C /* points2.png in Resources */,
@@ -1000,16 +1052,20 @@
 				37862C911D8258BB001318B8 /* NSObject+Ext.m in Sources */,
 				B978BC2F1F6A8174008E8ADA /* SCImageCollectionCell.m in Sources */,
 				37AD024E1E95E5D50075CA53 /* UIControl+Delay.m in Sources */,
+				B9BE27B61FB402E400705672 /* SCInputAccessoryController.m in Sources */,
 				B98131571F909DF700303631 /* UIDynamicImageTestController.m in Sources */,
 				375435601D851A5500851923 /* MSSCalendarCollectionReusableView.m in Sources */,
 				376924EE1DE2D66F00DA356C /* XGTableTestController.m in Sources */,
 				37E533241DF1535B00A1EB66 /* XGSearchController.m in Sources */,
+				B9BE27B11FB4020D00705672 /* SCInputAccessoryView.m in Sources */,
 				37ABE0671DED33E300E58619 /* XGSacnController.m in Sources */,
 				375435631D851A5500851923 /* MSSCalendarManager.m in Sources */,
 				37E533291DF1537500A1EB66 /* XGSearchResultController.m in Sources */,
 				B9B1F9551F90979B0076ED65 /* UIDynamicTestController.m in Sources */,
 				37862C941D8258BB001318B8 /* MJPopupBackgroundView.m in Sources */,
+				B9BE27AF1FB4020D00705672 /* SCInputAccessoryCell.m in Sources */,
 				37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */,
+				B9BE27BB1FB4034100705672 /* SCInputCell.m in Sources */,
 				376924F51DE2D66F00DA356C /* XGAddCell.m in Sources */,
 				B943B6E31F9B2D6500788A6C /* SCBrowsePhotoHelper.m in Sources */,
 				37862C921D8258BB001318B8 /* UIView+Ext.m in Sources */,
