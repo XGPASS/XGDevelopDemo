@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03E8DBA682210C33E3010820 /* libPods-XGDevelopDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */; };
 		3703A4861EEAA402008274D8 /* SCShareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3703A4841EEAA402008274D8 /* SCShareCollectionViewCell.m */; };
 		3703A4871EEAA402008274D8 /* SCShareCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3703A4851EEAA402008274D8 /* SCShareCollectionViewCell.xib */; };
 		371103261E6580FE00BAF041 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371103251E6580FE00BAF041 /* AddressBook.framework */; };
@@ -77,8 +76,6 @@
 		37E533251DF1535B00A1EB66 /* XGSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E533231DF1535B00A1EB66 /* XGSearchController.xib */; };
 		37E533291DF1537500A1EB66 /* XGSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E533271DF1537500A1EB66 /* XGSearchResultController.m */; };
 		37E5332A1DF1537500A1EB66 /* XGSearchResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E533281DF1537500A1EB66 /* XGSearchResultController.xib */; };
-		B943B6E31F9B2D6500788A6C /* SCBrowsePhotoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B943B6E21F9B2D6500788A6C /* SCBrowsePhotoHelper.m */; };
-		B943B6E91F9B2E1C00788A6C /* MWPhotoBrowser+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = B943B6E81F9B2E1C00788A6C /* MWPhotoBrowser+Ext.m */; };
 		B94F4EC01F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EB71F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m */; };
 		B94F4EC11F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EB91F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m */; };
 		B94F4EC21F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EBB1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m */; };
@@ -108,6 +105,7 @@
 		B9BE27B71FB402E400705672 /* SCInputAccessoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BE27B51FB402E400705672 /* SCInputAccessoryController.xib */; };
 		B9BE27BB1FB4034100705672 /* SCInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE27B91FB4034100705672 /* SCInputCell.m */; };
 		B9BE27BC1FB4034100705672 /* SCInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BE27BA1FB4034100705672 /* SCInputCell.xib */; };
+		C9A9D9753647F3AE572AD8F4 /* Pods_XGDevelopDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED876898C19BF253B8A388C3 /* Pods_XGDevelopDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,10 +248,6 @@
 		37E533271DF1537500A1EB66 /* XGSearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGSearchResultController.m; sourceTree = "<group>"; };
 		37E533281DF1537500A1EB66 /* XGSearchResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGSearchResultController.xib; sourceTree = "<group>"; };
 		B39BF90DA5AC4210BCB91714 /* Pods-XGDevelopDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGDevelopDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B943B6E11F9B2D6500788A6C /* SCBrowsePhotoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBrowsePhotoHelper.h; sourceTree = "<group>"; };
-		B943B6E21F9B2D6500788A6C /* SCBrowsePhotoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBrowsePhotoHelper.m; sourceTree = "<group>"; };
-		B943B6E71F9B2E1C00788A6C /* MWPhotoBrowser+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MWPhotoBrowser+Ext.h"; sourceTree = "<group>"; };
-		B943B6E81F9B2E1C00788A6C /* MWPhotoBrowser+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MWPhotoBrowser+Ext.m"; sourceTree = "<group>"; };
 		B94F4EB61F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
 		B94F4EB71F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
 		B94F4EB81F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
@@ -301,7 +295,7 @@
 		B9BE27B81FB4034100705672 /* SCInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCInputCell.h; sourceTree = "<group>"; };
 		B9BE27B91FB4034100705672 /* SCInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCInputCell.m; sourceTree = "<group>"; };
 		B9BE27BA1FB4034100705672 /* SCInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCInputCell.xib; sourceTree = "<group>"; };
-		D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGDevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED876898C19BF253B8A388C3 /* Pods_XGDevelopDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XGDevelopDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,7 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				371103261E6580FE00BAF041 /* AddressBook.framework in Frameworks */,
-				03E8DBA682210C33E3010820 /* libPods-XGDevelopDemo.a in Frameworks */,
+				C9A9D9753647F3AE572AD8F4 /* Pods_XGDevelopDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,8 +596,6 @@
 				37862C5C1D8258BB001318B8 /* UIView+Ext.m */,
 				37AD024C1E95E5D50075CA53 /* UIControl+Delay.h */,
 				37AD024D1E95E5D50075CA53 /* UIControl+Delay.m */,
-				B943B6E71F9B2E1C00788A6C /* MWPhotoBrowser+Ext.h */,
-				B943B6E81F9B2E1C00788A6C /* MWPhotoBrowser+Ext.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -651,8 +643,6 @@
 				37862C711D8258BB001318B8 /* XGDatePicerViewController.xib */,
 				B998F6B91F5A7CC400718DB8 /* XGTool.h */,
 				B998F6BA1F5A7CC400718DB8 /* XGTool.m */,
-				B943B6E11F9B2D6500788A6C /* SCBrowsePhotoHelper.h */,
-				B943B6E21F9B2D6500788A6C /* SCBrowsePhotoHelper.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -819,7 +809,7 @@
 			isa = PBXGroup;
 			children = (
 				371103251E6580FE00BAF041 /* AddressBook.framework */,
-				D0ADAF9762BA00FCDD832E6D /* libPods-XGDevelopDemo.a */,
+				ED876898C19BF253B8A388C3 /* Pods_XGDevelopDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1009,9 +999,36 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JSPatch/JSPatch.framework",
+				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MWPhotoBrowserHelper/MWPhotoBrowserHelper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSPatch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MWPhotoBrowserHelper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1028,7 +1045,7 @@
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/JSPatch/JSPatch/JSPatch.js",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle,
+				"${PODS_ROOT}/MWPhotoBrowserHelper/MWPhotoBrowserHelper/MWPhotoBrowserHelper.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1067,7 +1084,6 @@
 				37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */,
 				B9BE27BB1FB4034100705672 /* SCInputCell.m in Sources */,
 				376924F51DE2D66F00DA356C /* XGAddCell.m in Sources */,
-				B943B6E31F9B2D6500788A6C /* SCBrowsePhotoHelper.m in Sources */,
 				37862C921D8258BB001318B8 /* UIView+Ext.m in Sources */,
 				B94F4ED01F13607D00CCDC58 /* AppDelegate.m in Sources */,
 				375435611D851A5500851923 /* MSSCalendarCollectionViewCell.m in Sources */,
@@ -1104,7 +1120,6 @@
 				B94F4EC51F135F0300CCDC58 /* README.md in Sources */,
 				B998F6B81F5A7B5800718DB8 /* SCChoseDateView.m in Sources */,
 				37862C971D8258BB001318B8 /* XGAlertTool.m in Sources */,
-				B943B6E91F9B2E1C00788A6C /* MWPhotoBrowser+Ext.m in Sources */,
 				376924F01DE2D66F00DA356C /* XGWKDelegateController.m in Sources */,
 				B978BC2D1F6A8174008E8ADA /* SCCommonImageCell.m in Sources */,
 				376924EF1DE2D66F00DA356C /* WKWebViewBridgeController.m in Sources */,

@@ -33,6 +33,8 @@
 	<string>允许使用相机才能更好的体验相关功能</string>
 	<key>NSContactsUsageDescription</key>
 	<string>访问您的通讯录</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>允许使用相册才能更好的体验相关功能</string>
 	<key>UILaunchStoryboardName</key>
