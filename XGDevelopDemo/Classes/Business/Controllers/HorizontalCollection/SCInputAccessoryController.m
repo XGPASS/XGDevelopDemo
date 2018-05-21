@@ -47,6 +47,11 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)dealloc {
+    
+    NSLog(@"--%s--",__func__);
+}
+
 #pragma mark - 固定方法
 - (void)setupNav {
     self.navigationItem.title = @"大标题";
@@ -87,9 +92,10 @@
     
     SCInputCell *cell = [tableView dequeueReusableCellWithIdentifier:[SCInputCell className] forIndexPath:indexPath];
     [cell refreshCellWithText:self.inputString];
-    kWeakSelf
+    weakify(self)
     cell.textBlock = ^(NSString *text) {
-        weakSelf.inputString = text;
+        strongify(self)
+        self.inputString = text;
         NSLog(@"输入的文字==%@==",text);
     };
     return cell;

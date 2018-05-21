@@ -39,6 +39,7 @@
 
 - (void)setupView {
     
+    /// 设置此属性为yes 不满一屏幕 也能滚动
     self.collectionView.alwaysBounceHorizontal = YES;
     self.collectionView.showsHorizontalScrollIndicator = NO;
     // 1.创建流水布局
@@ -46,7 +47,6 @@
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.collectionView.collectionViewLayout = layout;
     [self registerNibWithTableView];
-    //self.collectionView.backgroundColor = [UIColor orangeColor];
 }
 
 #pragma mark - 代理方法 Delegate Methods

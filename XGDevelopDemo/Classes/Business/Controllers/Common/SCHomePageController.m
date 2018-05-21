@@ -1,12 +1,12 @@
 //
-//  ViewController.m
+//  SCHomePageController.m
 //  XGDevelopDemo
 //
-//  Created by 小广 on 16/8/30.
-//  Copyright © 2016年 小广. All rights reserved.
-//  主页
+//  Created by sunyongguang on 2018/5/21.
+//  Copyright © 2018年 小广. All rights reserved.
+//
 
-#import "ViewController.h"
+#import "SCHomePageController.h"
 #import "XGTableTestController.h"
 #import "XGCollectionController.h"
 #import "SCChoseDateView.h"
@@ -25,8 +25,9 @@
 #import "SCInputAccessoryController.h"
 
 #import "SCSharePlatformMenu.h"
+#import "SCNavigationController.h"
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource, MSSCalendarViewControllerDelegate>
+@interface SCHomePageController ()<UITableViewDelegate, UITableViewDataSource, MSSCalendarViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *titleArray;
@@ -40,16 +41,13 @@
 
 @end
 
-@implementation ViewController
+@implementation SCHomePageController
 
 #pragma mark - 生命周期方法
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initSubViews];
     [self initDatas];
-    
-    NSInteger tempNum = (NSInteger)ceil(3.1);
-    NSLog(@"tempNum===%ld==",(long)tempNum);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -63,7 +61,8 @@
 
 #pragma mark - 自定义方法
 - (void)initSubViews {
-    self.title = @"开发模板";    
+    self.title = @"开发模板";
+    self.view.backgroundColor = [UIColor whiteColor];
     [self registerNibWithTableView];
 }
 
@@ -83,7 +82,7 @@
 // 注册cell
 - (void)registerNibWithTableView {
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:[UITableViewCell className]];
-
+    
 }
 
 // 将时间字符串 转化为时间戳
@@ -359,8 +358,5 @@
     NSDictionary *dic = @{@"startTime":startDateString,@"endTime":endDateString};
     NSLog(@"日期的dic===%@==",dic);
 }
-
-
-
 
 @end

@@ -1,7 +1,7 @@
 # Uncomment this line to define a global platform for your project
 
 platform :ios, '8.0'
-use_frameworks!
+#use_frameworks!
 
 target 'XGDevelopDemo' do
   pod 'AFNetworking'
@@ -16,4 +16,5 @@ target 'XGDevelopDemo' do
   pod 'KVOController'
   pod 'WebViewJavascriptBridge'
   pod 'JSPatch'
+  pod 'UITextView+Placeholder'
 end

@@ -62,8 +62,6 @@
 		37862C991D8258BB001318B8 /* XGDatePicerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37862C711D8258BB001318B8 /* XGDatePicerViewController.xib */; };
 		37862C9A1D8258BB001318B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37862C731D8258BB001318B8 /* Assets.xcassets */; };
 		37862C9B1D8258BB001318B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37862C741D8258BB001318B8 /* LaunchScreen.storyboard */; };
-		37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37862C761D8258BB001318B8 /* Main.storyboard */; };
-		37862C9D1D8258BB001318B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37862C781D8258BB001318B8 /* Info.plist */; };
 		37862C9E1D8258BB001318B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37862C791D8258BB001318B8 /* main.m */; };
 		37A98CDC1DCC6E9C00AFD09C /* hotpatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */; };
 		37ABE0631DED294900E58619 /* XGQRScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ABE0621DED294900E58619 /* XGQRScanView.m */; };
@@ -76,13 +74,13 @@
 		37E533251DF1535B00A1EB66 /* XGSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E533231DF1535B00A1EB66 /* XGSearchController.xib */; };
 		37E533291DF1537500A1EB66 /* XGSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E533271DF1537500A1EB66 /* XGSearchResultController.m */; };
 		37E5332A1DF1537500A1EB66 /* XGSearchResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E533281DF1537500A1EB66 /* XGSearchResultController.xib */; };
+		57FE152C9628F218EA1CAC74 /* libPods-XGDevelopDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA09D6F09030CC0F1A978F3 /* libPods-XGDevelopDemo.a */; };
 		B94F4EC01F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EB71F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m */; };
 		B94F4EC11F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EB91F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m */; };
 		B94F4EC21F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EBB1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m */; };
 		B94F4EC31F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EBD1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		B94F4EC41F135F0300CCDC58 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B94F4EBE1F135F0300CCDC58 /* LICENSE */; };
 		B94F4EC51F135F0300CCDC58 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EBF1F135F0300CCDC58 /* README.md */; };
-		B94F4ECC1F13604300CCDC58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4ECA1F13604300CCDC58 /* ViewController.m */; };
 		B94F4ED01F13607D00CCDC58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4ECF1F13607D00CCDC58 /* AppDelegate.m */; };
 		B978BC2D1F6A8174008E8ADA /* SCCommonImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B978BC251F6A8174008E8ADA /* SCCommonImageCell.m */; };
 		B978BC2E1F6A8174008E8ADA /* SCCommonImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B978BC261F6A8174008E8ADA /* SCCommonImageCell.xib */; };
@@ -105,7 +103,11 @@
 		B9BE27B71FB402E400705672 /* SCInputAccessoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BE27B51FB402E400705672 /* SCInputAccessoryController.xib */; };
 		B9BE27BB1FB4034100705672 /* SCInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE27B91FB4034100705672 /* SCInputCell.m */; };
 		B9BE27BC1FB4034100705672 /* SCInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BE27BA1FB4034100705672 /* SCInputCell.xib */; };
-		C9A9D9753647F3AE572AD8F4 /* Pods_XGDevelopDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED876898C19BF253B8A388C3 /* Pods_XGDevelopDemo.framework */; };
+		B9C05AFB1FDE2E6A00701272 /* SCCommonTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C05AF91FDE2E6900701272 /* SCCommonTextViewCell.m */; };
+		B9C05AFC1FDE2E6A00701272 /* SCCommonTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C05AFA1FDE2E6900701272 /* SCCommonTextViewCell.xib */; };
+		B9D247A320B26A2E00FABE0D /* SCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D247A220B26A2E00FABE0D /* SCNavigationController.m */; };
+		B9D247AA20B26EC600FABE0D /* SCHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D247A820B26EC600FABE0D /* SCHomePageController.m */; };
+		B9D247AB20B26EC600FABE0D /* SCHomePageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D247A920B26EC600FABE0D /* SCHomePageController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,7 +228,6 @@
 		37862C711D8258BB001318B8 /* XGDatePicerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGDatePicerViewController.xib; sourceTree = "<group>"; };
 		37862C731D8258BB001318B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37862C751D8258BB001318B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		37862C771D8258BB001318B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37862C781D8258BB001318B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37862C791D8258BB001318B8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hotpatch.js; sourceTree = "<group>"; };
@@ -258,8 +259,6 @@
 		B94F4EBD1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		B94F4EBE1F135F0300CCDC58 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B94F4EBF1F135F0300CCDC58 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B94F4EC91F13604300CCDC58 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B94F4ECA1F13604300CCDC58 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B94F4ECE1F13607D00CCDC58 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B94F4ECF1F13607D00CCDC58 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B978BC241F6A8174008E8ADA /* SCCommonImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommonImageCell.h; sourceTree = "<group>"; };
@@ -295,7 +294,16 @@
 		B9BE27B81FB4034100705672 /* SCInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCInputCell.h; sourceTree = "<group>"; };
 		B9BE27B91FB4034100705672 /* SCInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCInputCell.m; sourceTree = "<group>"; };
 		B9BE27BA1FB4034100705672 /* SCInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCInputCell.xib; sourceTree = "<group>"; };
-		ED876898C19BF253B8A388C3 /* Pods_XGDevelopDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XGDevelopDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C05AF81FDE2E6900701272 /* SCCommonTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommonTextViewCell.h; sourceTree = "<group>"; };
+		B9C05AF91FDE2E6900701272 /* SCCommonTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCommonTextViewCell.m; sourceTree = "<group>"; };
+		B9C05AFA1FDE2E6900701272 /* SCCommonTextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCCommonTextViewCell.xib; sourceTree = "<group>"; };
+		B9D247A020B26A2E00FABE0D /* SCNavigationControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNavigationControllerProtocol.h; sourceTree = "<group>"; };
+		B9D247A120B26A2E00FABE0D /* SCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNavigationController.h; sourceTree = "<group>"; };
+		B9D247A220B26A2E00FABE0D /* SCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNavigationController.m; sourceTree = "<group>"; };
+		B9D247A720B26EC600FABE0D /* SCHomePageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomePageController.h; sourceTree = "<group>"; };
+		B9D247A820B26EC600FABE0D /* SCHomePageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomePageController.m; sourceTree = "<group>"; };
+		B9D247A920B26EC600FABE0D /* SCHomePageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCHomePageController.xib; sourceTree = "<group>"; };
+		BFA09D6F09030CC0F1A978F3 /* libPods-XGDevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGDevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,7 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				371103261E6580FE00BAF041 /* AddressBook.framework in Frameworks */,
-				C9A9D9753647F3AE572AD8F4 /* Pods_XGDevelopDemo.framework in Frameworks */,
+				57FE152C9628F218EA1CAC74 /* libPods-XGDevelopDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +552,9 @@
 		37862C2A1D8258BB001318B8 /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
+				B9D247A120B26A2E00FABE0D /* SCNavigationController.h */,
+				B9D247A220B26A2E00FABE0D /* SCNavigationController.m */,
+				B9D247A020B26A2E00FABE0D /* SCNavigationControllerProtocol.h */,
 				37862C2B1D8258BB001318B8 /* XGArrayDataSource.h */,
 				37862C2C1D8258BB001318B8 /* XGArrayDataSource.m */,
 				37862C2D1D8258BB001318B8 /* XGBaseController.h */,
@@ -603,6 +614,9 @@
 		37862C5D1D8258BB001318B8 /* CutomViews */ = {
 			isa = PBXGroup;
 			children = (
+				B9C05AF81FDE2E6900701272 /* SCCommonTextViewCell.h */,
+				B9C05AF91FDE2E6900701272 /* SCCommonTextViewCell.m */,
+				B9C05AFA1FDE2E6900701272 /* SCCommonTextViewCell.xib */,
 				B998F6B61F5A7B5800718DB8 /* SCChoseDateView.h */,
 				B998F6B71F5A7B5800718DB8 /* SCChoseDateView.m */,
 				37ABE0611DED294900E58619 /* XGQRScanView.h */,
@@ -666,7 +680,6 @@
 				37A98CDB1DCC6E9C00AFD09C /* hotpatch.js */,
 				37862C731D8258BB001318B8 /* Assets.xcassets */,
 				37862C741D8258BB001318B8 /* LaunchScreen.storyboard */,
-				37862C761D8258BB001318B8 /* Main.storyboard */,
 				37862C781D8258BB001318B8 /* Info.plist */,
 				37862C791D8258BB001318B8 /* main.m */,
 			);
@@ -733,8 +746,9 @@
 		B94F4EC61F13604300CCDC58 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				B94F4EC91F13604300CCDC58 /* ViewController.h */,
-				B94F4ECA1F13604300CCDC58 /* ViewController.m */,
+				B9D247A720B26EC600FABE0D /* SCHomePageController.h */,
+				B9D247A820B26EC600FABE0D /* SCHomePageController.m */,
+				B9D247A920B26EC600FABE0D /* SCHomePageController.xib */,
 			);
 			name = Common;
 			path = Controllers/Common;
@@ -809,7 +823,7 @@
 			isa = PBXGroup;
 			children = (
 				371103251E6580FE00BAF041 /* AddressBook.framework */,
-				ED876898C19BF253B8A388C3 /* Pods_XGDevelopDemo.framework */,
+				BFA09D6F09030CC0F1A978F3 /* libPods-XGDevelopDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -879,7 +893,7 @@
 		373690B81D7522CC00E04076 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "小广";
 				TargetAttributes = {
 					373690BF1D7522CC00E04076 = {
@@ -922,6 +936,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				376924F21DE2D66F00DA356C /* AddCellDatas.plist in Resources */,
+				B9D247AB20B26EC600FABE0D /* SCHomePageController.xib in Resources */,
 				37862C991D8258BB001318B8 /* XGDatePicerViewController.xib in Resources */,
 				B94F4EC41F135F0300CCDC58 /* LICENSE in Resources */,
 				376924FC1DE2D66F00DA356C /* XGTestCell.xib in Resources */,
@@ -937,9 +952,9 @@
 				37862C951D8258BB001318B8 /* MJPopupViewController.textClipping in Resources */,
 				B9BE27B21FB4020D00705672 /* SCInputAccessoryView.xib in Resources */,
 				37E533251DF1535B00A1EB66 /* XGSearchController.xib in Resources */,
+				B9C05AFC1FDE2E6A00701272 /* SCCommonTextViewCell.xib in Resources */,
 				B9BE27BC1FB4034100705672 /* SCInputCell.xib in Resources */,
 				B978BC321F6A8174008E8ADA /* XGShowImageController.xib in Resources */,
-				37862C9C1D8258BB001318B8 /* Main.storyboard in Resources */,
 				3769249F1DE2CF8D00DA356C /* points2.png in Resources */,
 				3703A4871EEAA402008274D8 /* SCShareCollectionViewCell.xib in Resources */,
 				B9B1F9561F90979B0076ED65 /* UIDynamicTestController.xib in Resources */,
@@ -954,7 +969,6 @@
 				B978BC2E1F6A8174008E8ADA /* SCCommonImageCell.xib in Resources */,
 				37E5332A1DF1537500A1EB66 /* XGSearchResultController.xib in Resources */,
 				37862C9B1D8258BB001318B8 /* LaunchScreen.storyboard in Resources */,
-				37862C9D1D8258BB001318B8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1064,7 +1078,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B94F4ECC1F13604300CCDC58 /* ViewController.m in Sources */,
 				B94F4EC11F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				37862C911D8258BB001318B8 /* NSObject+Ext.m in Sources */,
 				B978BC2F1F6A8174008E8ADA /* SCImageCollectionCell.m in Sources */,
@@ -1080,12 +1093,14 @@
 				37E533291DF1537500A1EB66 /* XGSearchResultController.m in Sources */,
 				B9B1F9551F90979B0076ED65 /* UIDynamicTestController.m in Sources */,
 				37862C941D8258BB001318B8 /* MJPopupBackgroundView.m in Sources */,
+				B9D247A320B26A2E00FABE0D /* SCNavigationController.m in Sources */,
 				B9BE27AF1FB4020D00705672 /* SCInputAccessoryCell.m in Sources */,
 				37862C7B1D8258BB001318B8 /* XGNetRequest.m in Sources */,
 				B9BE27BB1FB4034100705672 /* SCInputCell.m in Sources */,
 				376924F51DE2D66F00DA356C /* XGAddCell.m in Sources */,
 				37862C921D8258BB001318B8 /* UIView+Ext.m in Sources */,
 				B94F4ED01F13607D00CCDC58 /* AppDelegate.m in Sources */,
+				B9C05AFB1FDE2E6A00701272 /* SCCommonTextViewCell.m in Sources */,
 				375435611D851A5500851923 /* MSSCalendarCollectionViewCell.m in Sources */,
 				37ABE0631DED294900E58619 /* XGQRScanView.m in Sources */,
 				377869881EEB953800BA2B58 /* SCSharePlatformMenu.m in Sources */,
@@ -1111,6 +1126,7 @@
 				37862C7C1D8258BB001318B8 /* XGArrayDataSource.m in Sources */,
 				B94F4EC31F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				376924F91DE2D66F00DA356C /* XGCollectionHeaderView.m in Sources */,
+				B9D247AA20B26EC600FABE0D /* SCHomePageController.m in Sources */,
 				375435641D851A5500851923 /* MSSCalendarPopView.m in Sources */,
 				37862C7D1D8258BB001318B8 /* XGBaseController.m in Sources */,
 				B94F4EC01F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m in Sources */,
@@ -1168,14 +1184,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		37862C761D8258BB001318B8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37862C771D8258BB001318B8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1188,13 +1196,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1233,13 +1251,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1277,6 +1305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xg.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f07af5af-5f08-4c8f-b80f-c5a04e41d92d";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1292,6 +1321,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xg.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

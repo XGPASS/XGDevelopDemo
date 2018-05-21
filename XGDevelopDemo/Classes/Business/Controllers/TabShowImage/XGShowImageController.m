@@ -53,7 +53,7 @@
     
     NSArray *arr3 = @[
                       @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505388844480&di=5e1eb8cc6ebcfac3083c767f8150ad14&imgtype=0&src=http%3A%2F%2Fs7.rr.itc.cn%2Fg%2FwapChange%2F20153_18_9%2Fa8q8q79359434422520.jpeg",
-                      @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505388844480&di=a1155b743c7017a19c2b84b487a4e96e&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161219%2F5b2149b617054300a2e0b3515dda0cea_th.jpeg"];
+                      @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513141203401&di=718ba04142d0c2d89a69bba48bb96b57&imgtype=0&src=http%3A%2F%2Fp0.ifengimg.com%2Fpmop%2F2017%2F0822%2F02ECFE921D08ABCCE23B8088036B6DC451E0A785_size375_w500_h284.gif"];
     
     NSDictionary *dic1 = @{@"images" : arr2,
                            @"title" : @"我就是个标题"};
