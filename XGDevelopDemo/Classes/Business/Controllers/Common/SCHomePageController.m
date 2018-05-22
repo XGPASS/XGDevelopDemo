@@ -23,6 +23,7 @@
 #import "UIDynamicTestController.h"
 #import "UIDynamicImageTestController.h"
 #import "SCInputAccessoryController.h"
+#import "MapTool.h"
 
 #import "SCSharePlatformMenu.h"
 #import "SCNavigationController.h"
@@ -68,14 +69,15 @@
 
 - (void)initDatas {
     NSArray  *dataArray =  @[@"封装的Tab测试", @"CollectionView网格测试",
-                             @"选择日期的测试一",
+                             @"选择日期的测试一",@"调起地图APP导航",
                              @"选择日期的测试二",@"日历的选择一",
                              @"自动算高的Tab+设置view指定位置的边框",
                              @"第三方WebViewJavascriptBridge使用WKWebView",
                              @"普通WKWebView使用",@"JSPatch热修复",@"键盘的自定义InputView",
                              @"二维码扫描",@"UISearchController测试",
                              @"自定义分享弹出选择平台页面",@"Tab显示多张图片测试",
-                             @"UIDynamic图片测试",@"UIDynamic坠落测试"];
+                             @"UIDynamic图片测试",@"UIDynamic坠落测试",
+                             ];
     self.titleArray = [NSMutableArray arrayWithArray:dataArray];
 }
 
@@ -101,51 +103,74 @@
     
     NSString *tempTitle = self.titleArray[row];
     UIViewController *controller = nil;
+    
     if ([tempTitle isEqualToString:@"封装的Tab测试"]) {
         controller = [[XGTableTestController alloc] init];
-    } else if ([tempTitle isEqualToString:@"CollectionView网格测试"]) {
+    }
+    else if ([tempTitle isEqualToString:@"CollectionView网格测试"]) {
         controller = [[XGCollectionController alloc] init];
-    } else if ([tempTitle isEqualToString:@"选择日期的测试一"]) {
+    }
+    else if ([tempTitle isEqualToString:@"选择日期的测试一"]) {
         [self showDateView:0];
         return;
-    } else if ([tempTitle isEqualToString:@"选择日期的测试二"]) {
+    }
+    else if ([tempTitle isEqualToString:@"选择日期的测试二"]) {
         [self showDateView:1];
         return;
-    } else if ([tempTitle isEqualToString:@"日历的选择一"]) {
+    }
+    else if ([tempTitle isEqualToString:@"日历的选择一"]) {
         controller = self.calendarVC;
         controller.title = @"日期选择" ;
-    } else if ([tempTitle isEqualToString:@"自动算高的Tab+设置view指定位置的边框"]) {
+    }
+    else if ([tempTitle isEqualToString:@"自动算高的Tab+设置view指定位置的边框"]) {
         controller = [[XGAutoHeightTabController alloc] init];
-    } else if ([tempTitle isEqualToString:@"第三方WebViewJavascriptBridge使用WKWebView"]) {
+    }
+    else if ([tempTitle isEqualToString:@"第三方WebViewJavascriptBridge使用WKWebView"]) {
         controller = [[WKWebViewBridgeController alloc] init];
-    } else if ([tempTitle isEqualToString:@"普通WKWebView使用"]) {
+    }
+    else if ([tempTitle isEqualToString:@"普通WKWebView使用"]) {
         controller = [[XGWKWebViewController alloc] init];
-    } else if ([tempTitle isEqualToString:@"JSPatch热修复"]) {
+    }
+    else if ([tempTitle isEqualToString:@"JSPatch热修复"]) {
         // 详细的js用法 https://github.com/bang590/JSPatch/wiki
         [self showJSPatchMethod];
-    } else if ([tempTitle isEqualToString:@"二维码扫描"]) {
+    }
+    else if ([tempTitle isEqualToString:@"二维码扫描"]) {
         controller = [[XGSacnController alloc] init];
         [self presentViewController:controller animated:YES completion:nil];
         return;
-    } else if ([tempTitle isEqualToString:@"键盘的自定义InputView"]) {
+    }
+    else if ([tempTitle isEqualToString:@"键盘的自定义InputView"]) {
         controller = [[SCInputAccessoryController alloc] initWithNibName:NSStringFromClass([SCInputAccessoryController class]) bundle:nil];
-    } else if ([tempTitle isEqualToString:@"UISearchController测试"]) {
+    }
+    else if ([tempTitle isEqualToString:@"UISearchController测试"]) {
         controller = [[XGSearchController alloc] init];
-    } else if ([tempTitle isEqualToString:@"自定义分享弹出选择平台页面"]) {
+    }
+    else if ([tempTitle isEqualToString:@"自定义分享弹出选择平台页面"]) {
         if (!self.platformMenu) {
             self.platformMenu = [[SCSharePlatformMenu alloc] initWithShareWay:SCShareWayAll];
         }
         [self.platformMenu presentMenu:YES];
         
         return;
-    } else if ([tempTitle isEqualToString:@"Tab显示多张图片测试"]) {
+    }
+    else if ([tempTitle isEqualToString:@"Tab显示多张图片测试"]) {
         controller = [[XGShowImageController alloc] init];
-    } else if ([tempTitle isEqualToString:@"UIDynamic图片测试"]) {
+    }
+    else if ([tempTitle isEqualToString:@"UIDynamic图片测试"]) {
         controller = [[UIDynamicImageTestController alloc] initWithNibName:NSStringFromClass([UIDynamicImageTestController class]) bundle:nil];
-    } else if ([tempTitle isEqualToString:@"UIDynamic坠落测试"]) {
+    }
+    else if ([tempTitle isEqualToString:@"UIDynamic坠落测试"]) {
         controller = [[UIDynamicTestController alloc] initWithNibName:NSStringFromClass([UIDynamicTestController class]) bundle:nil];
     }
-    
+    else if ([tempTitle isEqualToString:@"调起地图APP导航"]) {
+        CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(30.2815100000,120.0174100000);
+        weakify(self)
+        dispatch_async(dispatch_get_main_queue(), ^{
+            strongify(self)
+            [MapTool navigationActionWithCoordinate:coordinate name:@"未来科技城海创园" viewController:self];
+        });
+    }
     
     if (controller) {
         //controller.title = tempTitle;
@@ -170,7 +195,7 @@
     }];
     
     /// 系统版本必须大于等于8.3
-    if ([self compareCurrentVersionGreaterThanV83]) {
+    if (@available(iOS 8.3, *)) {
         // 此代码 可以修改按钮颜色
         [cancleAction setValue:HEXCOLOR(0x00AE08) forKey:@"titleTextColor"];
     }
@@ -181,27 +206,6 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-/// 比较当前版本是否大于8.3版本（修改UIAlertController的titleTextColor会用到）
-- (BOOL)compareCurrentVersionGreaterThanV83 {
-    
-    NSString *currentVersion = [UIDevice currentDevice].systemVersion;
-    NSArray *versionArray = [currentVersion componentsSeparatedByString:@"."];
-    if (versionArray.count > 0) {
-        NSInteger mainVersion = [versionArray[0] integerValue];
-        if (mainVersion > 8) {
-            /// 主版本大于8，直接return YES;
-            return YES;
-        } else if (mainVersion == 8) {
-            /// 主版本等于8，判断次要版本是否大于3
-            NSInteger secondVersion = [versionArray[1] integerValue];
-            if (secondVersion >= 3) {
-                return YES;
-            }
-        }
-    }
-    
-    return NO;
-}
 
 // 选择日期的view
 - (void)showDateView:(NSInteger)index {
@@ -235,25 +239,7 @@
     
 }
 
-#pragma mark - lazy load
-- (MSSCalendarViewController *)calendarVC {
-    if (!_calendarVC) {
-        _calendarVC = [[MSSCalendarViewController alloc] init];
-        _calendarVC.limitMonth = 12 * 15;// 显示几个月的日历
-        _calendarVC.type = MSSCalendarViewControllerMiddleType;
-        _calendarVC.beforeTodayCanTouch = YES;// 今天之后的日期是否可以点击
-        _calendarVC.afterTodayCanTouch = YES;// 今天之前的日期是否可以点击
-        _calendarVC.showType = MSSCalendarShowTypeIsPush; // 模态还是push
-        // _calendarView.endDate = _endDate;// 选中结束时间
-        /*以下两个属性设为YES,计算中国农历非常耗性能（在5s加载15年以内的数据没有影响）*/
-        _calendarVC.showChineseHoliday = NO;// 是否展示农历节日
-        _calendarVC.showChineseCalendar = YES;// 是否展示农历
-        _calendarVC.showHolidayDifferentColor = NO;// 节假日是否显示不同的颜色
-        _calendarVC.showAlertView = YES;// 是否显示提示弹窗
-        _calendarVC.delegate = self;
-    }
-    return _calendarVC;
-}
+
 #pragma mark - 代理方法
 // cell的行数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -357,6 +343,26 @@
     NSString *endDateString = [dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:self.endDate]];
     NSDictionary *dic = @{@"startTime":startDateString,@"endTime":endDateString};
     NSLog(@"日期的dic===%@==",dic);
+}
+
+#pragma mark - lazy load
+- (MSSCalendarViewController *)calendarVC {
+    if (!_calendarVC) {
+        _calendarVC = [[MSSCalendarViewController alloc] init];
+        _calendarVC.limitMonth = 12 * 15;// 显示几个月的日历
+        _calendarVC.type = MSSCalendarViewControllerMiddleType;
+        _calendarVC.beforeTodayCanTouch = YES;// 今天之后的日期是否可以点击
+        _calendarVC.afterTodayCanTouch = YES;// 今天之前的日期是否可以点击
+        _calendarVC.showType = MSSCalendarShowTypeIsPush; // 模态还是push
+        // _calendarView.endDate = _endDate;// 选中结束时间
+        /*以下两个属性设为YES,计算中国农历非常耗性能（在5s加载15年以内的数据没有影响）*/
+        _calendarVC.showChineseHoliday = NO;// 是否展示农历节日
+        _calendarVC.showChineseCalendar = YES;// 是否展示农历
+        _calendarVC.showHolidayDifferentColor = NO;// 节假日是否显示不同的颜色
+        _calendarVC.showAlertView = YES;// 是否显示提示弹窗
+        _calendarVC.delegate = self;
+    }
+    return _calendarVC;
 }
 
 @end

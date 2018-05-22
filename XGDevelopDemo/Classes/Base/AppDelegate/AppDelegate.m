@@ -25,6 +25,7 @@
 //    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"hotpatch" ofType:@"js"];
 //    NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
 //    [JPEngine evaluateScript:script];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     IQKeyboardManager *keyBoardManager = [IQKeyboardManager sharedManager];

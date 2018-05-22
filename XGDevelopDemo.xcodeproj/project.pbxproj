@@ -108,6 +108,8 @@
 		B9D247A320B26A2E00FABE0D /* SCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D247A220B26A2E00FABE0D /* SCNavigationController.m */; };
 		B9D247AA20B26EC600FABE0D /* SCHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D247A820B26EC600FABE0D /* SCHomePageController.m */; };
 		B9D247AB20B26EC600FABE0D /* SCHomePageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D247A920B26EC600FABE0D /* SCHomePageController.xib */; };
+		B9D247B120B3B59D00FABE0D /* MapTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D247AF20B3B59D00FABE0D /* MapTool.m */; };
+		B9D247B320B3C23900FABE0D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D247B220B3C23900FABE0D /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -303,6 +305,9 @@
 		B9D247A720B26EC600FABE0D /* SCHomePageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomePageController.h; sourceTree = "<group>"; };
 		B9D247A820B26EC600FABE0D /* SCHomePageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomePageController.m; sourceTree = "<group>"; };
 		B9D247A920B26EC600FABE0D /* SCHomePageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCHomePageController.xib; sourceTree = "<group>"; };
+		B9D247AF20B3B59D00FABE0D /* MapTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTool.m; sourceTree = "<group>"; };
+		B9D247B020B3B59D00FABE0D /* MapTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTool.h; sourceTree = "<group>"; };
+		B9D247B220B3C23900FABE0D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BFA09D6F09030CC0F1A978F3 /* libPods-XGDevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGDevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -311,6 +316,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D247B320B3C23900FABE0D /* MapKit.framework in Frameworks */,
 				371103261E6580FE00BAF041 /* AddressBook.framework in Frameworks */,
 				57FE152C9628F218EA1CAC74 /* libPods-XGDevelopDemo.a in Frameworks */,
 			);
@@ -657,6 +663,8 @@
 				37862C711D8258BB001318B8 /* XGDatePicerViewController.xib */,
 				B998F6B91F5A7CC400718DB8 /* XGTool.h */,
 				B998F6BA1F5A7CC400718DB8 /* XGTool.m */,
+				B9D247B020B3B59D00FABE0D /* MapTool.h */,
+				B9D247AF20B3B59D00FABE0D /* MapTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -822,6 +830,7 @@
 		F1AD30B5353424FB5896BC81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9D247B220B3C23900FABE0D /* MapKit.framework */,
 				371103251E6580FE00BAF041 /* AddressBook.framework */,
 				BFA09D6F09030CC0F1A978F3 /* libPods-XGDevelopDemo.a */,
 			);
@@ -898,6 +907,7 @@
 				TargetAttributes = {
 					373690BF1D7522CC00E04076 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D38XPC8URL;
 						ProvisioningStyle = Manual;
 					};
 					373690D81D7522CC00E04076 = {
@@ -1110,6 +1120,7 @@
 				376924E81DE2D66F00DA356C /* XGCollectionController.m in Sources */,
 				B94F4EC21F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				37862C981D8258BB001318B8 /* XGDatePicerViewController.m in Sources */,
+				B9D247B120B3B59D00FABE0D /* MapTool.m in Sources */,
 				376924F31DE2D66F00DA356C /* XGAddCellModel.m in Sources */,
 				376924FB1DE2D66F00DA356C /* XGTestCell.m in Sources */,
 				B998F6BB1F5A7CC400718DB8 /* XGTool.m in Sources */,
@@ -1297,14 +1308,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Linkou Bian (W9H7VWKM6Q)";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = D38XPC8URL;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XGDevelopDemo/Classes/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/XGDevelopDemo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xg.development;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uama.ButlerForYidaEnterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f07af5af-5f08-4c8f-b80f-c5a04e41d92d";
+				PROVISIONING_PROFILE = "bd9c24ea-f6a4-4304-88f6-5de9cdadbb93";
+				PROVISIONING_PROFILE_SPECIFIER = ButlerForYidaEnterprise_dev;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1319,7 +1331,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/XGDevelopDemo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xg.development;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uama.ButlerForYidaEnterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
