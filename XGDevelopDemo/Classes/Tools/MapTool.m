@@ -49,8 +49,14 @@
     if (!vc) {
         vc = [[UIApplication sharedApplication] keyWindow].rootViewController;
     }
-  // 显示alertController
-  [vc presentViewController:alert animated:YES completion:nil];
+  
+    weakify(vc);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        strongify(vc);
+        /// 在iOS 11.3.1 iPhone 6Plus上，会延迟弹出，放在主线程，无此问题；
+        [vc presentViewController:alert animated:YES completion:nil];
+    });
+  
 }
 
 /// 唤醒苹果自带导航

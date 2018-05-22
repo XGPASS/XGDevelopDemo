@@ -43,7 +43,7 @@
     [[UINavigationBar appearance] setTintColor:HEXCOLOR(0x333333)];
         
     SCHomePageController *vc = [[SCHomePageController alloc] initWithNibName:NSStringFromClass([SCHomePageController class]) bundle:nil];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    SCNavigationController *nav = [[SCNavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     

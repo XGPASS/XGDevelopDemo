@@ -165,15 +165,10 @@
     }
     else if ([tempTitle isEqualToString:@"调起地图APP导航"]) {
         CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(30.2815100000,120.0174100000);
-        weakify(self)
-        dispatch_async(dispatch_get_main_queue(), ^{
-            strongify(self)
-            [MapTool navigationActionWithCoordinate:coordinate name:@"未来科技城海创园" viewController:self];
-        });
+        [MapTool navigationActionWithCoordinate:coordinate name:@"未来科技城海创园" viewController:self];
     }
     
     if (controller) {
-        //controller.title = tempTitle;
         [self.navigationController pushViewController:controller animated:YES];
     }
 }
