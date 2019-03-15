@@ -75,12 +75,6 @@
 		37E533291DF1537500A1EB66 /* XGSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E533271DF1537500A1EB66 /* XGSearchResultController.m */; };
 		37E5332A1DF1537500A1EB66 /* XGSearchResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E533281DF1537500A1EB66 /* XGSearchResultController.xib */; };
 		57FE152C9628F218EA1CAC74 /* libPods-XGDevelopDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA09D6F09030CC0F1A978F3 /* libPods-XGDevelopDemo.a */; };
-		B94F4EC01F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EB71F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m */; };
-		B94F4EC11F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EB91F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m */; };
-		B94F4EC21F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EBB1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m */; };
-		B94F4EC31F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EBD1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.m */; };
-		B94F4EC41F135F0300CCDC58 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B94F4EBE1F135F0300CCDC58 /* LICENSE */; };
-		B94F4EC51F135F0300CCDC58 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B94F4EBF1F135F0300CCDC58 /* README.md */; };
 		B94F4ED01F13607D00CCDC58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F4ECF1F13607D00CCDC58 /* AppDelegate.m */; };
 		B978BC2D1F6A8174008E8ADA /* SCCommonImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B978BC251F6A8174008E8ADA /* SCCommonImageCell.m */; };
 		B978BC2E1F6A8174008E8ADA /* SCCommonImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B978BC261F6A8174008E8ADA /* SCCommonImageCell.xib */; };
@@ -251,16 +245,6 @@
 		37E533271DF1537500A1EB66 /* XGSearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGSearchResultController.m; sourceTree = "<group>"; };
 		37E533281DF1537500A1EB66 /* XGSearchResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGSearchResultController.xib; sourceTree = "<group>"; };
 		B39BF90DA5AC4210BCB91714 /* Pods-XGDevelopDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGDevelopDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B94F4EB61F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
-		B94F4EB71F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
-		B94F4EB81F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
-		B94F4EB91F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
-		B94F4EBA1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		B94F4EBB1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
-		B94F4EBC1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
-		B94F4EBD1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
-		B94F4EBE1F135F0300CCDC58 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B94F4EBF1F135F0300CCDC58 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B94F4ECE1F13607D00CCDC58 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B94F4ECF1F13607D00CCDC58 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B978BC241F6A8174008E8ADA /* SCCommonImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommonImageCell.h; sourceTree = "<group>"; };
@@ -645,7 +629,6 @@
 		37862C651D8258BB001318B8 /* Three */ = {
 			isa = PBXGroup;
 			children = (
-				B94F4EB41F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell */,
 				3754354C1D851A5500851923 /* MSSCalendar */,
 			);
 			path = Three;
@@ -724,31 +707,6 @@
 				37E533281DF1537500A1EB66 /* XGSearchResultController.xib */,
 			);
 			path = SearchController;
-			sourceTree = "<group>";
-		};
-		B94F4EB41F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell */ = {
-			isa = PBXGroup;
-			children = (
-				B94F4EB51F135F0300CCDC58 /* Classes */,
-				B94F4EBE1F135F0300CCDC58 /* LICENSE */,
-				B94F4EBF1F135F0300CCDC58 /* README.md */,
-			);
-			path = "UITableView+FDTemplateLayoutCell";
-			sourceTree = "<group>";
-		};
-		B94F4EB51F135F0300CCDC58 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B94F4EB61F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.h */,
-				B94F4EB71F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m */,
-				B94F4EB81F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.h */,
-				B94F4EB91F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m */,
-				B94F4EBA1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.h */,
-				B94F4EBB1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m */,
-				B94F4EBC1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.h */,
-				B94F4EBD1F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		B94F4EC61F13604300CCDC58 /* Common */ = {
@@ -848,7 +806,6 @@
 				373690BC1D7522CC00E04076 /* Sources */,
 				373690BD1D7522CC00E04076 /* Frameworks */,
 				373690BE1D7522CC00E04076 /* Resources */,
-				2D7C5557054F19D3716D3DC6 /* [CP] Embed Pods Frameworks */,
 				AF2F76FA892D2967C9846B4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -948,7 +905,6 @@
 				376924F21DE2D66F00DA356C /* AddCellDatas.plist in Resources */,
 				B9D247AB20B26EC600FABE0D /* SCHomePageController.xib in Resources */,
 				37862C991D8258BB001318B8 /* XGDatePicerViewController.xib in Resources */,
-				B94F4EC41F135F0300CCDC58 /* LICENSE in Resources */,
 				376924FC1DE2D66F00DA356C /* XGTestCell.xib in Resources */,
 				B9BE27B01FB4020D00705672 /* SCInputAccessoryCell.xib in Resources */,
 				376924FA1DE2D66F00DA356C /* XGCollectionHeaderView.xib in Resources */,
@@ -1017,48 +973,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2D7C5557054F19D3716D3DC6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
-				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
-				"${BUILT_PRODUCTS_DIR}/JSPatch/JSPatch.framework",
-				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/MWPhotoBrowserHelper/MWPhotoBrowserHelper.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSPatch.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MWPhotoBrowserHelper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XGDevelopDemo/Pods-XGDevelopDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AF2F76FA892D2967C9846B4E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1074,7 +988,11 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSPatch.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MWPhotoBrowserHelper.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1088,7 +1006,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B94F4EC11F135F0300CCDC58 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				37862C911D8258BB001318B8 /* NSObject+Ext.m in Sources */,
 				B978BC2F1F6A8174008E8ADA /* SCImageCollectionCell.m in Sources */,
 				37AD024E1E95E5D50075CA53 /* UIControl+Delay.m in Sources */,
@@ -1118,7 +1035,6 @@
 				375435621D851A5500851923 /* MSSCalendarHeaderModel.m in Sources */,
 				376924EC1DE2D66F00DA356C /* XGAutoHeightTabController.m in Sources */,
 				376924E81DE2D66F00DA356C /* XGCollectionController.m in Sources */,
-				B94F4EC21F135F0300CCDC58 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				37862C981D8258BB001318B8 /* XGDatePicerViewController.m in Sources */,
 				B9D247B120B3B59D00FABE0D /* MapTool.m in Sources */,
 				376924F31DE2D66F00DA356C /* XGAddCellModel.m in Sources */,
@@ -1135,16 +1051,13 @@
 				B978BC311F6A8174008E8ADA /* XGShowImageController.m in Sources */,
 				376925081DE2E45D00DA356C /* NSString+Ext.m in Sources */,
 				37862C7C1D8258BB001318B8 /* XGArrayDataSource.m in Sources */,
-				B94F4EC31F135F0300CCDC58 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				376924F91DE2D66F00DA356C /* XGCollectionHeaderView.m in Sources */,
 				B9D247AA20B26EC600FABE0D /* SCHomePageController.m in Sources */,
 				375435641D851A5500851923 /* MSSCalendarPopView.m in Sources */,
 				37862C7D1D8258BB001318B8 /* XGBaseController.m in Sources */,
-				B94F4EC01F135F0300CCDC58 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				375435661D851A5500851923 /* MSSChineseCalendarManager.m in Sources */,
 				37862C9E1D8258BB001318B8 /* main.m in Sources */,
 				37ABE0701DED591C00E58619 /* UIImage+XJHResize.m in Sources */,
-				B94F4EC51F135F0300CCDC58 /* README.md in Sources */,
 				B998F6B81F5A7B5800718DB8 /* SCChoseDateView.m in Sources */,
 				37862C971D8258BB001318B8 /* XGAlertTool.m in Sources */,
 				376924F01DE2D66F00DA356C /* XGWKDelegateController.m in Sources */,
@@ -1318,6 +1231,7 @@
 				PROVISIONING_PROFILE = "bd9c24ea-f6a4-4304-88f6-5de9cdadbb93";
 				PROVISIONING_PROFILE_SPECIFIER = ButlerForYidaEnterprise_dev;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7s";
 			};
 			name = Debug;
 		};
@@ -1334,6 +1248,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uama.ButlerForYidaEnterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7s";
 			};
 			name = Release;
 		};

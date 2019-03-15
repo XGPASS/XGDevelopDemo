@@ -10,11 +10,16 @@ target 'XGDevelopDemo' do
   pod 'SVProgressHUD'
   pod 'MWPhotoBrowserHelper'
 # UITableView+FDTemplateLayoutCell官方代码有问题，使用修改后的
-#  pod 'UITableView+FDTemplateLayoutCell'
+  pod 'UITableView+FDTemplateLayoutCell'
   pod 'IQKeyboardManager'
   pod 'FSCalendar'
   pod 'KVOController'
   pod 'WebViewJavascriptBridge'
   pod 'JSPatch'
   pod 'UITextView+Placeholder'
+  pod 'MMDrawerController', '~> 0.6.0'
 end
+
+
+
+

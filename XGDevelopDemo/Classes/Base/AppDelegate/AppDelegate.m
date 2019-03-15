@@ -52,6 +52,8 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     //
+    
+    NSLog(@"applicationWillResignActive----");
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {

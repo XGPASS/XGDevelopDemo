@@ -22,7 +22,7 @@
   weakify(self)
   UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"开始导航" preferredStyle:UIAlertControllerStyleActionSheet];
   
-  [alert addAction:[UIAlertAction actionWithTitle:@"苹果自带地图" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+  [alert addAction:[UIAlertAction actionWithTitle:@"苹果地图" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     strongify(self)
     [self navigationForAppleMapWithCoordinate:coordinate name:name];
     

@@ -49,6 +49,25 @@
     [super viewDidLoad];
     [self initSubViews];
     [self initDatas];
+    
+    
+    NSNumber *number = nil;
+    
+    [number isEqualToNumber:@(1)];
+    
+    if (IPHONEX) {
+        NSLog(@"xxxxxxxx");
+    } else {
+        NSLog(@"傻瓜");
+    }
+    
+    
+    NSInteger testNum = [[NSUserDefaults standardUserDefaults] integerForKey:@"1233123"];
+    
+    NSLog(@"testNum===%ld",(long)testNum);
+    
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -65,6 +84,8 @@
     self.title = @"开发模板";
     self.view.backgroundColor = [UIColor whiteColor];
     [self registerNibWithTableView];
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:10086 forKey:@"1233123"];
 }
 
 - (void)initDatas {
@@ -204,6 +225,7 @@
 
 // 选择日期的view
 - (void)showDateView:(NSInteger)index {
+    
     
     kWeakSelf
     if (index == 0) {
