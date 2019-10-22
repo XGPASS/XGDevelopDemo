@@ -29,6 +29,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+}
+
 #pragma mark - 自定义方法
 // 布局UI
 - (void)setUpUIContent {

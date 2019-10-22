@@ -35,6 +35,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+}
 
 #pragma mark - 重写父类
 - (void)setupNav {

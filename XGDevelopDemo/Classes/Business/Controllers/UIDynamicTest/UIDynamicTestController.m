@@ -28,6 +28,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+}
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     //1.物理仿真器

@@ -36,12 +36,14 @@
     }
 }
 
+
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     if (@available(iOS 11.0, *)) {
         self.navigationController.navigationBar.prefersLargeTitles = NO;
     }
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -79,6 +79,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+}
+
 #pragma mark -
 
 - (void)setupNav {

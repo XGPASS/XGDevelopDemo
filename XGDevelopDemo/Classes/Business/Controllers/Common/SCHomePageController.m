@@ -66,7 +66,8 @@
     
     NSLog(@"testNum===%ld",(long)testNum);
     
-    
+    NSMutableArray *array = @[@"1",@"2"].mutableCopy;
+    [array insertObject:@"3" atIndex:2];
     
 }
 
@@ -383,3 +384,4 @@
 }
 
 @end
+

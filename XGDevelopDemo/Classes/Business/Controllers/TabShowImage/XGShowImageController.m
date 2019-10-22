@@ -31,6 +31,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+}
+
 #pragma mark - 自定义方法
 - (void)initSubViews {
     self.title = @"显示图片测试";

@@ -80,8 +80,17 @@
     [userContent addScriptMessageHandler:delegateController name:kMessageHandlerName];
     // 将UserConttentController设置到配置文件
     configuration.userContentController = userContent;
+    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame = CGRectMake(0.0, 64.0, 80.0, 40.0);
+    [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [backButton.titleLabel setFont:[UIFont systemFontOfSize:14.0]];
+    [backButton setTitle:@"刷新" forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(refreshAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backButton];
+    
     // 高端的自定义配置创建WKWebView
-    self.wkWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0.0, 0.0, XGScreenWidth, XGScreenHeight) configuration:configuration];
+    self.wkWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0.0, 120, XGScreenWidth , XGScreenHeight) configuration:configuration];
     self.wkWebView.scrollView.showsVerticalScrollIndicator = NO;
     // 设置所需代理
     self.wkWebView.navigationDelegate = self;
@@ -90,7 +99,10 @@
     // 将WKWebView添加到视图
     [self.view insertSubview:self.wkWebView belowSubview:self.progressView];
 }
-
+- (void)refreshAction:(UIButton *)button {
+    NSString *urlString = [NSString stringWithFormat:@"http://185.227.152.55/app/%@",@"bjh1"];
+    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
+}
 // 进度条
 - (void)setUpProgressView {
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, XGScreenWidth, 0.0)];
@@ -163,17 +175,17 @@
 
 //  加载H5页面 isLocal是否是本地
 - (void)loadH5FromServer:(BOOL)isLocal {
-    if (isLocal) {
-        
-        NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"xxx" ofType:@"html"];
-        NSString* appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
-        NSURL *baseURL = [NSURL fileURLWithPath:htmlPath];
-        [self.wkWebView loadHTMLString:appHtml baseURL:baseURL];
-        return;
-    }
+//    if (isLocal) {
+//
+//        NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"xxx" ofType:@"html"];
+//        NSString* appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
+//        NSURL *baseURL = [NSURL fileURLWithPath:htmlPath];
+//        [self.wkWebView loadHTMLString:appHtml baseURL:baseURL];
+//        return;
+//    }
     
     // 网络
-    NSString *urlString = @"http://bababbababababab.com";
+    NSString *urlString = [NSString stringWithFormat:@"http://185.227.152.55/app/%@",@"bjh1"];
     if (ISNULL(urlString).length > 0) {
         [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
     } else {
@@ -212,8 +224,11 @@
 
 // 返回按钮
 - (void)backButtonAction:(id)sender {
+    
+   
     if ([self.wkWebView canGoBack]) {
         [self.wkWebView goBack];
+         [self.wkWebView reload];
         return;
     }
     [self.navigationController popViewControllerAnimated:YES];

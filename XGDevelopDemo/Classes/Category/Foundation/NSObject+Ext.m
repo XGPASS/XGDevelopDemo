@@ -34,10 +34,15 @@
     
     //class_addMethod will fail if original method already exists
     
-    BOOL didAddMethod = class_addMethod(class, origSel, method_getImplementation(swizMethod), method_getTypeEncoding(swizMethod));
+    BOOL didAddMethod = class_addMethod(class,
+                                        origSel,
+                                        method_getImplementation(swizMethod),
+                                        method_getTypeEncoding(swizMethod));
     
     if (didAddMethod) {
-        class_replaceMethod(class, swizSel, method_getImplementation(origMethod), method_getTypeEncoding(origMethod));
+        class_replaceMethod(class, swizSel,
+                            method_getImplementation(origMethod),
+                            method_getTypeEncoding(origMethod));
     } else {
         //origMethod and swizMethod already exist
         method_exchangeImplementations(origMethod, swizMethod);

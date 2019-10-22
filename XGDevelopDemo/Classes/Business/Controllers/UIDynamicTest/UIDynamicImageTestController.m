@@ -27,6 +27,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     // 获取触摸点
