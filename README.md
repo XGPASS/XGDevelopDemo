@@ -29,3 +29,5 @@ CSDN：http://blog.csdn.net/syg90178aw
 
 ![image](https://github.com/XGPASS/XGDevelopDemo/blob/master/images/develop.gif)
 ![image](https://github.com/XGPASS/XGDevelopDemo/blob/master/images/develop2.gif)
+
+ps:作者转战前端，学习vue.js，此小demo不再维护更新；
